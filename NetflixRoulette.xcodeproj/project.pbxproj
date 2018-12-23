@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C46094521CE9F8100BEAC9C /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */; };
+		2C46094621CE9F8100BEAC9C /* AcceuilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */; };
+		2C46094921CE9FCF00BEAC9C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */; };
+		2C46094A21CE9FCF00BEAC9C /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */; };
+		2C46094D21CEA00000BEAC9C /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */; };
+		2C46094E21CEA00000BEAC9C /* ShuffleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */; };
+		2C5CEF2E21CAC539002EB873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CEF2D21CAC539002EB873 /* AppDelegate.swift */; };
+		2C5CEF3521CAC53F002EB873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5CEF3421CAC53F002EB873 /* Assets.xcassets */; };
+		2C5CEF3821CAC53F002EB873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5CEF3621CAC53F002EB873 /* LaunchScreen.storyboard */; };
+		2C5CEF4321CACBAF002EB873 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CEF4121CACBAF002EB873 /* MainViewController.swift */; };
+		2C5CEF4421CACBAF002EB873 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5CEF4221CACBAF002EB873 /* MainViewController.xib */; };
+		2C5CEF4721CAF145002EB873 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CEF4521CAF145002EB873 /* HomeViewController.swift */; };
+		EC09BE6E7519676C9ADCF5A4 /* Pods_NetflixRoulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6EBA3EF9505DAF7022E78 /* Pods_NetflixRoulette.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
+		2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcceuilViewController.xib; sourceTree = "<group>"; };
+		2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
+		2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuffleViewController.xib; sourceTree = "<group>"; };
+		2C5CEF2A21CAC539002EB873 /* NetflixRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5CEF2D21CAC539002EB873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C5CEF3421CAC53F002EB873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C5CEF3721CAC53F002EB873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C5CEF3921CAC53F002EB873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C5CEF4121CACBAF002EB873 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2C5CEF4221CACBAF002EB873 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2C5CEF4521CAF145002EB873 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3BAFFF3C7EC391C41B1FC74B /* Pods-NetflixRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.debug.xcconfig"; sourceTree = "<group>"; };
+		95C3333624B172E1370938DB /* Pods-NetflixRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.release.xcconfig"; sourceTree = "<group>"; };
+		C4C6EBA3EF9505DAF7022E78 /* Pods_NetflixRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C5CEF2721CAC539002EB873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC09BE6E7519676C9ADCF5A4 /* Pods_NetflixRoulette.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D7EB72981C3F51F617B69A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BAFFF3C7EC391C41B1FC74B /* Pods-NetflixRoulette.debug.xcconfig */,
+				95C3333624B172E1370938DB /* Pods-NetflixRoulette.release.xcconfig */,
+			);
+			name = Pods;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2C5CEF2121CAC539002EB873 = {
+			isa = PBXGroup;
+			children = (
+				2C5CEF2C21CAC539002EB873 /* NetflixRoulette */,
+				609FB72EE6A65C03881DB796 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C5CEF2B21CAC539002EB873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CEF2A21CAC539002EB873 /* NetflixRoulette.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2C5CEF2C21CAC539002EB873 /* NetflixRoulette */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CEF2D21CAC539002EB873 /* AppDelegate.swift */,
+				2C5CEF4121CACBAF002EB873 /* MainViewController.swift */,
+				2C5CEF4221CACBAF002EB873 /* MainViewController.xib */,
+				2C5CEF4521CAF145002EB873 /* HomeViewController.swift */,
+				2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */,
+				2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */,
+				2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */,
+				2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */,
+				2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */,
+				2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */,
+				2C5CEF3421CAC53F002EB873 /* Assets.xcassets */,
+				2C5CEF3621CAC53F002EB873 /* LaunchScreen.storyboard */,
+				2C5CEF3921CAC53F002EB873 /* Info.plist */,
+				2C5CEF2B21CAC539002EB873 /* Products */,
+				1D7EB72981C3F51F617B69A5 /* Pods */,
+			);
+			path = NetflixRoulette;
+			sourceTree = "<group>";
+		};
+		609FB72EE6A65C03881DB796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6EBA3EF9505DAF7022E78 /* Pods_NetflixRoulette.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C5CEF2921CAC539002EB873 /* NetflixRoulette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5CEF3C21CAC53F002EB873 /* Build configuration list for PBXNativeTarget "NetflixRoulette" */;
+			buildPhases = (
+				07E661B8C7CD4D231800081B /* [CP] Check Pods Manifest.lock */,
+				2C5CEF2621CAC539002EB873 /* Sources */,
+				2C5CEF2721CAC539002EB873 /* Frameworks */,
+				2C5CEF2821CAC539002EB873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetflixRoulette;
+			productName = NetflixRoulette;
+			productReference = 2C5CEF2A21CAC539002EB873 /* NetflixRoulette.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C5CEF2221CAC539002EB873 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ramzy Kermad";
+				TargetAttributes = {
+					2C5CEF2921CAC539002EB873 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2C5CEF2521CAC539002EB873 /* Build configuration list for PBXProject "NetflixRoulette" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C5CEF2121CAC539002EB873;
+			productRefGroup = 2C5CEF2B21CAC539002EB873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C5CEF2921CAC539002EB873 /* NetflixRoulette */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C5CEF2821CAC539002EB873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5CEF3821CAC53F002EB873 /* LaunchScreen.storyboard in Resources */,
+				2C5CEF4421CACBAF002EB873 /* MainViewController.xib in Resources */,
+				2C46094E21CEA00000BEAC9C /* ShuffleViewController.xib in Resources */,
+				2C5CEF3521CAC53F002EB873 /* Assets.xcassets in Resources */,
+				2C46094A21CE9FCF00BEAC9C /* SearchViewController.xib in Resources */,
+				2C46094621CE9F8100BEAC9C /* AcceuilViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07E661B8C7CD4D231800081B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetflixRoulette-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C5CEF2621CAC539002EB873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C46094921CE9FCF00BEAC9C /* SearchViewController.swift in Sources */,
+				2C46094521CE9F8100BEAC9C /* AcceuilViewController.swift in Sources */,
+				2C46094D21CEA00000BEAC9C /* ShuffleViewController.swift in Sources */,
+				2C5CEF2E21CAC539002EB873 /* AppDelegate.swift in Sources */,
+				2C5CEF4321CACBAF002EB873 /* MainViewController.swift in Sources */,
+				2C5CEF4721CAF145002EB873 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C5CEF3621CAC53F002EB873 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5CEF3721CAC53F002EB873 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C5CEF3A21CAC53F002EB873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C5CEF3B21CAC53F002EB873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C5CEF3D21CAC53F002EB873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BAFFF3C7EC391C41B1FC74B /* Pods-NetflixRoulette.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetflixRoulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NetflixRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C5CEF3E21CAC53F002EB873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C3333624B172E1370938DB /* Pods-NetflixRoulette.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetflixRoulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NetflixRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5CEF2521CAC539002EB873 /* Build configuration list for PBXProject "NetflixRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5CEF3A21CAC53F002EB873 /* Debug */,
+				2C5CEF3B21CAC53F002EB873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5CEF3C21CAC53F002EB873 /* Build configuration list for PBXNativeTarget "NetflixRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5CEF3D21CAC53F002EB873 /* Debug */,
+				2C5CEF3E21CAC53F002EB873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C5CEF2221CAC539002EB873 /* Project object */;
+}

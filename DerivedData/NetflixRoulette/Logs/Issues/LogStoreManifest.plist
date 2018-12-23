@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>9B202FB7-C3C3-463E-BAE5-8C5B4B760F05</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>9B202FB7-C3C3-463E-BAE5-8C5B4B760F05.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>NetflixRoulette-edokcyqyywkqhpeuppexbnvhsmcv</string>
+			<key>timeStartedRecording</key>
+			<real>567193082.31975603</real>
+			<key>timeStoppedRecording</key>
+			<real>567193086.453794</real>
+			<key>title</key>
+			<string>Build target NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>9B202FB7-C3C3-463E-BAE5-8C5B4B760F05</string>
+		</dict>
+		<key>E1881C5A-CC70-4CE4-8E31-E94A8F27745B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>E1881C5A-CC70-4CE4-8E31-E94A8F27745B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Pods-NetflixRoulette-hlglbzdqteeuukhdjfytzidphpat</string>
+			<key>timeStartedRecording</key>
+			<real>567189505.20701802</real>
+			<key>timeStoppedRecording</key>
+			<real>567189505.21174705</real>
+			<key>title</key>
+			<string>Build target Pods-NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>E1881C5A-CC70-4CE4-8E31-E94A8F27745B</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
