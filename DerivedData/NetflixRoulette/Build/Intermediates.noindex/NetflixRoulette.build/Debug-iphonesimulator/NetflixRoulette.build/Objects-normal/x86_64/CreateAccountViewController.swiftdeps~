@@ -29,7 +29,6 @@ depends-top-level:
 - !private "CC_MD5_Final"
 - !private "CC_MD5_Init"
 - !private "CC_MD5_Update"
-- !private "CastingPrecedence"
 - "CreateAccountViewController"
 - !private "FloatLiteralType"
 - !private "HTTPHeaders"
@@ -44,8 +43,6 @@ depends-top-level:
 - "UIViewController"
 - !private "UInt8"
 - !private "UnsafeMutablePointer"
-- !private "User"
-- !private "print"
 depends-member:
 - !private ["Sa", "init"]
 - !private ["s13ArrayProtocolP", "init"]
@@ -65,12 +62,12 @@ depends-member:
 - !private ["s7CVarArgP", "CC_MD5_Init"]
 - !private ["s7CVarArgP", "CC_MD5_Update"]
 - !private ["s7CVarArgP", "Encoding"]
+- !private ["s7CVarArgP", "HTTPHeaders"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "JSONEncoding"]
 - !private ["s7CVarArgP", "MainViewController"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UnsafeMutablePointer"]
-- !private ["s7CVarArgP", "User"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allocate"]
@@ -90,11 +87,9 @@ depends-member:
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "postAccount"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "pushViewController"]
 - !private ["s7CVarArgP", "second_password_field"]
 - !private ["s7CVarArgP", "setHidesBackButton"]
-- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "toMD5encryption"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -102,7 +97,6 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["Sl", "lengthOfBytes"]
-- !private ["Sl", "subscript"]
 - !private ["SL", "Encoding"]
 - !private ["SL", "allocate"]
 - !private ["SL", "deallocate"]
@@ -126,7 +120,6 @@ depends-member:
 - ["15NetflixRoulette27CreateAccountViewControllerC", "UITextField"]
 - !private ["15NetflixRoulette27CreateAccountViewControllerC", "UInt8"]
 - !private ["15NetflixRoulette27CreateAccountViewControllerC", "UnsafeMutablePointer"]
-- !private ["15NetflixRoulette27CreateAccountViewControllerC", "User"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "checkFieldsFilled"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "createAccount"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "differentPasswordField"]
@@ -140,7 +133,6 @@ depends-member:
 - !private ["15NetflixRoulette27CreateAccountViewControllerC", "navigationController"]
 - !private ["15NetflixRoulette27CreateAccountViewControllerC", "navigationItem"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "postAccount"]
-- !private ["15NetflixRoulette27CreateAccountViewControllerC", "print"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "second_password_field"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "toMD5encryption"]
 - ["15NetflixRoulette27CreateAccountViewControllerC", "viewDidLoad"]
@@ -152,12 +144,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CC_MD5_Init"]
 - !private ["s28CustomDebugStringConvertibleP", "CC_MD5_Update"]
 - !private ["s28CustomDebugStringConvertibleP", "Encoding"]
+- !private ["s28CustomDebugStringConvertibleP", "HTTPHeaders"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONEncoding"]
 - !private ["s28CustomDebugStringConvertibleP", "MainViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UnsafeMutablePointer"]
-- !private ["s28CustomDebugStringConvertibleP", "User"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "allocate"]
 - !private ["s28CustomDebugStringConvertibleP", "checkFieldsFilled"]
@@ -176,16 +168,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "postAccount"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
-- !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
-- !private ["s28CustomDebugStringConvertibleP", "result"]
 - !private ["s28CustomDebugStringConvertibleP", "second_password_field"]
 - !private ["s28CustomDebugStringConvertibleP", "setHidesBackButton"]
-- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "toMD5encryption"]
-- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s29CustomPlaygroundQuickLookableP", "Encoding"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -202,7 +189,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isHidden"]
 - !private ["s17CustomReflectableP", "lengthOfBytes"]
-- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Alamofire"]
 - !private ["s23CustomStringConvertibleP", "Array"]
@@ -212,12 +198,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CC_MD5_Init"]
 - !private ["s23CustomStringConvertibleP", "CC_MD5_Update"]
 - !private ["s23CustomStringConvertibleP", "Encoding"]
+- !private ["s23CustomStringConvertibleP", "HTTPHeaders"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "JSONEncoding"]
 - !private ["s23CustomStringConvertibleP", "MainViewController"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UnsafeMutablePointer"]
-- !private ["s23CustomStringConvertibleP", "User"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "checkFieldsFilled"]
@@ -235,36 +221,26 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "postAccount"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "pushViewController"]
-- !private ["s23CustomStringConvertibleP", "responseJSON"]
-- !private ["s23CustomStringConvertibleP", "result"]
 - !private ["s23CustomStringConvertibleP", "second_password_field"]
 - !private ["s23CustomStringConvertibleP", "setHidesBackButton"]
-- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "toMD5encryption"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
-- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["9Alamofire11DataRequestC", "responseJSON"]
-- !private ["9Alamofire12DataResponseV", "result"]
 - !private ["Se", "Encoding"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
 - !private ["Se", "isHidden"]
 - !private ["Se", "lengthOfBytes"]
-- !private ["Se", "subscript"]
 - !private ["Se", "text"]
-- !private ["SD", "subscript"]
 - !private ["SE", "Encoding"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "isHidden"]
 - !private ["SE", "lengthOfBytes"]
-- !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - !private ["SS10FoundationE8EncodingV", "utf8"]
 - !private ["SQ", "Alamofire"]
@@ -275,12 +251,12 @@ depends-member:
 - !private ["SQ", "CC_MD5_Init"]
 - !private ["SQ", "CC_MD5_Update"]
 - !private ["SQ", "Encoding"]
+- !private ["SQ", "HTTPHeaders"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "JSONEncoding"]
 - !private ["SQ", "MainViewController"]
 - !private ["SQ", "String"]
 - !private ["SQ", "UnsafeMutablePointer"]
-- !private ["SQ", "User"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "allocate"]
@@ -299,20 +275,16 @@ depends-member:
 - !private ["SQ", "login_field"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "navigationItem"]
-- !private ["SQ", "post"]
 - !private ["SQ", "postAccount"]
-- !private ["SQ", "print"]
 - !private ["SQ", "pushViewController"]
 - !private ["SQ", "second_password_field"]
 - !private ["SQ", "setHidesBackButton"]
-- !private ["SQ", "subscript"]
 - !private ["SQ", "text"]
 - !private ["SQ", "toMD5encryption"]
 - !private ["SQ", "utf8"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Encoding"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -329,7 +301,6 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lengthOfBytes"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["9Alamofire10HTTPMethodO", "post"]
 - !private ["SH", "Alamofire"]
 - !private ["SH", "Array"]
 - !private ["SH", "CC_LONG"]
@@ -338,12 +309,12 @@ depends-member:
 - !private ["SH", "CC_MD5_Init"]
 - !private ["SH", "CC_MD5_Update"]
 - !private ["SH", "Encoding"]
+- !private ["SH", "HTTPHeaders"]
 - !private ["SH", "Int"]
 - !private ["SH", "JSONEncoding"]
 - !private ["SH", "MainViewController"]
 - !private ["SH", "String"]
 - !private ["SH", "UnsafeMutablePointer"]
-- !private ["SH", "User"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "allocate"]
@@ -362,19 +333,15 @@ depends-member:
 - !private ["SH", "login_field"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "navigationItem"]
-- !private ["SH", "post"]
 - !private ["SH", "postAccount"]
-- !private ["SH", "print"]
 - !private ["SH", "pushViewController"]
 - !private ["SH", "second_password_field"]
 - !private ["SH", "setHidesBackButton"]
-- !private ["SH", "subscript"]
 - !private ["SH", "text"]
 - !private ["SH", "toMD5encryption"]
 - !private ["SH", "utf8"]
 - !private ["SH", "viewDidLoad"]
 - !private ["Si", "init"]
-- !private ["9Alamofire12JSONEncodingV", "default"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -394,12 +361,12 @@ depends-member:
 - !private ["So8NSCodingP", "CC_MD5_Final"]
 - !private ["So8NSCodingP", "CC_MD5_Init"]
 - !private ["So8NSCodingP", "CC_MD5_Update"]
+- !private ["So8NSCodingP", "HTTPHeaders"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "JSONEncoding"]
 - !private ["So8NSCodingP", "MainViewController"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UnsafeMutablePointer"]
-- !private ["So8NSCodingP", "User"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "checkFieldsFilled"]
 - !private ["So8NSCodingP", "differentPasswordField"]
@@ -416,7 +383,6 @@ depends-member:
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "postAccount"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "pushViewController"]
 - !private ["So8NSCodingP", "second_password_field"]
 - !private ["So8NSCodingP", "setHidesBackButton"]
@@ -431,12 +397,12 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "CC_MD5_Final"]
 - !private ["So26NSExtensionRequestHandlingP", "CC_MD5_Init"]
 - !private ["So26NSExtensionRequestHandlingP", "CC_MD5_Update"]
+- !private ["So26NSExtensionRequestHandlingP", "HTTPHeaders"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "JSONEncoding"]
 - !private ["So26NSExtensionRequestHandlingP", "MainViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UnsafeMutablePointer"]
-- !private ["So26NSExtensionRequestHandlingP", "User"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "checkFieldsFilled"]
 - !private ["So26NSExtensionRequestHandlingP", "differentPasswordField"]
@@ -451,7 +417,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - !private ["So26NSExtensionRequestHandlingP", "postAccount"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "second_password_field"]
 - !private ["So26NSExtensionRequestHandlingP", "toMD5encryption"]
@@ -476,7 +441,6 @@ depends-member:
 - ["So8NSObjectC", "UITextField"]
 - !private ["So8NSObjectC", "UInt8"]
 - !private ["So8NSObjectC", "UnsafeMutablePointer"]
-- !private ["So8NSObjectC", "User"]
 - ["So8NSObjectC", "checkFieldsFilled"]
 - ["So8NSObjectC", "createAccount"]
 - ["So8NSObjectC", "differentPasswordField"]
@@ -493,7 +457,6 @@ depends-member:
 - !private ["So8NSObjectC", "navigationController"]
 - !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "postAccount"]
-- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "pushViewController"]
 - ["So8NSObjectC", "second_password_field"]
 - !private ["So8NSObjectC", "setHidesBackButton"]
@@ -507,12 +470,12 @@ depends-member:
 - !private ["So8NSObjectP", "CC_MD5_Final"]
 - !private ["So8NSObjectP", "CC_MD5_Init"]
 - !private ["So8NSObjectP", "CC_MD5_Update"]
+- !private ["So8NSObjectP", "HTTPHeaders"]
 - !private ["So8NSObjectP", "Int"]
 - !private ["So8NSObjectP", "JSONEncoding"]
 - !private ["So8NSObjectP", "MainViewController"]
 - !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UnsafeMutablePointer"]
-- !private ["So8NSObjectP", "User"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "checkFieldsFilled"]
 - !private ["So8NSObjectP", "differentPasswordField"]
@@ -529,7 +492,6 @@ depends-member:
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "navigationItem"]
 - !private ["So8NSObjectP", "postAccount"]
-- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "pushViewController"]
 - !private ["So8NSObjectP", "second_password_field"]
 - !private ["So8NSObjectP", "setHidesBackButton"]
@@ -541,22 +503,16 @@ depends-member:
 - !private ["Sj", "init"]
 - !private ["Sq", "isHidden"]
 - !private ["Sq", "text"]
-- !private ["9Alamofire17ParameterEncodingP", "default"]
 - !private ["Sk", "init"]
 - !private ["Sm", "Encoding"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "lengthOfBytes"]
-- !private ["SY", "post"]
 - !private ["SY", "utf8"]
-- !private ["9Alamofire7RequestC", "responseJSON"]
-- !private ["9Alamofire8ResponseP", "result"]
-- !private ["9Alamofire6ResultO", "value"]
 - !private ["ST", "Encoding"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "lengthOfBytes"]
-- !private ["ST", "subscript"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "allocate"]
@@ -589,12 +545,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CC_MD5_Final"]
 - !private ["So21UIAppearanceContainerP", "CC_MD5_Init"]
 - !private ["So21UIAppearanceContainerP", "CC_MD5_Update"]
+- !private ["So21UIAppearanceContainerP", "HTTPHeaders"]
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "JSONEncoding"]
 - !private ["So21UIAppearanceContainerP", "MainViewController"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UnsafeMutablePointer"]
-- !private ["So21UIAppearanceContainerP", "User"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "checkFieldsFilled"]
 - !private ["So21UIAppearanceContainerP", "differentPasswordField"]
@@ -610,7 +566,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "postAccount"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "pushViewController"]
 - !private ["So21UIAppearanceContainerP", "second_password_field"]
 - !private ["So21UIAppearanceContainerP", "text"]
@@ -623,12 +578,12 @@ depends-member:
 - !private ["So18UIContentContainerP", "CC_MD5_Final"]
 - !private ["So18UIContentContainerP", "CC_MD5_Init"]
 - !private ["So18UIContentContainerP", "CC_MD5_Update"]
+- !private ["So18UIContentContainerP", "HTTPHeaders"]
 - !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "JSONEncoding"]
 - !private ["So18UIContentContainerP", "MainViewController"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UnsafeMutablePointer"]
-- !private ["So18UIContentContainerP", "User"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "checkFieldsFilled"]
 - !private ["So18UIContentContainerP", "differentPasswordField"]
@@ -643,7 +598,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "navigationItem"]
 - !private ["So18UIContentContainerP", "postAccount"]
-- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "pushViewController"]
 - !private ["So18UIContentContainerP", "second_password_field"]
 - !private ["So18UIContentContainerP", "toMD5encryption"]
@@ -662,12 +616,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CC_MD5_Final"]
 - !private ["So18UIFocusEnvironmentP", "CC_MD5_Init"]
 - !private ["So18UIFocusEnvironmentP", "CC_MD5_Update"]
+- !private ["So18UIFocusEnvironmentP", "HTTPHeaders"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "JSONEncoding"]
 - !private ["So18UIFocusEnvironmentP", "MainViewController"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UnsafeMutablePointer"]
-- !private ["So18UIFocusEnvironmentP", "User"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "checkFieldsFilled"]
 - !private ["So18UIFocusEnvironmentP", "differentPasswordField"]
@@ -683,7 +637,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "postAccount"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "pushViewController"]
 - !private ["So18UIFocusEnvironmentP", "second_password_field"]
 - !private ["So18UIFocusEnvironmentP", "text"]
@@ -704,12 +657,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CC_MD5_Final"]
 - !private ["So30UIPasteConfigurationSupportingP", "CC_MD5_Init"]
 - !private ["So30UIPasteConfigurationSupportingP", "CC_MD5_Update"]
+- !private ["So30UIPasteConfigurationSupportingP", "HTTPHeaders"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "JSONEncoding"]
 - !private ["So30UIPasteConfigurationSupportingP", "MainViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UnsafeMutablePointer"]
-- !private ["So30UIPasteConfigurationSupportingP", "User"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "checkFieldsFilled"]
 - !private ["So30UIPasteConfigurationSupportingP", "differentPasswordField"]
@@ -725,7 +678,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "postAccount"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "second_password_field"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
@@ -748,7 +700,6 @@ depends-member:
 - ["So11UIResponderC", "UITextField"]
 - !private ["So11UIResponderC", "UInt8"]
 - !private ["So11UIResponderC", "UnsafeMutablePointer"]
-- !private ["So11UIResponderC", "User"]
 - ["So11UIResponderC", "checkFieldsFilled"]
 - ["So11UIResponderC", "createAccount"]
 - ["So11UIResponderC", "differentPasswordField"]
@@ -764,7 +715,6 @@ depends-member:
 - !private ["So11UIResponderC", "navigationController"]
 - !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "postAccount"]
-- !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "pushViewController"]
 - ["So11UIResponderC", "second_password_field"]
 - !private ["So11UIResponderC", "text"]
@@ -777,12 +727,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CC_MD5_Final"]
 - !private ["So30UIResponderStandardEditActionsP", "CC_MD5_Init"]
 - !private ["So30UIResponderStandardEditActionsP", "CC_MD5_Update"]
+- !private ["So30UIResponderStandardEditActionsP", "HTTPHeaders"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "JSONEncoding"]
 - !private ["So30UIResponderStandardEditActionsP", "MainViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UnsafeMutablePointer"]
-- !private ["So30UIResponderStandardEditActionsP", "User"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "checkFieldsFilled"]
 - !private ["So30UIResponderStandardEditActionsP", "differentPasswordField"]
@@ -798,7 +748,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "postAccount"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "second_password_field"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
@@ -811,12 +760,12 @@ depends-member:
 - !private ["So16UIStateRestoringP", "CC_MD5_Final"]
 - !private ["So16UIStateRestoringP", "CC_MD5_Init"]
 - !private ["So16UIStateRestoringP", "CC_MD5_Update"]
+- !private ["So16UIStateRestoringP", "HTTPHeaders"]
 - !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "JSONEncoding"]
 - !private ["So16UIStateRestoringP", "MainViewController"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UnsafeMutablePointer"]
-- !private ["So16UIStateRestoringP", "User"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "checkFieldsFilled"]
 - !private ["So16UIStateRestoringP", "differentPasswordField"]
@@ -831,7 +780,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "navigationItem"]
 - !private ["So16UIStateRestoringP", "postAccount"]
-- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "pushViewController"]
 - !private ["So16UIStateRestoringP", "second_password_field"]
 - !private ["So16UIStateRestoringP", "toMD5encryption"]
@@ -849,12 +797,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CC_MD5_Final"]
 - !private ["So18UITraitEnvironmentP", "CC_MD5_Init"]
 - !private ["So18UITraitEnvironmentP", "CC_MD5_Update"]
+- !private ["So18UITraitEnvironmentP", "HTTPHeaders"]
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "JSONEncoding"]
 - !private ["So18UITraitEnvironmentP", "MainViewController"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UnsafeMutablePointer"]
-- !private ["So18UITraitEnvironmentP", "User"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "checkFieldsFilled"]
 - !private ["So18UITraitEnvironmentP", "differentPasswordField"]
@@ -870,7 +818,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "postAccount"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "pushViewController"]
 - !private ["So18UITraitEnvironmentP", "second_password_field"]
 - !private ["So18UITraitEnvironmentP", "text"]
@@ -883,12 +830,12 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "CC_MD5_Final"]
 - !private ["So23UIUserActivityRestoringP", "CC_MD5_Init"]
 - !private ["So23UIUserActivityRestoringP", "CC_MD5_Update"]
+- !private ["So23UIUserActivityRestoringP", "HTTPHeaders"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
 - !private ["So23UIUserActivityRestoringP", "JSONEncoding"]
 - !private ["So23UIUserActivityRestoringP", "MainViewController"]
 - !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UnsafeMutablePointer"]
-- !private ["So23UIUserActivityRestoringP", "User"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "checkFieldsFilled"]
 - !private ["So23UIUserActivityRestoringP", "differentPasswordField"]
@@ -904,7 +851,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - !private ["So23UIUserActivityRestoringP", "postAccount"]
-- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "pushViewController"]
 - !private ["So23UIUserActivityRestoringP", "second_password_field"]
 - !private ["So23UIUserActivityRestoringP", "text"]
@@ -929,7 +875,6 @@ depends-member:
 - ["So16UIViewControllerC", "UITextField"]
 - !private ["So16UIViewControllerC", "UInt8"]
 - !private ["So16UIViewControllerC", "UnsafeMutablePointer"]
-- !private ["So16UIViewControllerC", "User"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "checkFieldsFilled"]
 - ["So16UIViewControllerC", "createAccount"]
@@ -945,21 +890,14 @@ depends-member:
 - !private ["So16UIViewControllerC", "navigationController"]
 - !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "postAccount"]
-- !private ["So16UIViewControllerC", "print"]
 - !private ["So16UIViewControllerC", "pushViewController"]
 - ["So16UIViewControllerC", "second_password_field"]
 - ["So16UIViewControllerC", "toMD5encryption"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["s6UInt32V", "init"]
-- !private ["9Alamofire14URLConvertibleP", "Encoding"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
-- !private ["9Alamofire14URLConvertibleP", "lengthOfBytes"]
 - !private ["Sp", "allocate"]
 - !private ["Sp", "deallocate"]
 - !private ["SU", "init"]
-- !private ["15NetflixRoulette4UserC", "deinit"]
-- !private ["15NetflixRoulette4UserC", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -988,7 +926,6 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "lengthOfBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lengthOfBytes"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Alamofire"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CC_LONG"]
@@ -996,12 +933,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CC_MD5_Final"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CC_MD5_Init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CC_MD5_Update"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HTTPHeaders"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONEncoding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MainViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UnsafeMutablePointer"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "User"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "checkFieldsFilled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "differentPasswordField"]
@@ -1018,7 +955,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "postAccount"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "second_password_field"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setHidesBackButton"]
@@ -1031,7 +967,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isHidden"]
 - !private ["s21_ObjectiveCBridgeableP", "lengthOfBytes"]
-- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s8_PointerP", "allocate"]
 - !private ["s8_PointerP", "deallocate"]
@@ -1054,26 +989,20 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "9Alamofire11DataRequestC"
-- !private "9Alamofire12DataResponseV"
 - !private "Se"
-- !private "SD"
 - !private "SE"
 - !private "SS10FoundationE8EncodingV"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "9Alamofire10HTTPMethodO"
 - "SH"
 - !private "Si"
-- !private "9Alamofire12JSONEncodingV"
 - !private "s25LosslessStringConvertibleP"
 - !private "15NetflixRoulette18MainViewControllerC"
 - !private "s10MirrorPathP"
@@ -1090,13 +1019,9 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "Sj"
 - !private "Sq"
-- !private "9Alamofire17ParameterEncodingP"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
-- !private "9Alamofire7RequestC"
-- !private "9Alamofire8ResponseP"
-- !private "9Alamofire6ResultO"
 - !private "ST"
 - !private "SZ"
 - !private "s13SignedNumericP"
@@ -1135,10 +1060,8 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s6UInt32V"
-- !private "9Alamofire14URLConvertibleP"
 - !private "Sp"
 - !private "SU"
-- !private "15NetflixRoulette4UserC"
 - !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
@@ -1157,7 +1080,6 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -1170,9 +1092,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
