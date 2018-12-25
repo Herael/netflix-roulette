@@ -6,15 +6,15 @@
 	<dict>
 		<key>AcceuilViewController.nib/objects-11.0+.nib</key>
 		<data>
-		A7I3TCrQ6LvGw3JmScPBJhVhzkY=
+		ykF3z6idSAiXnYNvD+cRgA+S2XU=
 		</data>
 		<key>AcceuilViewController.nib/runtime.nib</key>
 		<data>
-		BMCajkTmLZ54mQ+50SMKx1HtQls=
+		m/FEClhcW4S8aN93g9ssOWfmztU=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		TS1D2WJ59pawrpRH3uhmnVfTKL4=
+		m++j+ad18I/wiuO0IjBQPFUSMoY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib</key>
 		<data>
@@ -35,6 +35,26 @@
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
 		bBBWXYkJwvx+KSVl6leDAZlUouc=
+		</data>
+		<key>CreateAccountViewController.nib/objects-11.0+.nib</key>
+		<data>
+		7ZkAhysbR2epTadOQd+zFX/0h04=
+		</data>
+		<key>CreateAccountViewController.nib/runtime.nib</key>
+		<data>
+		2qnidNCxrF1ZRYs+kLH37cMnHoE=
+		</data>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<data>
+		QR6GSvs2R05wAHaI9H0/w82DIqw=
+		</data>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<data>
+		i5u/wLVBCetM3AGKUVLYZ5JO82o=
+		</data>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<data>
+		GazVPVmmXGqwT03G9GBC69WXs78=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -90,15 +110,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1QNsMaPr0bi1hbcEQ16ar6CDw9o=
+		xNzfMXRYGCnrlIIoSAtdpp9v7kg=
+		</data>
+		<key>ItemDescriptionViewController.nib/objects-11.0+.nib</key>
+		<data>
+		xx58RQoKoX9nhkghY1WGO/1TnT4=
+		</data>
+		<key>ItemDescriptionViewController.nib/runtime.nib</key>
+		<data>
+		4j8TSwDt7eqwJbcR30gn/ydo2wM=
 		</data>
 		<key>MainViewController.nib/objects-11.0+.nib</key>
 		<data>
-		mdhlmdmA8c1e3mkxv/RNEcVzM3o=
+		OfzqpmA5g5ag0DYUDUtPZa/KuLo=
 		</data>
 		<key>MainViewController.nib/runtime.nib</key>
 		<data>
-		UgoSTXo7JRoX/RyIg284AtJNkOQ=
+		Hpj59FsD4ige/qNord5eJm5ajls=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -106,15 +134,15 @@
 		</data>
 		<key>SearchViewController.nib</key>
 		<data>
-		7bI4+hO5W3iyxBvP7396IMBH4A8=
+		MZDCG0FWXI9FzPHDsv1UdKsp8rg=
 		</data>
 		<key>ShuffleViewController.nib/objects-11.0+.nib</key>
 		<data>
-		Y7wX8wSkcmzg3yFA7Z++cDcAdos=
+		aRbe5dmlEDDNEdOFbA7UzyN1LAA=
 		</data>
 		<key>ShuffleViewController.nib/runtime.nib</key>
 		<data>
-		6Yr28Fx+IbZIbbUKA7a/dXFa2oI=
+		iQyw+EZjnuUbMNj1gJfIrl5XGsE=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -127,33 +155,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A7I3TCrQ6LvGw3JmScPBJhVhzkY=
+			ykF3z6idSAiXnYNvD+cRgA+S2XU=
 			</data>
 			<key>hash2</key>
 			<data>
-			eUoMMi6rtPZ3HkHvVOUjX5MWUNAykyFQd5yedfcWU3s=
+			ad/H7gJ8XesO/FeYp+pXM39iiHkj3wJDXALBSbrhbmg=
 			</data>
 		</dict>
 		<key>AcceuilViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BMCajkTmLZ54mQ+50SMKx1HtQls=
+			m/FEClhcW4S8aN93g9ssOWfmztU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uYl1bihR7ZEHBzkbL1oO2AXt4m4A3Y4O1VslCLZeQtE=
+			ODgcHjw7ZRI7UMFsgZEYIhGg34zmtYnkO5cK5/wtxQU=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TS1D2WJ59pawrpRH3uhmnVfTKL4=
+			m++j+ad18I/wiuO0IjBQPFUSMoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EUGaKLw4VMGvu9cSRkqoSD+fwGCSGeLraiM0hLwCD+4=
+			z1BOsECQUXHxwRz9VzWANvWaSKG24HSsCYIyvLJOtac=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib</key>
@@ -209,6 +237,61 @@
 			<key>hash2</key>
 			<data>
 			OC5gPtubWwAgilYflR8JbwCZiRxHGK4FmoVLhPpaBkE=
+			</data>
+		</dict>
+		<key>CreateAccountViewController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7ZkAhysbR2epTadOQd+zFX/0h04=
+			</data>
+			<key>hash2</key>
+			<data>
+			d2jmz7Iiavh2u9wrIFkG1tvDyYyjuNuprpVmAnJxV8I=
+			</data>
+		</dict>
+		<key>CreateAccountViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2qnidNCxrF1ZRYs+kLH37cMnHoE=
+			</data>
+			<key>hash2</key>
+			<data>
+			CT66E5VJ3tw1xsH4yAS4Ke1YXiwVMWnJ2+X+x/UhLJs=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QR6GSvs2R05wAHaI9H0/w82DIqw=
+			</data>
+			<key>hash2</key>
+			<data>
+			vO5cyRenebCiWrFPqp5DpWR5To3IfsilAeo0x6AMpJ4=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5u/wLVBCetM3AGKUVLYZ5JO82o=
+			</data>
+			<key>hash2</key>
+			<data>
+			pttiYqhRSOemOrCtyYcVN0fwJHY+GRlezbaistLQW44=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GazVPVmmXGqwT03G9GBC69WXs78=
+			</data>
+			<key>hash2</key>
+			<data>
+			LOQnK3JUID3xdnICoMoTgxJ3i/rnIoT3/e8JhO4E2is=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -354,59 +437,81 @@
 			EFpaiyfJXaJ3aaulKQ7mrmPLuqXG8IqYFe0E9uygyzU=
 			</data>
 		</dict>
+		<key>ItemDescriptionViewController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xx58RQoKoX9nhkghY1WGO/1TnT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			IqIH4YR1G6ZZQ9wlQSd/ynyXjLw5AhKa1WO/zezjm7Y=
+			</data>
+		</dict>
+		<key>ItemDescriptionViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4j8TSwDt7eqwJbcR30gn/ydo2wM=
+			</data>
+			<key>hash2</key>
+			<data>
+			N930mPG2WHCNfOX4AMt0nQVQI2ra+ADjCEt9sespSo0=
+			</data>
+		</dict>
 		<key>MainViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mdhlmdmA8c1e3mkxv/RNEcVzM3o=
+			OfzqpmA5g5ag0DYUDUtPZa/KuLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			V1wgVe97T906/4ylO4NGdW0KxM7tuTN4ol9FKkmzELE=
+			qAmdKmQc36907NaE6wWmoYAP+lgSX/2NvOdzm8DlFDU=
 			</data>
 		</dict>
 		<key>MainViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UgoSTXo7JRoX/RyIg284AtJNkOQ=
+			Hpj59FsD4ige/qNord5eJm5ajls=
 			</data>
 			<key>hash2</key>
 			<data>
-			dKY3PfllFd77nv7PMeEdckwPTJlboatI7Iiz7GRCrLA=
+			6FawF8qWHWfTInFpsOeDh7iXacts/l73JEeE9n2TWY0=
 			</data>
 		</dict>
 		<key>SearchViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7bI4+hO5W3iyxBvP7396IMBH4A8=
+			MZDCG0FWXI9FzPHDsv1UdKsp8rg=
 			</data>
 			<key>hash2</key>
 			<data>
-			nL0zD1H7ZIa/x2PRMw4ISOZ1JizZxm7cTV6I1U9VvtM=
+			BTR7Ntqtwu/wrxlVok6X6XPGqDdzjb1cVoZMl3iHE3A=
 			</data>
 		</dict>
 		<key>ShuffleViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y7wX8wSkcmzg3yFA7Z++cDcAdos=
+			aRbe5dmlEDDNEdOFbA7UzyN1LAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hPg9Acf/Y1LdfLkh2G6xnV6yk9lWLKrR1m0evyp0SXw=
+			DYyKXa89Ljz9chvuv9Kqsai3McvQuywD+nFXYU+bLFg=
 			</data>
 		</dict>
 		<key>ShuffleViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6Yr28Fx+IbZIbbUKA7a/dXFa2oI=
+			iQyw+EZjnuUbMNj1gJfIrl5XGsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			44RsseXFXm6lIxv1llJvbR9udWWOQERV3N6+xL23mOA=
+			pznaua1rdOHDJdCMPfXI2FAy2ZvQp/4Xj3VEMPI2K/4=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

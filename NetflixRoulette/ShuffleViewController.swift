@@ -14,8 +14,6 @@ class ShuffleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.white
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(ShuffleViewController.tapDetected))
         randomBox.isUserInteractionEnabled = true
         randomBox.addGestureRecognizer(singleTap)

@@ -7,29 +7,89 @@
 //
 
 import UIKit
+import Alamofire
+import CommonCrypto
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var user_email: UITextField!
+    @IBOutlet weak var user_password: UITextField!
+    
+    @IBOutlet weak var fieldsErrorWarning: UILabel! // Error message if email or password are wrong
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Sign in"
-        // Do any additional setup after loading the view.
+        
+        // TODO: delete this line of code (just for a test)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.fieldsErrorWarning.isHidden = true
     }
 
     @IBAction func sign(_ sender: Any) {
-       print("test")
-       let home = HomeViewController()
-       self.navigationController?.pushViewController(home, animated: true)
+        // let test = self.toMD5encryption(password: "Hello")
+        // print("Hello encryption -----> \(test)")
+    
+        self.addToApi(completion: { (success, user) in
+            if success == true {
+                let home = HomeViewController()
+                self.navigationController?.pushViewController(home, animated: true)
+            }else{
+                self.fieldsErrorWarning.isHidden = false
+                print("ERROR TRRRRRWASSANT")
+            }
+        })
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addToApi(completion: @escaping (Bool, User) -> Void){
+        guard let email = user_email.text,
+              let pwd = user_password.text else {
+            return
+        }
+        
+        let params: [String : Any] = [
+            "login": email,
+            "password": self.toMD5encryption(password: pwd)
+        ]
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "X-BetaSeries-Key": "ef873e84f313",
+            "X-BetaSeries-Version": "3.0"
+        ]
+        _ = Alamofire.request("https://api.betaseries.com/members/auth", method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+            if res.response?.statusCode == 200{
+                guard let json_response = res.result.value as? [String: Any] else {
+                    return
+                }
+                let user: User = User(json: json_response)!
+                print(user)
+                completion(res.response?.statusCode == 200, user)
+            } else {
+                print("User doesn't exist!!!!!!!!")
+            }
+        }
     }
-    */
-
+    
+    // OK
+    // Func to encrypt the password of the user with MD5 & send it in JSON obj
+    func toMD5encryption(password: String) -> String {
+        let context = UnsafeMutablePointer<CC_MD5_CTX>.allocate(capacity: 1)
+        var digest = Array<UInt8>(repeating:0, count:Int(CC_MD5_DIGEST_LENGTH))
+        CC_MD5_Init(context)
+        CC_MD5_Update(context, password, CC_LONG(password.lengthOfBytes(using: String.Encoding.utf8)))
+        CC_MD5_Final(&digest, context)
+        context.deallocate(capacity: 1)
+        var hexString = ""
+        for byte in digest {
+            hexString += String(format:"%02x", byte)
+        }
+        
+        return hexString
+    }
+    
+    @IBAction func sign_up(_ sender: Any) {
+        let create_account_vc = CreateAccountViewController()
+        self.navigationController?.pushViewController(create_account_vc, animated: true)
+    }
+    
 }

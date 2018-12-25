@@ -11,11 +11,12 @@ import UIKit
 class AcceuilViewController: UIViewController {
     
     @IBOutlet weak var randomMovieOfTheDay: UIImageView!
+    @IBOutlet weak var page_title: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
         uploadMoviePicture()
+        
     }
     
     // Function à implémenter au moment de l'appel à l'API

@@ -6,5 +6,6 @@ target 'NetflixRoulette' do
   use_frameworks!
 
   # Pods for NetflixRoulette
-
+ pod 'Alamofire'
+  
 end

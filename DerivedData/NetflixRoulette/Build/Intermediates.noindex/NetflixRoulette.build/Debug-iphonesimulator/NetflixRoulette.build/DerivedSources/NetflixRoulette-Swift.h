@@ -163,6 +163,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -182,12 +183,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIImageView;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15NetflixRoulette21AcceuilViewController")
 @interface AcceuilViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified randomMovieOfTheDay;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified page_title;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -208,9 +211,35 @@ SWIFT_CLASS("_TtC15NetflixRoulette11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+
+SWIFT_CLASS("_TtC15NetflixRoulette27CreateAccountViewController")
+@interface CreateAccountViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email_field;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified login_field;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified init_password_field;
+- (UITextField * _Null_unspecified)init_password_field SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified second_password_field;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldNotFilled;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified differentPasswordField;
+- (void)viewDidLoad;
+- (IBAction)createAccount:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC15NetflixRoulette18HomeViewController")
 @interface HomeViewController : UITabBarController
+- (void)viewDidLoad;
+- (void)disconnect;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
+@interface ItemDescriptionViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -219,10 +248,22 @@ SWIFT_CLASS("_TtC15NetflixRoulette18HomeViewController")
 
 SWIFT_CLASS("_TtC15NetflixRoulette18MainViewController")
 @interface MainViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified user_email;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified user_password;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldsErrorWarning;
 - (void)viewDidLoad;
 - (IBAction)sign:(id _Nonnull)sender;
+- (IBAction)sign_up:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15NetflixRoulette5Movie")
+@interface Movie : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 
@@ -241,6 +282,14 @@ SWIFT_CLASS("_TtC15NetflixRoulette21ShuffleViewController")
 - (void)tapDetected;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15NetflixRoulette4User")
+@interface User : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 #if __has_attribute(external_source_symbol)

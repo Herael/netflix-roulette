@@ -21,16 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonjour salambourahba, voici notre film du jour rien que pour vous!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-3m-gLh">
+                    <rect key="frame" x="8" y="20" width="359" height="80"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuffle" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-d5-a82">
-                    <rect key="frame" x="8" y="28" width="359" height="278"/>
+                    <rect key="frame" x="8" y="108" width="359" height="314"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="YPz-d5-a82" firstAttribute="top" secondItem="F3Y-3m-gLh" secondAttribute="bottom" constant="8" id="Clj-Ox-JuV"/>
+                <constraint firstItem="F3Y-3m-gLh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FyD-Wo-Ph0"/>
                 <constraint firstItem="YPz-d5-a82" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TQv-39-cou"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="WPH-fG-IQA"/>
+                <constraint firstItem="YPz-d5-a82" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="88" id="WPH-fG-IQA"/>
+                <constraint firstItem="F3Y-3m-gLh" firstAttribute="leading" secondItem="YPz-d5-a82" secondAttribute="leading" id="ZuF-bH-gAq"/>
                 <constraint firstItem="YPz-d5-a82" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="ckr-sb-GJn"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-166.5" id="fh9-T4-32v"/>
+                <constraint firstItem="YPz-d5-a82" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-68.5" id="fh9-T4-32v"/>
+                <constraint firstItem="F3Y-3m-gLh" firstAttribute="trailing" secondItem="YPz-d5-a82" secondAttribute="trailing" id="n6O-KW-c7X"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>

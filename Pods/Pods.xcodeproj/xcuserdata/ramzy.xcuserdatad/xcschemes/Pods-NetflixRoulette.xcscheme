@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "26A48AE13AF56CC50BBAE6CBB0388EEE"
+               BlueprintIdentifier = "5708661B16881F376C25ECDE7EDFCD11"
                BuildableName = "Pods_NetflixRoulette.framework"
                BlueprintName = "Pods-NetflixRoulette"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "26A48AE13AF56CC50BBAE6CBB0388EEE"
+            BlueprintIdentifier = "5708661B16881F376C25ECDE7EDFCD11"
             BuildableName = "Pods_NetflixRoulette.framework"
             BlueprintName = "Pods-NetflixRoulette"
             ReferencedContainer = "container:Pods.xcodeproj">
