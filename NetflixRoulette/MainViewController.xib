@@ -36,7 +36,7 @@
                     <color key="highlightedColor" red="1" green="0.15328232529999999" blue="0.22470375470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <size key="shadowOffset" width="17" height="8"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cBC-is-t8r">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cBC-is-t8r">
                     <rect key="frame" x="57" y="256" width="300" height="50"/>
                     <color key="backgroundColor" red="0.73971153757115105" green="0.73971153757115105" blue="0.73971153757115105" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -46,7 +46,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-TW-n9G">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-TW-n9G">
                     <rect key="frame" x="57" y="331" width="300" height="50"/>
                     <color key="backgroundColor" red="0.74989207513591793" green="0.74989207513591793" blue="0.74989207513591793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>

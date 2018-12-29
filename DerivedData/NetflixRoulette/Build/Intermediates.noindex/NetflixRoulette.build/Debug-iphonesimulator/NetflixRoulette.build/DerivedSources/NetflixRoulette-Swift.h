@@ -189,9 +189,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC15NetflixRoulette21AcceuilViewController")
 @interface AcceuilViewController : UIViewController
+/// (A°
+/// ** Endpoint to reach to get the title of a random movie,
+/// ** then put in in a json and reach the endpoint bellow
+/// **                                                 |
+/// https://api.betaseries.com/movies/random           |
+/// **                                                 |
+/// |
+/// |
+/// ** (B)                                             V
+/// ** Endpoint to reach to get all info about a movie from his
+/// **
+/// https://api.betaseries.com/movies/search
+/// **
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified randomMovieOfTheDay;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified page_title;
 - (void)viewDidLoad;
+- (void)tapDetected;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -247,7 +265,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
 
 
 SWIFT_CLASS("_TtC15NetflixRoulette18MainViewController")
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UISearchBarDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified user_email;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified user_password;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldsErrorWarning;
@@ -266,10 +284,14 @@ SWIFT_CLASS("_TtC15NetflixRoulette5Movie")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+@class UISearchBar;
 
 SWIFT_CLASS("_TtC15NetflixRoulette20SearchViewController")
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController <UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 - (void)viewDidLoad;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -282,6 +304,11 @@ SWIFT_CLASS("_TtC15NetflixRoulette21ShuffleViewController")
 - (void)tapDetected;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(NetflixRoulette))
+- (void)dismissKeyboard;
 @end
 
 

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="KSv-07-rhT" id="u4Q-mF-Lbp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar clipsSubviews="YES" contentMode="redraw" barStyle="blackTranslucent" searchBarStyle="minimal" placeholder="Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-07-rhT">
+                <searchBar clipsSubviews="YES" contentMode="scaleToFill" barStyle="blackTranslucent" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-07-rhT">
                     <rect key="frame" x="0.0" y="90" width="414" height="56"/>
                     <color key="barTintColor" red="0.12167917937040329" green="0.12537738680839539" blue="0.1333344578742981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <textInputTraits key="textInputTraits" keyboardType="twitter" keyboardAppearance="alert" returnKeyType="done"/>

@@ -372,6 +372,7 @@ depends-member:
 - !private ["So16UIBarPositioningP", "appearance"]
 - !private ["So16UIBarPositioningP", "barTintColor"]
 - !private ["So16UIBarPositioningP", "titleTextAttributes"]
+- !private ["So24UIBarPositioningDelegateP", "init"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "init"]
@@ -500,6 +501,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
+- !private ["So19UISearchBarDelegateP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So18UITraitEnvironmentP", "appearance"]
 - !private ["So18UITraitEnvironmentP", "barTintColor"]
@@ -620,6 +622,7 @@ depends-nominal:
 - "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - !private "So16UIBarPositioningP"
+- !private "So24UIBarPositioningDelegateP"
 - !private "So7UIColorC"
 - !private "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
@@ -633,6 +636,7 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
+- !private "So19UISearchBarDelegateP"
 - !private "So16UIStateRestoringP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
@@ -648,6 +652,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -660,6 +665,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

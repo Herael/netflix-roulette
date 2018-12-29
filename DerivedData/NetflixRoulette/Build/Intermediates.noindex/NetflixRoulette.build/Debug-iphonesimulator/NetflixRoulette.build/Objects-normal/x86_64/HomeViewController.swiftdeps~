@@ -369,6 +369,7 @@ depends-member:
 - !private ["So9UIBarItemC", "image"]
 - !private ["So9UIBarItemC", "init"]
 - !private ["So9UIBarItemC", "title"]
+- !private ["So24UIBarPositioningDelegateP", "init"]
 - !private ["So7UIColorC", "init"]
 - !private ["So18UIContentContainerP", "AcceuilViewController"]
 - !private ["So18UIContentContainerP", "MainViewController"]
@@ -492,6 +493,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So19UISearchBarDelegateP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "barTintColor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "image"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -629,6 +631,8 @@ depends-member:
 - ["So16UIViewControllerC", "user_params"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -720,6 +724,7 @@ depends-nominal:
 - "So21UIAppearanceContainerP"
 - !private "So15UIBarButtonItemC"
 - !private "So9UIBarItemC"
+- !private "So24UIBarPositioningDelegateP"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
@@ -734,6 +739,7 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So19UISearchBarDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So8UITabBarC"
@@ -744,6 +750,7 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "9Alamofire14URLConvertibleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -758,6 +765,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -770,6 +778,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

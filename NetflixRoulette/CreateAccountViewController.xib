@@ -26,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-GM-IL0">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-GM-IL0">
                     <rect key="frame" x="57" y="218" width="300" height="50"/>
                     <color key="backgroundColor" red="0.73971153759999997" green="0.73971153759999997" blue="0.73971153759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -36,7 +36,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-eJ-ZWv">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-eJ-ZWv">
                     <rect key="frame" x="57" y="358" width="300" height="50"/>
                     <color key="backgroundColor" red="0.7498920751" green="0.7498920751" blue="0.7498920751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -47,7 +47,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGq-RY-1rQ">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eGq-RY-1rQ">
                     <rect key="frame" x="57" y="432" width="300" height="50"/>
                     <color key="backgroundColor" red="0.7498920751" green="0.7498920751" blue="0.7498920751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -73,7 +73,7 @@
                         <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="g9K-UF-UnC"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Create Account" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdC-lb-emN">
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Create Account" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdC-lb-emN">
                     <rect key="frame" x="81" y="108" width="252" height="48"/>
                     <color key="backgroundColor" red="0.12156864255666733" green="0.12156864255666733" blue="0.12156864255666733" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -89,7 +89,7 @@
                     <color key="textColor" red="1" green="0.15328232529999999" blue="0.22470375470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-NG-4oB">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-NG-4oB">
                     <rect key="frame" x="57" y="287" width="300" height="50"/>
                     <color key="backgroundColor" red="0.7498920751" green="0.7498920751" blue="0.7498920751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>

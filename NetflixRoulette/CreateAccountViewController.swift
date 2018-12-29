@@ -32,11 +32,12 @@ class CreateAccountViewController: UIViewController {
         
         hideSomeFieldsEmptyWarning = !hideSomeFieldsEmptyWarning //false
         hidePasswordsAreDifferentWarning = !hidePasswordsAreDifferentWarning //false
+        
+        self.hideKeyboardWhenTappedAround()
     }
 
     @IBAction func createAccount(_ sender: Any) {
         checkFieldsFilled()
-        
     }
     
     func checkFieldsFilled(){
@@ -107,3 +108,5 @@ class CreateAccountViewController: UIViewController {
         return hexString
     }
 }
+
+// Extension to allow hidding the keyboard if the user clicks anywhere else in the view

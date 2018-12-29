@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import CommonCrypto
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var user_email: UITextField!
     @IBOutlet weak var user_password: UITextField!
@@ -20,16 +20,14 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Sign in"
-        
-        // TODO: delete this line of code (just for a test)
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.fieldsErrorWarning.isHidden = true
+        
+        self.hideKeyboardWhenTappedAround()
     }
 
-    @IBAction func sign(_ sender: Any) {
-        // let test = self.toMD5encryption(password: "Hello")
-        // print("Hello encryption -----> \(test)")
     
+    @IBAction func sign(_ sender: Any) {
         self.addToApi(completion: { (success, user) in
             if success == true {
                 let home = HomeViewController()
@@ -92,4 +90,19 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(create_account_vc, animated: true)
     }
     
+}
+
+
+// Extension to allow hidding the keyboard if the user clicks anywhere else in the view
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
