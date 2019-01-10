@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
-class SearchViewController: UIViewController , UISearchBarDelegate{
+class SearchViewController: UIViewController , UISearchBarDelegate {
+    
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    var shows: [Movie]?
+    var movies: [Movie]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +25,41 @@ class SearchViewController: UIViewController , UISearchBarDelegate{
         
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
+        
+        guard (searchBar.text) != nil else{
+            return
+        }
+        self.searchAPI(query: searchBar.text!, completion: { (succes) in
+            print(succes)
+        })
+    }
+    
+    func searchAPI(query: String, completion: @escaping (Bool) -> Void){
+        let params: [String: Any] = [
+            "query": query,
+            "limit": 10
+            
+        ]
+
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "X-BetaSeries-Key": "ef873e84f313",
+            "X-BetaSeries-Version": "3.0"
+        ]
+        _ = Alamofire.request("https://api.betaseries.com/search/all", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+            
+            print(res)
+        }
+        
+    }
+    
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        print("Canel")
+        print("Cancel")
         searchBar.text = nil
         searchBar.showsCancelButton = false
         searchBar.endEditing(true)
