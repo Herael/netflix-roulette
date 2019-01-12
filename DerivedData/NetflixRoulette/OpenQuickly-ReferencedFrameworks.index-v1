@@ -2,13 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Dispatch</string>
-	<string>MobileCoreServices</string>
-	<string>Foundation</string>
-	<string>CommonCrypto</string>
-	<string>SystemConfiguration</string>
-	<string>UIKit</string>
-	<string>CoreServices</string>
 	<string>Alamofire</string>
+	<string>CoreServices</string>
+	<string>Dispatch</string>
+	<string>CoreImage</string>
+	<string>CommonCrypto</string>
+	<string>CoreGraphics</string>
+	<string>WatchKit</string>
+	<string>AlamofireImage</string>
+	<string>CoreData</string>
+	<string>MobileCoreServices</string>
+	<string>AppKit</string>
+	<string>Foundation</string>
+	<string>Cocoa</string>
+	<string>UIKit</string>
+	<string>SystemConfiguration</string>
 </array>
 </plist>

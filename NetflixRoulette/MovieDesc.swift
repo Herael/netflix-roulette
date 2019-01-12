@@ -18,6 +18,11 @@ class  Movie: NSObject {
     let id: Int
     let title: String
     let production_year: String
+//    let release_date: String
+//    let genre: [String]
+//    let synopsis: String
+//    let language: String
+    
     
     convenience init? (json: [String: Any]){
         

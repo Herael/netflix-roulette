@@ -258,6 +258,13 @@ SWIFT_CLASS("_TtC15NetflixRoulette18HomeViewController")
 
 SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
 @interface ItemDescriptionViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified poster;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title_label;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rate_value;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified duration_value;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified date_value;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified genre_value;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified synopsis_value;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

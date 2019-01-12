@@ -7,5 +7,5 @@ target 'NetflixRoulette' do
 
   # Pods for NetflixRoulette
  pod 'Alamofire'
-  
+ pod 'AlamofireImage', '~> 3.5'
 end

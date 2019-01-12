@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FAKETEAMID.com.example.NetflixRoulette</string>
+	<string>GXMYLMSN26.com.example.NetflixRoulette</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FAKETEAMID.com.example.NetflixRoulette</string>
+		<string>GXMYLMSN26.com.example.NetflixRoulette</string>
 	</array>
 </dict>
 </plist>

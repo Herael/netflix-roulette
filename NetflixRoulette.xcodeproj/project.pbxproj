@@ -29,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BE50689F8ABB91B15FEDC01 /* Pods-NetflixRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.debug.xcconfig"; sourceTree = "<group>"; };
 		2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
 		2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcceuilViewController.xib; sourceTree = "<group>"; };
 		2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +49,8 @@
 		2C62D25621D2548000311826 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2CC16AC021D2BF7200444837 /* ItemDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescriptionViewController.swift; sourceTree = "<group>"; };
 		2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDescriptionViewController.xib; sourceTree = "<group>"; };
-		3BAFFF3C7EC391C41B1FC74B /* Pods-NetflixRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.debug.xcconfig"; sourceTree = "<group>"; };
-		6EF7B5A964A75227BA60A4F6 /* Pods-NetflixRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.release.xcconfig"; sourceTree = "<group>"; };
-		95C3333624B172E1370938DB /* Pods-NetflixRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.release.xcconfig"; sourceTree = "<group>"; };
+		5C28058A41E5849C13057BBA /* Pods-NetflixRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.debug.xcconfig"; sourceTree = "<group>"; };
+		5F0549BA84A68AF22AF052D9 /* Pods-NetflixRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixRoulette.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette.release.xcconfig"; sourceTree = "<group>"; };
 		CB2093DDE1200D23E28F14F1 /* Pods_NetflixRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,22 +66,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D7EB72981C3F51F617B69A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3BAFFF3C7EC391C41B1FC74B /* Pods-NetflixRoulette.debug.xcconfig */,
-				95C3333624B172E1370938DB /* Pods-NetflixRoulette.release.xcconfig */,
-			);
-			name = Pods;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		2C5CEF2121CAC539002EB873 = {
 			isa = PBXGroup;
 			children = (
 				2C5CEF2C21CAC539002EB873 /* NetflixRoulette */,
-				2EA9F578C102F8FBD2B69A50 /* Pods */,
 				35B139A8859014B78646FF84 /* Frameworks */,
+				B88C481FC9363C656158704F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,38 +87,52 @@
 		2C5CEF2C21CAC539002EB873 /* NetflixRoulette */ = {
 			isa = PBXGroup;
 			children = (
+				2CC337D821EA249F00E76185 /* models */,
+				2CC337D721EA249400E76185 /* viewz */,
+				2CC337D621EA248100E76185 /* controllers */,
 				2C5CEF2D21CAC539002EB873 /* AppDelegate.swift */,
-				2C5CEF4121CACBAF002EB873 /* MainViewController.swift */,
-				2C5CEF4221CACBAF002EB873 /* MainViewController.xib */,
-				2C62D24F21D10AF100311826 /* CreateAccountViewController.swift */,
-				2C62D25021D10AF100311826 /* CreateAccountViewController.xib */,
-				2C5CEF4521CAF145002EB873 /* HomeViewController.swift */,
-				2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */,
-				2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */,
-				2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */,
-				2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */,
-				2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */,
-				2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */,
-				2CC16AC021D2BF7200444837 /* ItemDescriptionViewController.swift */,
-				2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */,
 				2C5CEF3421CAC53F002EB873 /* Assets.xcassets */,
 				2C62D25621D2548000311826 /* User.swift */,
 				2C62D25321D1767E00311826 /* MovieDesc.swift */,
 				2C5CEF3621CAC53F002EB873 /* LaunchScreen.storyboard */,
 				2C5CEF3921CAC53F002EB873 /* Info.plist */,
 				2C5CEF2B21CAC539002EB873 /* Products */,
-				1D7EB72981C3F51F617B69A5 /* Pods */,
 			);
 			path = NetflixRoulette;
 			sourceTree = "<group>";
 		};
-		2EA9F578C102F8FBD2B69A50 /* Pods */ = {
+		2CC337D621EA248100E76185 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0BE50689F8ABB91B15FEDC01 /* Pods-NetflixRoulette.debug.xcconfig */,
-				6EF7B5A964A75227BA60A4F6 /* Pods-NetflixRoulette.release.xcconfig */,
+				2C5CEF4121CACBAF002EB873 /* MainViewController.swift */,
+				2C62D24F21D10AF100311826 /* CreateAccountViewController.swift */,
+				2C5CEF4521CAF145002EB873 /* HomeViewController.swift */,
+				2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */,
+				2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */,
+				2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */,
+				2CC16AC021D2BF7200444837 /* ItemDescriptionViewController.swift */,
 			);
-			name = Pods;
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		2CC337D721EA249400E76185 /* viewz */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CEF4221CACBAF002EB873 /* MainViewController.xib */,
+				2C62D25021D10AF100311826 /* CreateAccountViewController.xib */,
+				2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */,
+				2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */,
+				2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */,
+				2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */,
+			);
+			path = viewz;
+			sourceTree = "<group>";
+		};
+		2CC337D821EA249F00E76185 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		35B139A8859014B78646FF84 /* Frameworks */ = {
@@ -139,6 +141,15 @@
 				CB2093DDE1200D23E28F14F1 /* Pods_NetflixRoulette.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B88C481FC9363C656158704F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C28058A41E5849C13057BBA /* Pods-NetflixRoulette.debug.xcconfig */,
+				5F0549BA84A68AF22AF052D9 /* Pods-NetflixRoulette.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,12 +258,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -411,7 +424,7 @@
 		};
 		2C5CEF3D21CAC53F002EB873 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BE50689F8ABB91B15FEDC01 /* Pods-NetflixRoulette.debug.xcconfig */;
+			baseConfigurationReference = 5C28058A41E5849C13057BBA /* Pods-NetflixRoulette.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -433,7 +446,7 @@
 		};
 		2C5CEF3E21CAC53F002EB873 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EF7B5A964A75227BA60A4F6 /* Pods-NetflixRoulette.release.xcconfig */;
+			baseConfigurationReference = 5F0549BA84A68AF22AF052D9 /* Pods-NetflixRoulette.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
