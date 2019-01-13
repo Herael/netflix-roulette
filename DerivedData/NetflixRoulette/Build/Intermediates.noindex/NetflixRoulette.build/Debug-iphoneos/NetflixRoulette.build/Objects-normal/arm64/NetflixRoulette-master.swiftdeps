@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "80174f63b03bcaa96e0a563d7c296ebe"
+build_time: [1547390493, 250058000]
+inputs:
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/ItemDescriptionViewController.swift": [1547301600, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/CreateAccountViewController.swift": [1546081514, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/MovieDesc.swift": [1546705112, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/SearchViewController.swift": [1546702885, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/AcceuilViewController.swift": [1546784774, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift": [1545768463, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/User.swift": [1545750264, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/AppDelegate.swift": [1546945293, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/MainViewController.swift": [1546702764, 0]
+  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/NetflixRoulette/controllers/HomeViewController.swift": [1546784769, 0]

@@ -92,7 +92,8 @@ class ItemDescriptionViewController: UIViewController {
             let release = movie["original_release_date"] as? String else{
                 return
         }
-        self.duration_value.text = duration.description
+        let durationEnhanced: [Int] = convertToHours(secondes: duration)
+        self.duration_value.text = durationEnhanced[0].description + "h " + durationEnhanced[1].description 
         self.synopsis_value.text = synopsis
         self.date_value.text = release
         
@@ -116,6 +117,15 @@ class ItemDescriptionViewController: UIViewController {
         }
         let genres_concat = movie_genre.joined(separator: ", ")
         self.genre_value.text = genres_concat
+    }
+    
+    private func convertToHours(secondes: Int) -> [Int]{
+        let hours: Int = secondes/3600
+        let minutes: Int = (secondes % 3600) / 60
+        var time: [Int] = []
+        time.append(hours)
+        time.append(minutes)
+        return time;
     }
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netflix Roulette" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHO-ND-SNt">
-                    <rect key="frame" x="99.5" y="137" width="214" height="49"/>
+                    <rect key="frame" x="99.666666666666686" y="137" width="214" height="49"/>
                     <color key="tintColor" red="0.69511010360000003" green="0.68843993179999996" blue="0.22887012910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                     <constraints>
@@ -90,9 +90,8 @@
                         <action selector="sign_up:" destination="-1" eventType="touchUpInside" id="15s-xD-F5b"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email or password wrong!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnJ-JH-Bts">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password wrong!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnJ-JH-Bts">
                     <rect key="frame" x="57" y="227" width="300" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="0.15328232529999999" blue="0.22470375470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -101,19 +100,24 @@
             <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <color key="tintColor" red="0.0" green="0.077521931870000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="qnJ-JH-Bts" firstAttribute="trailing" secondItem="cBC-is-t8r" secondAttribute="trailing" id="3tc-Ac-HXm"/>
                 <constraint firstItem="HMg-Re-PSD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="92" id="62j-1h-Jpy"/>
                 <constraint firstItem="jmX-1t-03K" firstAttribute="top" secondItem="wDc-TW-n9G" secondAttribute="bottom" constant="39" id="6KK-EW-wt1"/>
                 <constraint firstItem="wDc-TW-n9G" firstAttribute="top" secondItem="cBC-is-t8r" secondAttribute="bottom" constant="25" id="6gZ-eP-Qhg"/>
                 <constraint firstItem="wDc-TW-n9G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6u2-2q-qPM"/>
                 <constraint firstItem="cBC-is-t8r" firstAttribute="top" secondItem="PHO-ND-SNt" secondAttribute="bottom" constant="70" id="85S-2H-UOl"/>
+                <constraint firstItem="wDc-TW-n9G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="VG0-r3-0ic"/>
+                <constraint firstItem="cBC-is-t8r" firstAttribute="top" secondItem="qnJ-JH-Bts" secondAttribute="bottom" constant="8" symbolic="YES" id="WZJ-vL-mRu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uOB-zY-fRk" secondAttribute="bottom" constant="62" id="XtM-Uq-cdc"/>
                 <constraint firstItem="uOB-zY-fRk" firstAttribute="centerX" secondItem="jmX-1t-03K" secondAttribute="centerX" id="ZkS-kr-ud5"/>
                 <constraint firstItem="jmX-1t-03K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="cy3-Qg-GZb"/>
                 <constraint firstItem="PHO-ND-SNt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-0.5" id="hEU-su-E0V"/>
                 <constraint firstItem="uOB-zY-fRk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iMS-ia-T2I"/>
                 <constraint firstItem="cBC-is-t8r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jIh-DA-Kz8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wDc-TW-n9G" secondAttribute="trailing" constant="57" id="qGQ-8I-Lwt"/>
                 <constraint firstItem="HMg-Re-PSD" firstAttribute="top" secondItem="jmX-1t-03K" secondAttribute="bottom" constant="31" id="qgG-Cv-uOI"/>
                 <constraint firstItem="HMg-Re-PSD" firstAttribute="centerX" secondItem="jmX-1t-03K" secondAttribute="centerX" constant="-1" id="rHd-sf-JvF"/>
+                <constraint firstItem="qnJ-JH-Bts" firstAttribute="leading" secondItem="cBC-is-t8r" secondAttribute="leading" id="tMZ-zD-cKy"/>
                 <constraint firstItem="PHO-ND-SNt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="93" id="vSc-aP-nzo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
