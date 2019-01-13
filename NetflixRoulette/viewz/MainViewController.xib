@@ -106,7 +106,6 @@
                 <constraint firstItem="wDc-TW-n9G" firstAttribute="top" secondItem="cBC-is-t8r" secondAttribute="bottom" constant="25" id="6gZ-eP-Qhg"/>
                 <constraint firstItem="wDc-TW-n9G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6u2-2q-qPM"/>
                 <constraint firstItem="cBC-is-t8r" firstAttribute="top" secondItem="PHO-ND-SNt" secondAttribute="bottom" constant="70" id="85S-2H-UOl"/>
-                <constraint firstItem="wDc-TW-n9G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="VG0-r3-0ic"/>
                 <constraint firstItem="cBC-is-t8r" firstAttribute="top" secondItem="qnJ-JH-Bts" secondAttribute="bottom" constant="8" symbolic="YES" id="WZJ-vL-mRu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uOB-zY-fRk" secondAttribute="bottom" constant="62" id="XtM-Uq-cdc"/>
                 <constraint firstItem="uOB-zY-fRk" firstAttribute="centerX" secondItem="jmX-1t-03K" secondAttribute="centerX" id="ZkS-kr-ud5"/>
@@ -114,14 +113,13 @@
                 <constraint firstItem="PHO-ND-SNt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-0.5" id="hEU-su-E0V"/>
                 <constraint firstItem="uOB-zY-fRk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iMS-ia-T2I"/>
                 <constraint firstItem="cBC-is-t8r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jIh-DA-Kz8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wDc-TW-n9G" secondAttribute="trailing" constant="57" id="qGQ-8I-Lwt"/>
                 <constraint firstItem="HMg-Re-PSD" firstAttribute="top" secondItem="jmX-1t-03K" secondAttribute="bottom" constant="31" id="qgG-Cv-uOI"/>
                 <constraint firstItem="HMg-Re-PSD" firstAttribute="centerX" secondItem="jmX-1t-03K" secondAttribute="centerX" constant="-1" id="rHd-sf-JvF"/>
                 <constraint firstItem="qnJ-JH-Bts" firstAttribute="leading" secondItem="cBC-is-t8r" secondAttribute="leading" id="tMZ-zD-cKy"/>
                 <constraint firstItem="PHO-ND-SNt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="93" id="vSc-aP-nzo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="52.173913043478265" y="47.544642857142854"/>
+            <point key="canvasLocation" x="-588" y="-225"/>
         </view>
     </objects>
 </document>
