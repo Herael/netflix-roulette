@@ -30,15 +30,20 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         guard (searchBar.text) != nil else{
             return
         }
-        self.searchAPI(query: searchBar.text!, completion: { (succes) in
+        self.searchAPI(title: searchBar.text!, completion: { (succes) in
             print(succes)
         })
     }
     
-    func searchAPI(query: String, completion: @escaping (Bool) -> Void){
+    func searchAPI(title: String, completion: @escaping (Bool) -> Void){
+        
+        var movies : [Movie] = []
+        var shows : [Show] = []
+        
         let params: [String: Any] = [
-            "query": query,
-            "limit": 10
+            "title": title,
+            "order": "popularity",
+            "nbpp": 10
             
         ]
 
@@ -47,10 +52,39 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
             "X-BetaSeries-Key": "ef873e84f313",
             "X-BetaSeries-Version": "3.0"
         ]
-        _ = Alamofire.request("https://api.betaseries.com/search/all", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            
-            print(res)
-        }
+        _ = Alamofire.request("https://api.betaseries.com/movies/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+            guard let   jsonResponse = res.result.value as? [String:Any],
+                let movie = jsonResponse["movies"] as? [[String:Any]] else{
+                    //Todo : Cellule avec "aucun résultat"
+                    return
+            }
+            var i = 0
+            for _ in movie {
+                
+                movies.append(Movie(id: movie[i]["id"] as! Int, title: movie[i]["title"] as! String, production_year: movie[i]["production_year"] as! Int))
+                //print(movies[i])
+                i = i + 1
+            }
+            i = 0
+            print(movies)
+            }
+        
+//        _ = Alamofire.request("https://api.betaseries.com/shows/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+//            guard let   jsonResponse = res.result.value as? [String:Any],
+//                let show = jsonResponse["shows"] as? [[String:Any]] else{
+//                    //Todo : Cellule avec "aucun résultat"
+//                    return
+//            }
+//            for _ in show {
+//                var i = 0
+//                print(show)
+//                shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, production_year: show[i]["production_year"] as! Int, season: show[i]["season"] as! Int, episode: show[i]["episode"] as! Int))
+//                print(shows[i])
+//                i = i + 1
+//            }
+//            print(shows)
+//        }
+        
         
     }
     

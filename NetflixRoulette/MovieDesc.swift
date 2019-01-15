@@ -17,28 +17,22 @@ class  Movie: NSObject {
     
     let id: Int
     let title: String
-    let production_year: String
-    let season: Int?
-    let episode: Int?
+    let production_year: Int
     
     convenience init? (json: [String: Any]){
         
         guard let id_movie = json["id"] as? Int,
               let title_movie = json["title"] as? String,
-              let production_year = json["production_year"] as? String,
-              let season_show = json["season"] as? Int?,
-              let episode_show = json["episode"] as? Int? else {
+              let production_year = json["production_year"] as? Int else {
                 return nil
         }
-        self.init(id: id_movie, title: title_movie, production_year: production_year, season: season_show, episode: episode_show)
+        self.init(id: id_movie, title: title_movie, production_year: production_year)
     }
     
-    init(id: Int, title: String, production_year: String, season: Int?, episode: Int?) {
+    init(id: Int, title: String, production_year: Int) {
         self.id = id
         self.title = title
         self.production_year = production_year
-        self.season = season
-        self.episode = episode
     }
     
     
