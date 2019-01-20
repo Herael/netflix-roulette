@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
                 <outlet property="searchBar" destination="KSv-07-rhT" id="u4Q-mF-Lbp"/>
+                <outlet property="tableView" destination="m9Q-eq-0jK" id="zPS-gN-DfL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

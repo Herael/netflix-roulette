@@ -12,33 +12,30 @@ import Alamofire
 public class Show : NSObject {
     
     override public var description: String{
-        return " id: \(self.id), title: \(self.title), prod year: \(self.production_year), season: \(self.season), episode: \(self.season)"
+        return " id: \(self.id), title: \(self.title), seasons: \(self.seasons), episodes: \(self.episodes)"
     }
     
     let id: Int
     let title: String
-    let production_year: Int
-    let season: Int
-    let episode: Int
+    let seasons: String
+    let episodes: String
     
     convenience init? (json: [String: Any]){
         
         guard let id_show = json["id"] as? Int,
             let title_show = json["title"] as? String,
-            let production_year = json["production_year"] as? Int,
-            let season_show = json["season"] as? Int,
-            let episode_show = json["episode"] as? Int else {
+            let season_show = json["seasons"] as? String,
+            let episode_show = json["episodes"] as? String else {
                 return nil
         }
-        self.init(id: id_show, title: title_show, production_year: production_year, season: season_show, episode: episode_show)
+        self.init(id: id_show, title: title_show, seasons: season_show, episodes: episode_show)
     }
     
-    init(id: Int, title: String, production_year: Int, season: Int, episode: Int) {
+    init(id: Int, title: String, seasons: String, episodes: String) {
         self.id = id
         self.title = title
-        self.production_year = production_year
-        self.season = season
-        self.episode = episode
+        self.seasons = seasons
+        self.episodes = episodes
     }
     
     
