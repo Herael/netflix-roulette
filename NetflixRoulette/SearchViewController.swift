@@ -19,10 +19,10 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     class func newInstance(movies: [Movie], shows: [Show]) -> SearchViewController {
         
-        let mlvc = SearchViewController()
-        mlvc.movies = movies
-        mlvc.shows = shows
-        return mlvc
+        let svc = SearchViewController()
+        svc.movies = movies
+        svc.shows = shows
+        return svc
     }
     
     
@@ -35,7 +35,6 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "MovieSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SearchViewController.movieCellId)
-        
     }
     
     
@@ -44,13 +43,15 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         guard (searchBar.text) != nil else{
             return
         }
-        self.searchAPI(title: searchBar.text!, completion: { (succes) in
-            print(succes)
+        self.searchAPI(title: searchBar.text!, completion: { (movies, shows) in
+            self.movies = movies
+            self.shows = shows
+            self.tableView.reloadData()
         })
     }
     
     
-    func searchAPI(title: String, completion: @escaping (Bool) -> Void){
+    func searchAPI(title: String, completion: @escaping ([Movie], [Show]) -> Void){
         
         let params: [String: Any] = [
             "title": title,
@@ -71,30 +72,32 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
                     return
             }
             var j = 0
+            print(res)
             for _ in movie {
-                self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int))
+                //self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int))
+                self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int, length: movie[j]["length"] as! Int, picture: movie[j]["poster"] as! String))
                 //print(movies[j])
                 j += 1
             }
             print(self.movies)
-        }
-        
-        _ = Alamofire.request("https://api.betaseries.com/shows/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            guard let   jsonResponse = res.result.value as? [String:Any],
-                let show = jsonResponse["shows"] as? [[String:Any]] else{
-                    //Todo : Cellule avec "aucun résultat"
-                    return
+            
+            _ = Alamofire.request("https://api.betaseries.com/shows/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+                guard let   jsonResponse = res.result.value as? [String:Any],
+                    let show = jsonResponse["shows"] as? [[String:Any]] else{
+                        //Todo : Cellule avec "aucun résultat"
+                        return
+                }
+                var i = 0
+                for _ in show {
+                    self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String))
+                    //print(shows[i])
+                    i += 1
+                }
+                print(self.shows)
+                
+                completion(self.movies, self.shows)
             }
-            var i = 0
-            for _ in show {
-                self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String))
-                //print(shows[i])
-                i += 1
-            }
-            print(self.shows)
         }
-        //completion()
-        
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -120,18 +123,22 @@ extension SearchViewController: UITableViewDataSource {
     public static let movieCellId = "MOVIE_SEARCH_CELL_IDENTIFIER"
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return movies.count + shows.count
         return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.movieCellId, for: indexPath) as! MovieSearchTableViewCell
+        
+        let movieCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.movieCellId, for: indexPath) as! MovieSearchTableViewCell
         let movie = self.movies[indexPath.row]
-        cell.titleLabel.text = movie.title
-        cell.typeImageView.image = UIImage(named: "cabane")
-        cell.releaseDateLabel.text = movie.title
-        cell.lengthLabel.text = movie.title
-        return cell
+        movieCell.titleLabel.text = movie.title
+        let imageURL = URL(string: movie.picture)
+        let imageData = try! Data(contentsOf: imageURL!)
+        movieCell.typeImageView.image = UIImage(data: imageData)
+        movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
+        movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"
+        
+        
+        return movieCell
     }
-    
-    
 }
