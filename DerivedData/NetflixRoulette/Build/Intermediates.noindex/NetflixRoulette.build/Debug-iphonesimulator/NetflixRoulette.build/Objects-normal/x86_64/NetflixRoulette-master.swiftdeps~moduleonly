@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "51cdc43c3d96e85196ad195c42ebfe88"
+build_time: [1548961849, 10698000]
+inputs:
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/ItemDescriptionViewController.swift": [1548950113, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/CreateAccountViewController.swift": [1546081514, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/MovieDesc.swift": [1548941657, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/SearchViewController.swift": !dirty [1548957593, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/AcceuilViewController.swift": !dirty [1548945406, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift": !dirty [1548941803, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/User.swift": [1545750264, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/AppDelegate.swift": [1546945293, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/MainViewController.swift": [1547985908, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/NetflixRoulette/controllers/HomeViewController.swift": [1546784769, 0]

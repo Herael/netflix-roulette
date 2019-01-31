@@ -1,0 +1,87 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AlamofireImage-Swift.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AlamofireImage-umbrella.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/Target Support Files/AlamofireImage/AlamofireImage-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/AlamofireImage.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Pods_NetflixRoulette.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-NetflixRoulette-umbrella.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/Target Support Files/Pods-NetflixRoulette/Pods-NetflixRoulette-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_NetflixRoulette-Swift.h",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Pods_NetflixRoulette.framework/Headers/Pods_NetflixRoulette-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Pods_NetflixRoulette.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-NetflixRoulette.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
