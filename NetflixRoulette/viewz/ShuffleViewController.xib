@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShuffleViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
+                <outlet property="movie_radioButton" destination="KQU-VD-dT1" id="Wo7-Jg-4eH"/>
                 <outlet property="randomBox" destination="Z8c-gX-7t5" id="vFR-cL-lnl"/>
+                <outlet property="series_radioButton" destination="1wa-YZ-2w5" id="gnl-e4-zWv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -76,7 +78,7 @@
                 <constraint firstItem="y8c-h1-iUG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-10" id="xR8-OF-AYt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="138.40000000000001" y="147.97601199400302"/>
+            <point key="canvasLocation" x="-187" y="147"/>
         </view>
     </objects>
     <resources>

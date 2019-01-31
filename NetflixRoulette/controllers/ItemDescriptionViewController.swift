@@ -22,17 +22,11 @@ class ItemDescriptionViewController: UIViewController {
     @IBOutlet weak var synopsis_value: UILabel!
     
     
-    var movie_title: String = ""
-    var movie_image_url: String = ""
+    var movie_title: String?
+    var movie_image_url: String?
     var movie_id: Int?
     
-//    var movies_sinopsis: String = ""
-//    var movie_rate: Int = 0
-//    var movie_duration: Int = 0
-//    var movie_release_date: String = ""
-//    var movie_productor: String = ""
-//    var movie_actors: String = ""
-//    var movie_type: String = ""
+
     
    
     override func viewDidLoad() {
@@ -47,12 +41,12 @@ class ItemDescriptionViewController: UIViewController {
             return
         }
         title_label.text = movie_title
-        guard let url = self.movie_image_url as? String else{
-            poster.image = UIImage(named: "report_problem_white")
-            return
-        }
-        poster.af_setImage(withURL: URL(string: url)!)
         
+        if self.movie_image_url != "" && self.movie_image_url != nil {
+            poster.af_setImage(withURL: URL(string: self.movie_image_url!)!)
+        } else {
+            poster.image = UIImage(named: "report_problem_white")
+        }
         self.getOtherInformationsAboutMovie()
     }
 
@@ -77,10 +71,10 @@ class ItemDescriptionViewController: UIViewController {
             }else{
                 self.apiDataGetter(m: "movie", response: response)
             }
-            
-           
         }
     }
+    
+    
     
     private func apiDataGetter(m: String, response: DataResponse<Any>){
         
@@ -96,6 +90,7 @@ class ItemDescriptionViewController: UIViewController {
         self.duration_value.text = durationEnhanced[0].description + "h " + durationEnhanced[1].description 
         self.synopsis_value.text = synopsis
         self.date_value.text = release
+       
         
         let test = notes["mean"]
 
@@ -104,10 +99,7 @@ class ItemDescriptionViewController: UIViewController {
         } else if type(of: test) == type(of: String()){
             self.rate_value.text = test as? String
         }
-        
-        
-        
-        
+
         print("response of the server: \(json_response)")
         
         guard let json = response.result.value as? [String: Any],

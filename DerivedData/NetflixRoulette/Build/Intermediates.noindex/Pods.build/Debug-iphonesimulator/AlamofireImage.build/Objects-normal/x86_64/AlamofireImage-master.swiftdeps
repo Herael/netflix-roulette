@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "6743964acd3df5caa989c447a43b503c"
-build_time: [1547399685, 774070000]
+options: "a0bd7cd6c152b8c53b0364420b3dc3b2"
+build_time: [1548961844, 821296000]
 inputs:
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/AFIError.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/Image.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageCache.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageDownloader.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageFilter.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [1546780044, 0]
-  "/Users/ramzy/Desktop/swift/Netfli_roulette_repo/netflix-roulette/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [1546780044, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/AFIError.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/Image.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageCache.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageDownloader.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/ImageFilter.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [1548961414, 0]
+  "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [1548961414, 0]

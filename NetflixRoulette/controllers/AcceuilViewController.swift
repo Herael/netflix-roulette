@@ -58,7 +58,6 @@ class AcceuilViewController: UIViewController {
     func getRandomMovieTitle(){
         var random_movie_title: String = ""
         var random_movie_id: Int = 0
-        var random_movie_poster: String = ""
         
         // Make a call to endpoint (A)
         let params: [String : Any] = [
@@ -77,27 +76,24 @@ class AcceuilViewController: UIViewController {
                     let movie_description = json_response["movies"] as? [Any],
                         let random_movie = movie_description[0] as? [String: Any],
                             let random_title = random_movie["title"] as? String,
-                            let random_id = random_movie["id"] as? Int,
-                            let ramdom_poster = random_movie["poster"] as? String else{
+                            let random_id = random_movie["id"] as? Int else{
                     return
             }
         
             random_movie_title = random_title
             random_movie_id = random_id
-            random_movie_poster = ramdom_poster
             
             print("title of the random movie: \(random_movie_title)")
-            self.getRandomMovieDetails(movie_title: random_movie_title, movie_id: random_movie_id, movie_poster: random_movie_poster)
+            self.getRandomMovieDetails(movie_title: random_movie_title, movie_id: random_movie_id)
         }
         
     }
     
-    func getRandomMovieDetails(movie_title: String, movie_id: Int, movie_poster: String){
+    func getRandomMovieDetails(movie_title: String, movie_id: Int){
         //Make call to endpoint (B)
         // Send useful information to ItemDescriptionViewController
         
         let item_description = ItemDescriptionViewController()
-        item_description.movie_image_url = movie_poster
         item_description.movie_title = movie_title
         item_description.movie_id = movie_id
         self.navigationController?.pushViewController(item_description, animated: true)

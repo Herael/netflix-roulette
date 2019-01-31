@@ -33,7 +33,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
                 self.navigationController?.pushViewController(home, animated: true)
             }else{
                 self.fieldsErrorWarning.isHidden = false
-                print("ERROR TRRRRRWASSANT")
+                print("Error while signing in!")
             }
         })
     }
@@ -75,7 +75,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         CC_MD5_Init(context)
         CC_MD5_Update(context, password, CC_LONG(password.lengthOfBytes(using: String.Encoding.utf8)))
         CC_MD5_Final(&digest, context)
-        context.deallocate(capacity: 1)
+        context.deallocate()
         var hexString = ""
         for byte in digest {
             hexString += String(format:"%02x", byte)
@@ -90,7 +90,6 @@ class MainViewController: UIViewController, UISearchBarDelegate {
     }
     
 }
-
 
 // Extension to allow hidding the keyboard if the user clicks anywhere else in the view
 
