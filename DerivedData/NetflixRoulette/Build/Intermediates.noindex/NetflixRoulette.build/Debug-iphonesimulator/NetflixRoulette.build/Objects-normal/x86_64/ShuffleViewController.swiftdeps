@@ -15,6 +15,7 @@ depends-top-level:
 - !private "!"
 - !private "!="
 - !private "&&"
+- !private "*"
 - !private "+"
 - !private "-"
 - !private "..."
@@ -41,6 +42,7 @@ depends-top-level:
 - "UISwitch"
 - !private "UITapGestureRecognizer"
 - "UIViewController"
+- "UnicodeScalarType"
 - "Void"
 - !private "print"
 depends-member:
@@ -55,6 +57,7 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "init"]
 - !private ["SK", "subscript"]
+- !private ["Sz", "init"]
 - !private ["Sz", "random"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
@@ -233,6 +236,7 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "random"]
 - !private ["s23ExpressibleByNilLiteralP", "addGestureRecognizer"]
 - !private ["s23ExpressibleByNilLiteralP", "isOn"]
@@ -241,6 +245,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["s17FixedWidthIntegerP", "random"]
 - !private ["9Alamofire10HTTPMethodO", "get"]
 - !private ["SH", "Alamofire"]
@@ -273,6 +278,7 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "tapDetected"]
 - !private ["SH", "viewDidLoad"]
+- !private ["Si", "init"]
 - !private ["Si", "random"]
 - !private ["9Alamofire12JSONEncodingV", "default"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -385,6 +391,7 @@ depends-member:
 - !private ["So8NSObjectP", "series_radioButton"]
 - !private ["So8NSObjectP", "tapDetected"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sj", "init"]
 - !private ["Sj", "random"]
 - !private ["Sq", "addGestureRecognizer"]
 - !private ["Sq", "isOn"]
@@ -434,8 +441,11 @@ depends-member:
 - ["15NetflixRoulette21ShuffleViewControllerC", "series_radioButton"]
 - ["15NetflixRoulette21ShuffleViewControllerC", "tapDetected"]
 - ["15NetflixRoulette21ShuffleViewControllerC", "viewDidLoad"]
+- !private ["SZ", "init"]
 - !private ["SZ", "random"]
+- !private ["s13SignedNumericP", "init"]
 - !private ["s13SignedNumericP", "random"]
+- !private ["Sx", "init"]
 - !private ["Sx", "random"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
@@ -725,6 +735,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s18_BitwiseOperationsP", "random"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isOn"]
@@ -735,6 +746,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "random"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -746,6 +758,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "random"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Alamofire"]

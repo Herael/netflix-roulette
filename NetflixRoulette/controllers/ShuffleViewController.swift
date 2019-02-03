@@ -74,6 +74,7 @@ class ShuffleViewController: UIViewController {
             var poster_url: String?
             var title_movie: String?
             var year_prod: Int
+            var length: Int = 0
             var id: Int
             
             for count in 0..<nb{
@@ -83,9 +84,10 @@ class ShuffleViewController: UIViewController {
                 year_prod = current_movie["production_year"] as! Int
                 id = current_movie["id"] as! Int
                 poster_url = current_movie["poster"] as? String
+                length = current_movie["length"] as! Int
             
                 
-                moviz.append(Movie(id: id, title: title_movie!, production_year: year_prod, length: 0, picture: poster_url ?? "no url"))
+                moviz.append(Movie(id: id, title: title_movie!, production_year: year_prod, length: length, picture: poster_url ?? "no url"))
             }
             
             if nb < 10 && (self.series_radioButton.isOn && self.movie_radioButton.isOn){
@@ -124,20 +126,21 @@ class ShuffleViewController: UIViewController {
             var poster_url: String?
             var show_links: [String: Any]
             var title_movie: String?
-            var year_prod: Int = 0
+            var year_prod: String = "0"
+            var length: String = "0"
             var id: Int
             
             for count in 0..<nb{
                 current_movie = show_description[count] as! [String: Any]
                 title_movie = current_movie["title"] as? String
                 
-                if current_movie["production_year"] != nil{
-                    year_prod = current_movie["production_year"] as! Int
+                if current_movie["creation"] != nil{
+                    year_prod = current_movie["creation"] as! String
                 }
                 
                 id = current_movie["id"] as! Int
                 show_links = current_movie["images"] as! [String: Any]
-
+                length = current_movie["length"] as! String
                 poster_url = show_links["show"] as? String
                 
                 if poster_url == nil{
@@ -149,7 +152,7 @@ class ShuffleViewController: UIViewController {
                         }
                     }
                 }
-                showz.append(Movie(id: id, title: title_movie!, production_year: year_prod,length: 0, picture: poster_url ?? "default"))
+                showz.append(Movie(id: id, title: title_movie!, production_year: Int(year_prod)!,length: Int(length)! * 60, picture: poster_url ?? "default"))
             }
             
             print()
@@ -159,4 +162,5 @@ class ShuffleViewController: UIViewController {
             completion(showz)
         }
     }
+    
 }

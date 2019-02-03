@@ -42,7 +42,7 @@ class ItemDescriptionViewController: UIViewController {
         }
         title_label.text = movie_title
         
-        if self.movie_image_url != "" && self.movie_image_url != nil {
+        if self.movie_image_url != "" {
             poster.af_setImage(withURL: URL(string: self.movie_image_url!)!)
         } else {
             poster.image = UIImage(named: "report_problem_white")

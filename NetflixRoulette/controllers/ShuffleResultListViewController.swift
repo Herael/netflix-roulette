@@ -45,11 +45,11 @@ extension ShuffleResultListViewController: UITableViewDataSource {
         let movie = self.movies[indexPath.row]
         movieCell.titleLabel.text = movie.title
         
-//        if movie.picture != nil{
-//            let imageURL = URL(string: movie.picture)
-//            let imageData = try! Data(contentsOf: imageURL!)
-//            movieCell.typeImageView.image = UIImage(data: imageData)
-//        }
+        if movie.picture != ""{
+            let imageURL = URL(string: movie.picture)
+            movieCell.typeImageView.af_setImage(withURL: imageURL!)
+                //.image = UIImage(data: imageURL?)
+        }
         
         movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
         movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"
