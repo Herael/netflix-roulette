@@ -74,9 +74,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
             var j = 0
             print(res)
             for _ in movie {
-                //self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int))
                 self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int, length: movie[j]["length"] as! Int, picture: movie[j]["poster"] as! String))
-                //print(movies[j])
                 j += 1
             }
             print(self.movies)
@@ -90,7 +88,6 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
                 var i = 0
                 for _ in show {
                     self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String))
-                    //print(shows[i])
                     i += 1
                 }
                 print(self.shows)
@@ -133,9 +130,11 @@ extension SearchViewController: UITableViewDataSource {
         let movie = self.movies[indexPath.row]
         movieCell.titleLabel.text = movie.title
         
-        // let imageURL = URL(string: movie.picture)
-        // let imageData = try! Data(contentsOf: imageURL!)
-        //movieCell.typeImageView.image = UIImage(data: imageData)
+        if movie.picture.description != ""{
+            let imageURL = URL(string: movie.picture)
+            let imageData = try! Data(contentsOf: imageURL!)
+            movieCell.typeImageView.image = UIImage(data: imageData)
+        }
         
         movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
         movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"

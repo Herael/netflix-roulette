@@ -83,5 +83,165 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.814887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "tapDetected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetflixRoulette.ShuffleViewController.tapDetected() -&gt; ()"
+                  moduleName = "NetflixRoulette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift"
+                  timestampString = "570816736.106326"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "4875">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Array&lt;NetflixRoulette.Movie&gt;) -&gt; () in NetflixRoulette.ShuffleViewController.tapDetected() -&gt; ()"
+                  moduleName = "NetflixRoulette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift"
+                  timestampString = "570816736.108817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.815008"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "getSeries(nb:headers:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.8150719"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "getMovies(nb:params:headers:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.815129"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getMovies(nb:params:headers:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.815185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "getMovies(nb:params:headers:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetflixRoulette/controllers/ShuffleViewController.swift"
+            timestampString = "570901152.815241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "getSeries(nb:headers:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetflixRoulette.ShuffleViewController.getSeries(nb: Swift.Int, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completion: (Swift.Array&lt;NetflixRoulette.Movie&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetflixRoulette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift"
+                  timestampString = "570817009.175814"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "479">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in NetflixRoulette.ShuffleViewController.getSeries(nb: Swift.Int, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completion: (Swift.Array&lt;NetflixRoulette.Movie&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetflixRoulette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/NetflixRoulette/controllers/ShuffleViewController.swift"
+                  timestampString = "570817009.178358"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

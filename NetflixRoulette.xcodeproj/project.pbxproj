@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1BDA432204748A00FF3902 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BDA422204748A00FF3902 /* Show.swift */; };
+		2C1BDA472204753300FF3902 /* MovieSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BDA462204753300FF3902 /* MovieSearchTableViewCell.xib */; };
+		2C3976A5220475A6006BAC5B /* MovieSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3976A4220475A6006BAC5B /* MovieSearchTableViewCell.swift */; };
+		2C3976A82205BD01006BAC5B /* ShuffleResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3976A62205BD01006BAC5B /* ShuffleResultListViewController.swift */; };
+		2C3976A92205BD01006BAC5B /* ShuffleResultListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3976A72205BD01006BAC5B /* ShuffleResultListViewController.xib */; };
 		2C46094521CE9F8100BEAC9C /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */; };
 		2C46094621CE9F8100BEAC9C /* AcceuilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */; };
 		2C46094921CE9FCF00BEAC9C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1BDA422204748A00FF3902 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		2C1BDA462204753300FF3902 /* MovieSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieSearchTableViewCell.xib; path = ../../../../../MovieSearchTableViewCell.xib; sourceTree = "<group>"; };
+		2C3976A4220475A6006BAC5B /* MovieSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieSearchTableViewCell.swift; path = ../../../../../MovieSearchTableViewCell.swift; sourceTree = "<group>"; };
+		2C3976A62205BD01006BAC5B /* ShuffleResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleResultListViewController.swift; sourceTree = "<group>"; };
+		2C3976A72205BD01006BAC5B /* ShuffleResultListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuffleResultListViewController.xib; sourceTree = "<group>"; };
 		2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
 		2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcceuilViewController.xib; sourceTree = "<group>"; };
 		2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +103,7 @@
 				2C5CEF2D21CAC539002EB873 /* AppDelegate.swift */,
 				2C5CEF3421CAC53F002EB873 /* Assets.xcassets */,
 				2C62D25621D2548000311826 /* User.swift */,
+				2C1BDA422204748A00FF3902 /* Show.swift */,
 				2C62D25321D1767E00311826 /* MovieDesc.swift */,
 				2C5CEF3621CAC53F002EB873 /* LaunchScreen.storyboard */,
 				2C5CEF3921CAC53F002EB873 /* Info.plist */,
@@ -105,8 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				2C5CEF4121CACBAF002EB873 /* MainViewController.swift */,
+				2C3976A62205BD01006BAC5B /* ShuffleResultListViewController.swift */,
 				2C62D24F21D10AF100311826 /* CreateAccountViewController.swift */,
 				2C5CEF4521CAF145002EB873 /* HomeViewController.swift */,
+				2C3976A4220475A6006BAC5B /* MovieSearchTableViewCell.swift */,
 				2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */,
 				2C46094721CE9FCF00BEAC9C /* SearchViewController.swift */,
 				2C46094B21CEA00000BEAC9C /* ShuffleViewController.swift */,
@@ -118,9 +131,11 @@
 		2CC337D721EA249400E76185 /* viewz */ = {
 			isa = PBXGroup;
 			children = (
+				2C1BDA462204753300FF3902 /* MovieSearchTableViewCell.xib */,
 				2C5CEF4221CACBAF002EB873 /* MainViewController.xib */,
 				2C62D25021D10AF100311826 /* CreateAccountViewController.xib */,
 				2C46094421CE9F8100BEAC9C /* AcceuilViewController.xib */,
+				2C3976A72205BD01006BAC5B /* ShuffleResultListViewController.xib */,
 				2C46094821CE9FCF00BEAC9C /* SearchViewController.xib */,
 				2C46094C21CEA00000BEAC9C /* ShuffleViewController.xib */,
 				2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */,
@@ -213,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5CEF3821CAC53F002EB873 /* LaunchScreen.storyboard in Resources */,
+				2C1BDA472204753300FF3902 /* MovieSearchTableViewCell.xib in Resources */,
 				2C5CEF4421CACBAF002EB873 /* MainViewController.xib in Resources */,
+				2C3976A92205BD01006BAC5B /* ShuffleResultListViewController.xib in Resources */,
 				2C46094E21CEA00000BEAC9C /* ShuffleViewController.xib in Resources */,
 				2C5CEF3521CAC53F002EB873 /* Assets.xcassets in Resources */,
 				2CC16AC321D2BF7300444837 /* ItemDescriptionViewController.xib in Resources */,
@@ -281,14 +298,17 @@
 			files = (
 				2CC16AC221D2BF7300444837 /* ItemDescriptionViewController.swift in Sources */,
 				2C62D25121D10AF100311826 /* CreateAccountViewController.swift in Sources */,
+				2C3976A5220475A6006BAC5B /* MovieSearchTableViewCell.swift in Sources */,
 				2C62D25421D1767E00311826 /* MovieDesc.swift in Sources */,
 				2C46094921CE9FCF00BEAC9C /* SearchViewController.swift in Sources */,
 				2C46094521CE9F8100BEAC9C /* AcceuilViewController.swift in Sources */,
 				2C46094D21CEA00000BEAC9C /* ShuffleViewController.swift in Sources */,
 				2C62D25721D2548000311826 /* User.swift in Sources */,
+				2C3976A82205BD01006BAC5B /* ShuffleResultListViewController.swift in Sources */,
 				2C5CEF2E21CAC539002EB873 /* AppDelegate.swift in Sources */,
 				2C5CEF4321CACBAF002EB873 /* MainViewController.swift in Sources */,
 				2C5CEF4721CAF145002EB873 /* HomeViewController.swift in Sources */,
+				2C1BDA432204748A00FF3902 /* Show.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
