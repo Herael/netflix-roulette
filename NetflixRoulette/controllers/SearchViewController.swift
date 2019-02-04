@@ -50,6 +50,12 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         })
     }
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        self.movies.removeAll()
+        self.shows.removeAll()
+        self.tableView.reloadData()
+    }
+    
     
     func searchAPI(title: String, completion: @escaping ([Movie], [Show]) -> Void){
         
