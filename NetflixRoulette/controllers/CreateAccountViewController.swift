@@ -26,7 +26,7 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        //self.navigationItem.setHidesBackButton(true, animated: true)
         self.fieldNotFilled.isHidden = hideSomeFieldsEmptyWarning   // hide the warning
         self.differentPasswordField.isHidden = hidePasswordsAreDifferentWarning //hide the warning
         

@@ -57,13 +57,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-zY-fRk">
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-zY-fRk">
                     <rect key="frame" x="82" y="770" width="250" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="ErY-nf-fBX"/>
                     </constraints>
                     <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                    <state key="normal" title="Forgot your password ?"/>
+                    <state key="normal" title="V1.0.0"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmX-1t-03K">
                     <rect key="frame" x="145" y="420" width="124" height="56"/>
@@ -97,7 +97,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="0.12156974524259567" green="0.12156660109758377" blue="0.12156873196363449" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <color key="tintColor" red="0.0" green="0.077521931870000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="qnJ-JH-Bts" firstAttribute="trailing" secondItem="cBC-is-t8r" secondAttribute="trailing" id="3tc-Ac-HXm"/>

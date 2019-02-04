@@ -87,9 +87,9 @@ class ItemDescriptionViewController: UIViewController {
                 return
         }
         let durationEnhanced: [Int] = convertToHours(secondes: duration)
-        self.duration_value.text = durationEnhanced[0].description + "h " + durationEnhanced[1].description 
-        self.synopsis_value.text = synopsis
-        self.date_value.text = release
+        self.duration_value.text = "Durée : " + durationEnhanced[0].description + "h " + durationEnhanced[1].description
+        self.synopsis_value.text = "Synopsis : " + synopsis
+        self.date_value.text = "Sortie : " + release
        
         
         let test = notes["mean"]
@@ -108,7 +108,7 @@ class ItemDescriptionViewController: UIViewController {
                 return
         }
         let genres_concat = movie_genre.joined(separator: ", ")
-        self.genre_value.text = genres_concat
+        self.genre_value.text = "Genre : " + genres_concat
     }
     
     private func convertToHours(secondes: Int) -> [Int]{
