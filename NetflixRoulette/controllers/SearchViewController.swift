@@ -59,6 +59,9 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     func searchAPI(title: String, completion: @escaping ([Movie], [Show]) -> Void){
         
+        self.movies.removeAll()
+        self.shows.removeAll()
+        
         let params: [String: Any] = [
             "title": title,
             "order": "popularity",
@@ -78,12 +81,12 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
                     return
             }
             var j = 0
-            print(res)
+            //print(res)
             for _ in movie {
                 self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int, length: movie[j]["length"] as! Int, picture: movie[j]["poster"] as! String))
                 j += 1
             }
-            print(self.movies)
+            //print(self.movies)
             
             _ = Alamofire.request("https://api.betaseries.com/shows/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
                 guard let   jsonResponse = res.result.value as? [String:Any],
@@ -96,7 +99,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
                     self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String))
                     i += 1
                 }
-                print(self.shows)
+                //print(self.shows)
                 
                 completion(self.movies, self.shows)
             }
