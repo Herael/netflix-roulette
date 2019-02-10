@@ -23,9 +23,11 @@ class ItemDescriptionViewController: UIViewController {
     var movie_title: String?
     var movie_image_url: String! = ""
     var movie_id: Int?
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        //TO DO : Why he don't make my button..?
+        self.navigationItem.setHidesBackButton(true, animated: true)
         self.fillViews()
     }
 
