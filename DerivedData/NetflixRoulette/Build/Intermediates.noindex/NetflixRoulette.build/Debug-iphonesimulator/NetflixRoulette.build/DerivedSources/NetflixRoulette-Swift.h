@@ -184,7 +184,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIImageView;
-@class UITextField;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
@@ -208,8 +208,9 @@ SWIFT_CLASS("_TtC15NetflixRoulette21AcceuilViewController")
 ///   </li>
 /// </ul>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified randomMovieOfTheDay;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified page_title;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified home_page_title;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)tapDetected;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -230,7 +231,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class UITextField;
 
 SWIFT_CLASS("_TtC15NetflixRoulette27CreateAccountViewController")
 @interface CreateAccountViewController : UIViewController
@@ -245,6 +246,34 @@ SWIFT_CLASS("_TtC15NetflixRoulette27CreateAccountViewController")
 - (IBAction)createAccount:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC15NetflixRoulette22FavoriteViewController")
+@interface FavoriteViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified mediaResultList;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)touchEditTableView;
+- (void)touchNewMovie;
+- (void)disconnect;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FavoriteViewController (SWIFT_EXTENSION(NetflixRoulette)) <UITableViewDelegate>
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+@class UITableViewCell;
+
+@interface FavoriteViewController (SWIFT_EXTENSION(NetflixRoulette)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
@@ -267,6 +296,8 @@ SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified genre_value;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified synopsis_value;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)addMovieToFavorite;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -299,21 +330,24 @@ SWIFT_CLASS("_TtC15NetflixRoulette24MovieSearchTableViewCell")
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified typeImageView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified releaseDateLabel;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lengthLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified favIcon;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)addMovieToFavorite;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UISearchBar;
-@class UITableView;
 
 SWIFT_CLASS("_TtC15NetflixRoulette20SearchViewController")
 @interface SearchViewController : UIViewController <UISearchBarDelegate>
 @property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarTextDidEndEditing:(UISearchBar * _Nonnull)searchBar;
 - (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
 - (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -367,6 +401,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette21ShuffleViewController")
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified movie_radioButton;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified series_radioButton;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)tapDetected;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

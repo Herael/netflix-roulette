@@ -32,8 +32,7 @@ class AcceuilViewController: UIViewController {
     @IBOutlet weak var randomMovieOfTheDay: UIImageView!
     var random_movie_details: Movie!    // Load here the response of the API call
     
-    @IBOutlet weak var page_title: UITextField!
-    
+    @IBOutlet weak var home_page_title: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +40,13 @@ class AcceuilViewController: UIViewController {
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(ShuffleViewController.tapDetected))
         randomMovieOfTheDay.isUserInteractionEnabled = true
         randomMovieOfTheDay.addGestureRecognizer(singleTap)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let tabBarCtrl = self.tabBarController as! HomeViewController
+        let login = tabBarCtrl.userLogin
+        home_page_title.text = "Bonjour \(login) voici le film du jour rien que pour vous"
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
     @objc func tapDetected() {
@@ -56,9 +61,6 @@ class AcceuilViewController: UIViewController {
     }
     
     func getRandomMovieTitle(){
-        var random_movie_title: String = ""
-        var random_movie_id: Int = 0
-        
         // Make a call to endpoint (A)
         let params: [String : Any] = [
             "nb": 1
@@ -76,26 +78,28 @@ class AcceuilViewController: UIViewController {
                     let movie_description = json_response["movies"] as? [Any],
                         let random_movie = movie_description[0] as? [String: Any],
                             let random_title = random_movie["title"] as? String,
-                            let random_id = random_movie["id"] as? Int else{
+                            let random_id = random_movie["id"] as? Int,
+                            let poster_url = random_movie["poster"] as? String else{
                     return
             }
         
-            random_movie_title = random_title
-            random_movie_id = random_id
+//            random_movie_title = random_title
+//            random_movie_id = random_id
             
-            print("title of the random movie: \(random_movie_title)")
-            self.getRandomMovieDetails(movie_title: random_movie_title, movie_id: random_movie_id)
+            print("title of the random movie: \(random_title)")
+            self.getRandomMovieDetails(movie_title: random_title, movie_id: random_id, movie_poster: poster_url)
         }
         
     }
     
-    func getRandomMovieDetails(movie_title: String, movie_id: Int){
+    func getRandomMovieDetails(movie_title: String, movie_id: Int, movie_poster: String){
         //Make call to endpoint (B)
         // Send useful information to ItemDescriptionViewController
         
         let item_description = ItemDescriptionViewController()
         item_description.movie_title = movie_title
         item_description.movie_id = movie_id
+        item_description.movie_image_url = movie_poster
         self.navigationController?.pushViewController(item_description, animated: true)
     }
 }

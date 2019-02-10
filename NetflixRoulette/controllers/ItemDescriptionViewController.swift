@@ -14,39 +14,48 @@ class ItemDescriptionViewController: UIViewController {
     
     @IBOutlet weak var poster: UIImageView!
     @IBOutlet weak var title_label: UILabel!
-    
     @IBOutlet weak var rate_value: UILabel!
     @IBOutlet weak var duration_value: UILabel!
     @IBOutlet weak var date_value: UILabel!
     @IBOutlet weak var genre_value: UILabel!
     @IBOutlet weak var synopsis_value: UILabel!
     
-    
     var movie_title: String?
-    var movie_image_url: String?
+    var movie_image_url: String! = ""
     var movie_id: Int?
-    
 
-    
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fillViews()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "fav_white_full"), style: .done, target: self, action: #selector(addMovieToFavorite))
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
+    }
+    
+    @objc func addMovieToFavorite(){
+        print("Movie added to favorite list!")
+        
+        let idMovie = movie_id
+        let authToken = "6513d7f844db"
+        
+        MovieServices.default.addMovieToFavs(movieID: idMovie!, userAuthToken: authToken)
+    }
+    
     private func fillViews(){
-        guard movie_title != nil,
-                movie_id != nil else {
+        guard movie_title != nil else {
             poster.image = UIImage(named: "report_problem_white")
             return
         }
         title_label.text = movie_title
-        
-        if self.movie_image_url != "" {
-            poster.af_setImage(withURL: URL(string: self.movie_image_url!)!)
-        } else {
+        if movie_image_url == ""{
             poster.image = UIImage(named: "report_problem_white")
+        }else{
+            poster.af_setImage(withURL: URL(string: self.movie_image_url)!)
         }
+        
+     
         self.getOtherInformationsAboutMovie()
     }
 

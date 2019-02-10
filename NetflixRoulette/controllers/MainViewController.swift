@@ -23,6 +23,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.fieldsErrorWarning.isHidden = true
         self.hideKeyboardWhenTappedAround()
+        
     }
 
     
@@ -30,6 +31,9 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         self.addToApi(completion: { (success, user) in
             if success == true {
                 let home = HomeViewController()
+                home.userLogin = user.login
+                home.userId = user.id
+                home.userAuthToken = user.token
                 self.navigationController?.pushViewController(home, animated: true)
             }else{
                 self.fieldsErrorWarning.isHidden = false
@@ -62,7 +66,8 @@ class MainViewController: UIViewController, UISearchBarDelegate {
                 print(user)
                 completion(res.response?.statusCode == 200, user)
             } else {
-                print("User doesn't exist!!!!!!!!")
+                self.fieldsErrorWarning.isHidden = false
+                print("Error while signing in!")
             }
         }
     }

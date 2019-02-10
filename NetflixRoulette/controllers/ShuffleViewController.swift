@@ -20,9 +20,13 @@ class ShuffleViewController: UIViewController {
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(ShuffleViewController.tapDetected))
         randomBox.isUserInteractionEnabled = true
         randomBox.addGestureRecognizer(singleTap)
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
+    }
+    
     @objc func tapDetected() {
         let random_number = Int.random(in: 1...10)
         let params: [String : Any] = [
@@ -141,17 +145,18 @@ class ShuffleViewController: UIViewController {
                 id = current_movie["id"] as! Int
                 show_links = current_movie["images"] as! [String: Any]
                 length = current_movie["length"] as! String
-                poster_url = show_links["show"] as? String
+                poster_url = show_links["poster"] as? String
                 
                 if poster_url == nil{
                     poster_url = show_links["baner"] as? String
                     if poster_url == nil{
                         poster_url = show_links["box"] as? String
                         if poster_url == nil{
-                            poster_url = show_links["poster"] as? String
+                            poster_url = show_links["show"] as? String
                         }
                     }
                 }
+                
                 showz.append(Movie(id: id, title: title_movie!, production_year: Int(year_prod)!,length: Int(length)! * 60, picture: poster_url ?? "default"))
             }
             

@@ -13,6 +13,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
+    
     var movies : [Movie] = []
     var shows : [Show] = []
     
@@ -35,8 +36,12 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "MovieSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SearchViewController.movieCellId)
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
+    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         

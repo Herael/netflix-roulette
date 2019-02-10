@@ -15,7 +15,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MOVIE_SEARCH_CELL_IDENTIFIER" rowHeight="125" id="KGk-i7-Jjw" customClass="MovieSearchTableViewCell" customModule="NetflixRoulette" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="350" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="350" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -39,7 +39,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qn-0I-w5s">
-                        <rect key="frame" x="83" y="69" width="267" height="14"/>
+                        <rect key="frame" x="83" y="50" width="267" height="33"/>
                         <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -51,6 +51,13 @@
                             <constraint firstAttribute="width" constant="75" id="zvf-aC-bWs"/>
                         </constraints>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav_white_empty" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-EW-HiY">
+                        <rect key="frame" x="325" y="5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4Bu-zx-XNC"/>
+                            <constraint firstAttribute="width" constant="20" id="DZd-60-Piq"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -58,18 +65,23 @@
                     <constraint firstItem="25l-OT-Okv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4A6-ff-fOJ"/>
                     <constraint firstItem="6Qn-0I-w5s" firstAttribute="leading" secondItem="25l-OT-Okv" secondAttribute="trailing" constant="8" symbolic="YES" id="9la-hZ-YTh"/>
                     <constraint firstItem="2v9-qm-4o4" firstAttribute="leading" secondItem="25l-OT-Okv" secondAttribute="trailing" constant="8" symbolic="YES" id="En9-8O-l5D"/>
+                    <constraint firstItem="XiM-EW-HiY" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="GB3-s7-bEA"/>
+                    <constraint firstItem="6Qn-0I-w5s" firstAttribute="top" secondItem="XiM-EW-HiY" secondAttribute="bottom" constant="25" id="HiW-9b-I9h"/>
                     <constraint firstItem="2v9-qm-4o4" firstAttribute="trailing" secondItem="6Qn-0I-w5s" secondAttribute="trailing" id="Mf6-G3-18g"/>
                     <constraint firstItem="hZv-xr-UzL" firstAttribute="leading" secondItem="25l-OT-Okv" secondAttribute="trailing" constant="8" symbolic="YES" id="Oxl-ke-8so"/>
                     <constraint firstItem="2v9-qm-4o4" firstAttribute="top" secondItem="6Qn-0I-w5s" secondAttribute="bottom" constant="2" id="PUE-wX-JVi"/>
+                    <constraint firstItem="XiM-EW-HiY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Rgv-FM-e67"/>
                     <constraint firstAttribute="bottomMargin" secondItem="2v9-qm-4o4" secondAttribute="bottom" constant="8" id="WTt-pE-bX8"/>
                     <constraint firstItem="25l-OT-Okv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="agz-N8-VSa"/>
                     <constraint firstItem="hZv-xr-UzL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="iGn-Pb-pZw"/>
+                    <constraint firstItem="XiM-EW-HiY" firstAttribute="leading" secondItem="25l-OT-Okv" secondAttribute="trailing" constant="250" id="iy2-VT-920"/>
                     <constraint firstAttribute="bottom" secondItem="25l-OT-Okv" secondAttribute="bottom" id="vpA-y6-DMp"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="favIcon" destination="XiM-EW-HiY" id="MgR-2V-2yC"/>
                 <outlet property="lengthLabel" destination="2v9-qm-4o4" id="ws8-Bc-S2b"/>
                 <outlet property="releaseDateLabel" destination="6Qn-0I-w5s" id="zeS-9Z-yUX"/>
                 <outlet property="titleLabel" destination="hZv-xr-UzL" id="2SQ-uc-2Nh"/>
@@ -78,4 +90,7 @@
             <point key="canvasLocation" x="161.59999999999999" y="190.25487256371815"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="fav_white_empty" width="36" height="36"/>
+    </resources>
 </document>
