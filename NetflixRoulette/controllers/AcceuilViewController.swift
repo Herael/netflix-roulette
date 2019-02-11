@@ -32,6 +32,7 @@ class AcceuilViewController: UIViewController {
     @IBOutlet weak var randomMovieOfTheDay: UIImageView!
     var random_movie_details: Movie!    // Load here the response of the API call
     
+    
     @IBOutlet weak var home_page_title: UILabel!
     
     override func viewDidLoad() {

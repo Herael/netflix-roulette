@@ -33,7 +33,7 @@ class ItemDescriptionViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "fav_white_full"), style: .done, target: self, action: #selector(addMovieToFavorite))
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
+        self.tabBarController?.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
     }
     
     @objc func addMovieToFavorite(){

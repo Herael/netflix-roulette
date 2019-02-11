@@ -25,6 +25,7 @@ depends-top-level:
 - !private "Alamofire"
 - "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "DataResponse"
 - !private "FloatLiteralType"
@@ -96,6 +97,7 @@ depends-member:
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "rate_value"]
 - !private ["s7CVarArgP", "red"]
+- !private ["s7CVarArgP", "setHidesBackButton"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "synopsis_value"]
 - !private ["s7CVarArgP", "tabBarController"]
@@ -146,6 +148,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "result"]
+- !private ["s28CustomDebugStringConvertibleP", "setHidesBackButton"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "synopsis_value"]
 - !private ["s28CustomDebugStringConvertibleP", "tabBarController"]
@@ -205,6 +208,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "responseJSON"]
 - !private ["s23CustomStringConvertibleP", "result"]
+- !private ["s23CustomStringConvertibleP", "setHidesBackButton"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "synopsis_value"]
 - !private ["s23CustomStringConvertibleP", "tabBarController"]
@@ -273,6 +277,7 @@ depends-member:
 - !private ["SQ", "print"]
 - !private ["SQ", "rate_value"]
 - !private ["SQ", "red"]
+- !private ["SQ", "setHidesBackButton"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "synopsis_value"]
 - !private ["SQ", "tabBarController"]
@@ -334,6 +339,7 @@ depends-member:
 - !private ["SH", "print"]
 - !private ["SH", "rate_value"]
 - !private ["SH", "red"]
+- !private ["SH", "setHidesBackButton"]
 - !private ["SH", "subscript"]
 - !private ["SH", "synopsis_value"]
 - !private ["SH", "tabBarController"]
@@ -369,6 +375,7 @@ depends-member:
 - ["15NetflixRoulette29ItemDescriptionViewControllerC", "movie_id"]
 - ["15NetflixRoulette29ItemDescriptionViewControllerC", "movie_image_url"]
 - ["15NetflixRoulette29ItemDescriptionViewControllerC", "movie_title"]
+- !private ["15NetflixRoulette29ItemDescriptionViewControllerC", "navigationItem"]
 - ["15NetflixRoulette29ItemDescriptionViewControllerC", "poster"]
 - !private ["15NetflixRoulette29ItemDescriptionViewControllerC", "print"]
 - ["15NetflixRoulette29ItemDescriptionViewControllerC", "rate_value"]
@@ -421,6 +428,7 @@ depends-member:
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "rate_value"]
 - !private ["So8NSCodingP", "red"]
+- !private ["So8NSCodingP", "setHidesBackButton"]
 - !private ["So8NSCodingP", "synopsis_value"]
 - !private ["So8NSCodingP", "tabBarController"]
 - !private ["So8NSCodingP", "text"]
@@ -499,6 +507,7 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "rate_value"]
 - !private ["So8NSObjectC", "red"]
+- !private ["So8NSObjectC", "setHidesBackButton"]
 - ["So8NSObjectC", "synopsis_value"]
 - !private ["So8NSObjectC", "tabBarController"]
 - !private ["So8NSObjectC", "text"]
@@ -537,6 +546,7 @@ depends-member:
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "rate_value"]
 - !private ["So8NSObjectP", "red"]
+- !private ["So8NSObjectP", "setHidesBackButton"]
 - !private ["So8NSObjectP", "synopsis_value"]
 - !private ["So8NSObjectP", "tabBarController"]
 - !private ["So8NSObjectP", "text"]
@@ -717,6 +727,7 @@ depends-member:
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
 - !private ["So16UINavigationItemC", "leftBarButtonItem"]
+- !private ["So16UINavigationItemC", "setHidesBackButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "Alamofire"]
 - !private ["So30UIPasteConfigurationSupportingP", "JSONEncoding"]
 - !private ["So30UIPasteConfigurationSupportingP", "MovieServices"]
@@ -1028,6 +1039,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rate_value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setHidesBackButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "synopsis_value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]

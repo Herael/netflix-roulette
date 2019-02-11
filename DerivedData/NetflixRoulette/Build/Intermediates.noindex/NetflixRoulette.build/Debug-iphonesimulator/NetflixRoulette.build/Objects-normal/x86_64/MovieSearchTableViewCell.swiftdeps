@@ -166,7 +166,6 @@ depends-member:
 - !private ["15NetflixRoulette24MovieSearchTableViewCellC", "UITapGestureRecognizer"]
 - ["15NetflixRoulette24MovieSearchTableViewCellC", "addMovieToFavorite"]
 - ["15NetflixRoulette24MovieSearchTableViewCellC", "awakeFromNib"]
-- ["15NetflixRoulette24MovieSearchTableViewCellC", "deinit"]
 - ["15NetflixRoulette24MovieSearchTableViewCellC", "favIcon"]
 - ["15NetflixRoulette24MovieSearchTableViewCellC", "init"]
 - !private ["15NetflixRoulette24MovieSearchTableViewCellC", "isFav"]
