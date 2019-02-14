@@ -95,7 +95,9 @@ extension FavoriteViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let movieCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.movieCellId, for: indexPath) as! MovieSearchTableViewCell
+        
+        
+        let movieCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.mediaCellId, for: indexPath) as! MovieSearchTableViewCell
         let movie = self.movies[indexPath.row]
         movieCell.titleLabel.text = movie.title
         
@@ -108,6 +110,9 @@ extension FavoriteViewController: UITableViewDataSource {
         movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
         movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"
         
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.red
+        movieCell.selectedBackgroundView = backgroundView
         
         return movieCell
     }

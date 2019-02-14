@@ -16,6 +16,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     var movies : [Movie] = []
     var shows : [Show] = []
+    var medias: [Media] = []
     
     
     class func newInstance(movies: [Movie], shows: [Show]) -> SearchViewController {
@@ -35,7 +36,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         searchBar.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(UINib(nibName: "MovieSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SearchViewController.movieCellId)
+        self.tableView.register(UINib(nibName: "MovieSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SearchViewController.mediaCellId)
         self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
@@ -58,6 +59,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         self.movies.removeAll()
         self.shows.removeAll()
+        self.medias.removeAll()
         self.tableView.reloadData()
     }
     
@@ -66,6 +68,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         
         self.movies.removeAll()
         self.shows.removeAll()
+        self.medias.removeAll()
         
         let params: [String: Any] = [
             "title": title,
@@ -89,6 +92,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
             //print(res)
             for _ in movie {
                 self.movies.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int, length: movie[j]["length"] as! Int, picture: movie[j]["poster"] as! String))
+                self.medias.append(self.movies[j])
                 j += 1
             }
             //print(self.movies)
@@ -101,7 +105,23 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
                 }
                 var i = 0
                 for _ in show {
-                    self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String))
+                    let temp_creation = show[i]["creation"] as! String
+                    let myInt = (temp_creation as NSString).integerValue
+                    let images = show[i]["images"] as! [String: Any]
+                    var poster_url = images["poster"] as? String
+                    if poster_url == nil{
+                        poster_url = images["baner"] as? String
+                        if poster_url == nil{
+                            poster_url = images["box"] as? String
+                            if poster_url == nil{
+                                poster_url = images["show"] as? String
+                            }
+                        }
+                    }
+                    
+
+                    self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, production_year: myInt, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String, picture: poster_url!))
+                    self.medias.append(self.shows[i])
                     i += 1
                 }
                 //print(self.shows)
@@ -131,38 +151,50 @@ extension SearchViewController: UITableViewDelegate {
 
 extension SearchViewController: UITableViewDataSource {
     
-    public static let movieCellId = "MOVIE_SEARCH_CELL_IDENTIFIER"
+    public static let mediaCellId = "MOVIE_SEARCH_CELL_IDENTIFIER"
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return movies.count + shows.count
-        return movies.count
+        return medias.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let movieCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.movieCellId, for: indexPath) as! MovieSearchTableViewCell
-        let movie = self.movies[indexPath.row]
-        movieCell.titleLabel.text = movie.title
+        let mediaCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.mediaCellId, for: indexPath) as! MovieSearchTableViewCell
+        let media = self.medias[indexPath.row]
+        mediaCell.titleLabel.text = media.title
         
-        if movie.picture.description != ""{
-            let imageURL = URL(string: movie.picture)
+        if media.picture.description != ""{
+            let imageURL = URL(string: media.picture)
             let imageData = try! Data(contentsOf: imageURL!)
-            movieCell.typeImageView.image = UIImage(data: imageData)
+            mediaCell.typeImageView.image = UIImage(data: imageData)
+        }
+        if media.isKind(of: Movie.self) {
+            
+            mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
+            mediaCell.lengthLabel.text = "Durée : " + String((media as! Movie).length/60) + " min"
+        }else if media.isKind(of: Show.self) {
+            
+            mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
+            mediaCell.lengthLabel.text = "Saison : " + (media as! Show).seasons
         }
         
-        movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
-        movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"
         
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.red
+        mediaCell.selectedBackgroundView = backgroundView
         
-        return movieCell
+        return mediaCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let item_description = ItemDescriptionViewController()
-        item_description.movie_title = self.movies[indexPath.row].title
-        item_description.movie_id = self.movies[indexPath.row].id
-        item_description.movie_image_url = self.movies[indexPath.row].picture
+        item_description.movie_title = self.medias[indexPath.row].title
+        item_description.movie_id = self.medias[indexPath.row].id
+        item_description.movie_image_url = self.medias[indexPath.row].picture
         self.navigationController?.pushViewController(item_description, animated: true)
     }
     
 }
+
+
+//typeof()
