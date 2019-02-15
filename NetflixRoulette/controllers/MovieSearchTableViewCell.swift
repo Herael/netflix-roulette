@@ -41,8 +41,6 @@ class MovieSearchTableViewCell: UITableViewCell {
         }else{
             favIcon.image = UIImage(named: "fav_white_empty")
         }
-        
-        
     }
 
     

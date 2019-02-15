@@ -118,7 +118,11 @@ extension FavoriteViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        print(self.movies[indexPath.row].id)
+        let item_description = ItemDescriptionViewController()
+        item_description.movie_title = self.movies[indexPath.row].title
+        item_description.movie_id = self.movies[indexPath.row].id
+        item_description.movie_image_url = self.movies[indexPath.row].picture
+        self.navigationController?.pushViewController(item_description, animated: true)
     }
     
     

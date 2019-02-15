@@ -53,6 +53,7 @@
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav_white_empty" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-EW-HiY">
                         <rect key="frame" x="325" y="5" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="4Bu-zx-XNC"/>
                             <constraint firstAttribute="width" constant="20" id="DZd-60-Piq"/>
