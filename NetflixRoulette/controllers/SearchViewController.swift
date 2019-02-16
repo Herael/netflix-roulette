@@ -161,13 +161,18 @@ extension SearchViewController: UITableViewDataSource {
         
         let mediaCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.mediaCellId, for: indexPath) as! MovieSearchTableViewCell
         let media = self.medias[indexPath.row]
+    
         mediaCell.titleLabel.text = media.title
         
-        if media.picture.description != ""{
+        if media.picture.description != "" {
             let imageURL = URL(string: media.picture)
             let imageData = try! Data(contentsOf: imageURL!)
             mediaCell.typeImageView.image = UIImage(data: imageData)
+        }else {
+            mediaCell.typeImageView.image = UIImage(named: "noPicture")
         }
+        
+        
         if media.isKind(of: Movie.self) {
             
             mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
@@ -177,8 +182,8 @@ extension SearchViewController: UITableViewDataSource {
             mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
             mediaCell.lengthLabel.text = "Saison : " + (media as! Show).seasons
         }
-        
-        
+    
+    
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.red
         mediaCell.selectedBackgroundView = backgroundView

@@ -46,7 +46,7 @@ class AcceuilViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         let tabBarCtrl = self.tabBarController as! HomeViewController
         let login = tabBarCtrl.userLogin
-        home_page_title.text = "Bonjour \(login) voici le film du jour rien que pour vous"
+        home_page_title.text = "Hi \(login)! There is a daily movie just for you! 😉"
         self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
@@ -59,6 +59,10 @@ class AcceuilViewController: UIViewController {
     // pour afficher l'affiche du film du jour
     func uploadMoviePicture(){
         randomMovieOfTheDay.image = UIImage(named: "home-white")
+//        let imageUrl = URL(string: poster_url)
+//        let imageData = try! Data(contentsOf: imageUrl!)
+//        self.randomMovieOfTheDay.image = UIImage(data: imageData)
+        
     }
     
     func getRandomMovieTitle(){

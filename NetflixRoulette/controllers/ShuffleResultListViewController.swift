@@ -49,6 +49,8 @@ extension ShuffleResultListViewController: UITableViewDataSource {
             let imageURL = URL(string: movie.picture)
             movieCell.typeImageView.af_setImage(withURL: imageURL!)
                 //.image = UIImage(data: imageURL?)
+        }else {
+            movieCell.typeImageView.image = UIImage(named: "noPicture")
         }
         
         movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)

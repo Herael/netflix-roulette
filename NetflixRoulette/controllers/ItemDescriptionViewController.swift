@@ -18,7 +18,7 @@ class ItemDescriptionViewController: UIViewController {
     @IBOutlet weak var duration_value: UILabel!
     @IBOutlet weak var date_value: UILabel!
     @IBOutlet weak var genre_value: UILabel!
-    @IBOutlet weak var synopsis_value: UILabel!
+    @IBOutlet var synopsis_value: UITextView!
     
     var movie_title: String?
     var movie_image_url: String! = ""
@@ -47,12 +47,12 @@ class ItemDescriptionViewController: UIViewController {
     
     private func fillViews(){
         guard movie_title != nil else {
-            poster.image = UIImage(named: "report_problem_white")
+            poster.image = UIImage(named: "noPicture")
             return
         }
         title_label.text = movie_title
         if movie_image_url == ""{
-            poster.image = UIImage(named: "report_problem_white")
+            poster.image = UIImage(named: "noPicture")
         }else{
             poster.af_setImage(withURL: URL(string: self.movie_image_url)!)
         }
@@ -98,17 +98,16 @@ class ItemDescriptionViewController: UIViewController {
                 return
         }
         let durationEnhanced: [Int] = convertToHours(secondes: duration)
-        self.duration_value.text = "Durée : " + durationEnhanced[0].description + "h " + durationEnhanced[1].description
+        self.duration_value.text = "Length : " + durationEnhanced[0].description + "h" + durationEnhanced[1].description
         self.synopsis_value.text = "Synopsis : " + synopsis
-        self.date_value.text = "Sortie : " + release
-       
-        
-        let test = notes["mean"]
+        self.date_value.text = "Date : " + release
 
-        if test as? Int != nil{
-            self.rate_value.text = (test as! Int).description
-        } else if type(of: test) == type(of: String()){
-            self.rate_value.text = test as? String
+        if let test = notes["mean"] as? Int{
+            self.rate_value.text = "Note: " + test.description + "/5"
+        } else if let test = notes["mean"] as? Double{
+            self.rate_value.text = "Note: " +  Int(test).description + "/5"
+        }else if let test = notes["mean"] as? String{
+            self.rate_value.text = "Note: " + test + "/5"
         }
 
         print("response of the server: \(json_response)")
@@ -119,7 +118,11 @@ class ItemDescriptionViewController: UIViewController {
                 return
         }
         let genres_concat = movie_genre.joined(separator: ", ")
-        self.genre_value.text = "Genre : " + genres_concat
+        if genres_concat.count == 0 {
+                self.genre_value.text = "Type : /"
+        }else {
+                self.genre_value.text = "Type : " + genres_concat
+        }
     }
     
     private func convertToHours(secondes: Int) -> [Int]{
