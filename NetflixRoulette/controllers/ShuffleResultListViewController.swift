@@ -52,6 +52,7 @@ extension ShuffleResultListViewController: UITableViewDataSource {
         }else {
             movieCell.typeImageView.image = UIImage(named: "noPicture")
         }
+    
         
         movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
         movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"

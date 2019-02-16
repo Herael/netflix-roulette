@@ -10,9 +10,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "NSObject"
 - "String"
 - !private "StringLiteralType"

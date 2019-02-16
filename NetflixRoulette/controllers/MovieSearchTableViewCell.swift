@@ -14,15 +14,12 @@ class MovieSearchTableViewCell: UITableViewCell {
     @IBOutlet var typeImageView: UIImageView!
     @IBOutlet var releaseDateLabel: UILabel!
     @IBOutlet var lengthLabel: UILabel!
-    @IBOutlet weak var favIcon: UIImageView!
     
     private var isFav = false;
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let singleTap = UITapGestureRecognizer(target: self, action: #selector(MovieSearchTableViewCell.addMovieToFavorite))
-        favIcon.isUserInteractionEnabled = true
-        favIcon.addGestureRecognizer(singleTap)
+        
         // Initialization code
     }
     
@@ -31,17 +28,7 @@ class MovieSearchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @objc func addMovieToFavorite(){
-        // fonction à supprimer pour enlever el coeur des cellules des listes
-        isFav = !isFav
-        if isFav{
-            favIcon.image = UIImage(named: "fav_white_full")
-            //MovieServices.default.addMovieToFavs(movieID: <#T##Int#>, userAuthToken: <#T##String#>)
-        }else{
-            favIcon.image = UIImage(named: "fav_white_empty")
-        }
-    }
+ 
 
     
 }

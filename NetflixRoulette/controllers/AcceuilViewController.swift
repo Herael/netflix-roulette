@@ -87,9 +87,6 @@ class AcceuilViewController: UIViewController {
                             let poster_url = random_movie["poster"] as? String else{
                     return
             }
-        
-//            random_movie_title = random_title
-//            random_movie_id = random_id
             
             print("title of the random movie: \(random_title)")
             self.getRandomMovieDetails(movie_title: random_title, movie_id: random_id, movie_poster: poster_url)

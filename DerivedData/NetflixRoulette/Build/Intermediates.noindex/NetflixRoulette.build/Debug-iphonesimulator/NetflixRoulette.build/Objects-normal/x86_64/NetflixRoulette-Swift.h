@@ -285,6 +285,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette18HomeViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 
 SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
 @interface ItemDescriptionViewController : UIViewController
@@ -294,7 +295,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette29ItemDescriptionViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified duration_value;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified date_value;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified genre_value;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified synopsis_value;
+@property (nonatomic, strong) IBOutlet UITextView * _Null_unspecified synopsis_value;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)addMovieToFavorite;
@@ -316,11 +317,16 @@ SWIFT_CLASS("_TtC15NetflixRoulette18MainViewController")
 @end
 
 
-SWIFT_CLASS("_TtC15NetflixRoulette5Movie")
-@interface Movie : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+SWIFT_CLASS("_TtC15NetflixRoulette5Media")
+@interface Media : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC15NetflixRoulette5Movie")
+@interface Movie : Media
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 
@@ -330,10 +336,8 @@ SWIFT_CLASS("_TtC15NetflixRoulette24MovieSearchTableViewCell")
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified typeImageView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified releaseDateLabel;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lengthLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified favIcon;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (void)addMovieToFavorite;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -367,10 +371,8 @@ SWIFT_CLASS("_TtC15NetflixRoulette20SearchViewController")
 
 
 SWIFT_CLASS("_TtC15NetflixRoulette4Show")
-@interface Show : NSObject
+@interface Show : Media
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 

@@ -100,14 +100,15 @@ class ItemDescriptionViewController: UIViewController {
         let durationEnhanced: [Int] = convertToHours(secondes: duration)
         self.duration_value.text = "Length : " + durationEnhanced[0].description + "h" + durationEnhanced[1].description
         self.synopsis_value.text = "Synopsis : " + synopsis
-        self.date_value.text = "Date : " + release
 
+        
         if let test = notes["mean"] as? Int{
             self.rate_value.text = "Note: " + test.description + "/5"
         } else if let test = notes["mean"] as? Double{
             self.rate_value.text = "Note: " +  Int(test).description + "/5"
         }else if let test = notes["mean"] as? String{
             self.rate_value.text = "Note: " + test + "/5"
+
         }
 
         print("response of the server: \(json_response)")
@@ -118,11 +119,13 @@ class ItemDescriptionViewController: UIViewController {
                 return
         }
         let genres_concat = movie_genre.joined(separator: ", ")
+
         if genres_concat.count == 0 {
                 self.genre_value.text = "Type : /"
         }else {
                 self.genre_value.text = "Type : " + genres_concat
         }
+
     }
     
     private func convertToHours(secondes: Int) -> [Int]{

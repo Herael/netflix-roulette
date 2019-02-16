@@ -9,11 +9,10 @@ provides-dynamic-lookup:
 - "description"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CastingPrecedence"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
-- "NSObject"
+- "Media"
 - "Show"
 - "String"
 - !private "StringLiteralType"
@@ -26,11 +25,9 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "seasons"]
-- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "title"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
-- !private ["Sl", "subscript"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -39,37 +36,29 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "seasons"]
-- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "subscript"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "episodes"]
 - !private ["s23CustomStringConvertibleP", "id"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "seasons"]
-- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
-- !private ["Se", "subscript"]
-- !private ["SD", "subscript"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
-- !private ["SE", "subscript"]
 - ["SQ", ""]
 - !private ["SQ", "episodes"]
 - !private ["SQ", "id"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "seasons"]
-- !private ["SQ", "subscript"]
 - !private ["SQ", "title"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -82,21 +71,27 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "seasons"]
-- !private ["SH", "subscript"]
 - !private ["SH", "title"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- ["15NetflixRoulette5MediaC", "Int"]
+- ["15NetflixRoulette5MediaC", "String"]
+- ["15NetflixRoulette5MediaC", ""]
+- ["15NetflixRoulette5MediaC", "description"]
+- ["15NetflixRoulette5MediaC", "episodes"]
+- !private ["15NetflixRoulette5MediaC", "id"]
+- ["15NetflixRoulette5MediaC", "init"]
+- ["15NetflixRoulette5MediaC", "seasons"]
+- !private ["15NetflixRoulette5MediaC", "title"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
-- ["So8NSObjectC", ""]
 - ["So8NSObjectC", "description"]
 - ["So8NSObjectC", "episodes"]
-- ["So8NSObjectC", "id"]
-- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "id"]
 - ["So8NSObjectC", "seasons"]
-- ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "episodes"]
 - !private ["So8NSObjectP", "id"]
@@ -107,15 +102,14 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
-- !private ["ST", "subscript"]
 - ["15NetflixRoulette4ShowC", "Int"]
 - ["15NetflixRoulette4ShowC", "String"]
 - ["15NetflixRoulette4ShowC", "description"]
 - ["15NetflixRoulette4ShowC", "episodes"]
-- ["15NetflixRoulette4ShowC", "id"]
+- !private ["15NetflixRoulette4ShowC", "id"]
 - ["15NetflixRoulette4ShowC", "init"]
 - ["15NetflixRoulette4ShowC", "seasons"]
-- ["15NetflixRoulette4ShowC", "title"]
+- !private ["15NetflixRoulette4ShowC", "title"]
 - !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
@@ -138,7 +132,6 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "episodes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "id"]
@@ -147,7 +140,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -160,15 +152,14 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
-- !private "SD"
 - !private "SE"
 - "SQ"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
+- "15NetflixRoulette5MediaC"
 - !private "s10MirrorPathP"
 - "So8NSObjectC"
 - "So8NSObjectP"
@@ -186,7 +177,6 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
@@ -224,4 +214,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "72e7c95d41548f895d5dd8a722a574d1"
+interface-hash: "eeaeb57f7ffaafa6614b81a1801a4103"
