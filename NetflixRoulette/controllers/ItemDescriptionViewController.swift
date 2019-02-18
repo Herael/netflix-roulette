@@ -57,23 +57,14 @@ class ItemDescriptionViewController: UIViewController {
             poster.af_setImage(withURL: URL(string: self.movie_image_url)!)
         }
         
-     
         self.getOtherInformationsAboutMovie()
     }
 
     private func getOtherInformationsAboutMovie(){
-        let params: [String : Int] = [
-            "id": self.movie_id!
-        ]
-        
-        let headers: HTTPHeaders = [
-            "Content-Type": "application/json",
-            "X-BetaSeries-Key": "ef873e84f313",
-            "X-BetaSeries-Version": "3.0"
-        ]
-        
-        _ = Alamofire.request("https://api.betaseries.com/movies/movie", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (response: DataResponse<Any>) in
-            
+        guard let id = self.movie_id else {
+            return
+        }
+        MovieService.default.getMovieFromId(idMovie: id, completion: { response in
             let main_response = response.result.value as? [String: Any]
             let _movie = main_response?["movie"] as? [String: Any]
             
@@ -82,13 +73,10 @@ class ItemDescriptionViewController: UIViewController {
             }else{
                 self.apiDataGetter(m: "movie", response: response)
             }
-        }
+        })
     }
-    
-    
-    
+
     private func apiDataGetter(m: String, response: DataResponse<Any>){
-        
         guard let json_response = response.result.value as? [String: Any],
             let movie = json_response[m] as? [String: Any],
             let duration = movie["length"] as? Int,
@@ -97,10 +85,11 @@ class ItemDescriptionViewController: UIViewController {
             let release = movie["original_release_date"] as? String else{
                 return
         }
+        
         let durationEnhanced: [Int] = convertToHours(secondes: duration)
-        self.duration_value.text = "Length : " + durationEnhanced[0].description + "h" + durationEnhanced[1].description
+        self.duration_value.text = "Length : " + durationEnhanced[0].description + "h " + durationEnhanced[1].description
         self.synopsis_value.text = "Synopsis : " + synopsis
-
+        self.date_value.text = "Date : " + release
         
         if let test = notes["mean"] as? Int{
             self.rate_value.text = "Note: " + test.description + "/5"
@@ -121,9 +110,9 @@ class ItemDescriptionViewController: UIViewController {
         let genres_concat = movie_genre.joined(separator: ", ")
 
         if genres_concat.count == 0 {
-                self.genre_value.text = "Type : /"
+            self.genre_value.text = "Type : /"
         }else {
-                self.genre_value.text = "Type : " + genres_concat
+            self.genre_value.text = "Type : " + genres_concat
         }
 
     }

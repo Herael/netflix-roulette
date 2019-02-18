@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>9B870EB5-6633-433F-A4CD-C9AD556AD639</key>
+		<key>5B25F97A-5F30-41C9-B219-D499A1B3E7A0</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9B870EB5-6633-433F-A4CD-C9AD556AD639.xcactivitylog</string>
+			<string>5B25F97A-5F30-41C9-B219-D499A1B3E7A0.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,13 @@
 			<key>signature</key>
 			<string>Debug NetflixRoulette</string>
 			<key>timeStartedRecording</key>
-			<real>572027478.37668395</real>
+			<real>572092704.27774</real>
 			<key>timeStoppedRecording</key>
-			<real>572029933.78812802</real>
+			<real>572093063.65727198</real>
 			<key>title</key>
 			<string>Debug NetflixRoulette</string>
 			<key>uniqueIdentifier</key>
-			<string>9B870EB5-6633-433F-A4CD-C9AD556AD639</string>
+			<string>5B25F97A-5F30-41C9-B219-D499A1B3E7A0</string>
 		</dict>
 	</dict>
 </dict>

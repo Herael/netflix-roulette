@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C069715221964A900C71259 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C069714221964A900C71259 /* MovieService.swift */; };
 		2C3976A82205BD01006BAC5B /* ShuffleResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3976A62205BD01006BAC5B /* ShuffleResultListViewController.swift */; };
 		2C3976A92205BD01006BAC5B /* ShuffleResultListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3976A72205BD01006BAC5B /* ShuffleResultListViewController.xib */; };
 		2C46094521CE9F8100BEAC9C /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */; };
@@ -29,7 +30,7 @@
 		2CC16AC321D2BF7300444837 /* ItemDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */; };
 		2CD1F877220CC38900BA401D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD1F875220CC38900BA401D /* FavoriteViewController.swift */; };
 		2CD1F878220CC38900BA401D /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1F876220CC38900BA401D /* FavoriteViewController.xib */; };
-		2CD1F87F220F20FB00BA401D /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD1F87E220F20FB00BA401D /* MovieServices.swift */; };
+		2CD1F87F220F20FB00BA401D /* FavsMovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD1F87E220F20FB00BA401D /* FavsMovieServices.swift */; };
 		5915551B2211F630003AEB2F /* MovieSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915551A2211F630003AEB2F /* MovieSearchTableViewCell.swift */; };
 		59390559220388CB00FACB77 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59390558220388CB00FACB77 /* Show.swift */; };
 		5939055D220388EC00FACB77 /* MovieSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939055C220388EC00FACB77 /* MovieSearchTableViewCell.xib */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C069714221964A900C71259 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		2C3976A62205BD01006BAC5B /* ShuffleResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleResultListViewController.swift; sourceTree = "<group>"; };
 		2C3976A72205BD01006BAC5B /* ShuffleResultListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuffleResultListViewController.xib; sourceTree = "<group>"; };
 		2C46094321CE9F8100BEAC9C /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDescriptionViewController.xib; sourceTree = "<group>"; };
 		2CD1F875220CC38900BA401D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		2CD1F876220CC38900BA401D /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
-		2CD1F87E220F20FB00BA401D /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		2CD1F87E220F20FB00BA401D /* FavsMovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsMovieServices.swift; sourceTree = "<group>"; };
 		5915551A2211F630003AEB2F /* MovieSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSearchTableViewCell.swift; sourceTree = "<group>"; };
 		59390558220388CB00FACB77 /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		5939055C220388EC00FACB77 /* MovieSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieSearchTableViewCell.xib; path = NetflixRoulette/viewz/MovieSearchTableViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -157,7 +159,8 @@
 		2CD1F87D220F20DE00BA401D /* services */ = {
 			isa = PBXGroup;
 			children = (
-				2CD1F87E220F20FB00BA401D /* MovieServices.swift */,
+				2CD1F87E220F20FB00BA401D /* FavsMovieServices.swift */,
+				2C069714221964A900C71259 /* MovieService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -318,9 +321,10 @@
 				593C0F2A2214BDAA00B3ECDB /* Media.swift in Sources */,
 				2C46094D21CEA00000BEAC9C /* ShuffleViewController.swift in Sources */,
 				2C62D25721D2548000311826 /* User.swift in Sources */,
-				2CD1F87F220F20FB00BA401D /* MovieServices.swift in Sources */,
+				2CD1F87F220F20FB00BA401D /* FavsMovieServices.swift in Sources */,
 				2C3976A82205BD01006BAC5B /* ShuffleResultListViewController.swift in Sources */,
 				2C5CEF2E21CAC539002EB873 /* AppDelegate.swift in Sources */,
+				2C069715221964A900C71259 /* MovieService.swift in Sources */,
 				2CD1F877220CC38900BA401D /* FavoriteViewController.swift in Sources */,
 				2C5CEF4321CACBAF002EB873 /* MainViewController.swift in Sources */,
 				2C5CEF4721CAF145002EB873 /* HomeViewController.swift in Sources */,

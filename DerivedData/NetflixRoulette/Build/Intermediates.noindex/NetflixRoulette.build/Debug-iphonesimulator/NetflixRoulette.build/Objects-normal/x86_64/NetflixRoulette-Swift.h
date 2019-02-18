@@ -190,23 +190,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC15NetflixRoulette21AcceuilViewController")
 @interface AcceuilViewController : UIViewController
-/// (A°
-/// ** Endpoint to reach to get the title of a random movie,
-/// ** then put in in a json and reach the endpoint bellow
-/// **                                                 |
-/// https://api.betaseries.com/movies/random           |
-/// **                                                 |
-/// |
-/// |
-/// ** (B)                                             V
-/// ** Endpoint to reach to get all info about a movie from his
-/// **
-/// https://api.betaseries.com/movies/search
-/// **
-/// <ul>
-///   <li>
-///   </li>
-/// </ul>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified randomMovieOfTheDay;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified home_page_title;
 - (void)viewDidLoad;
