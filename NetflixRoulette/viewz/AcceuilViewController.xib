@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AcceuilViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
-                <outlet property="home_page_title" destination="F3Y-3m-gLh" id="MXl-9f-hsk"/>
-                <outlet property="randomMovieOfTheDay" destination="YPz-d5-a82" id="Oo7-wl-Au9"/>
+                <outlet property="home_page_title" destination="rfE-tr-ptH" id="dNq-z8-6jl"/>
+                <outlet property="randomMovieOfTheDay" destination="cmO-J0-8aw" id="urw-g1-EOE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,33 +22,109 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonjour, voici notre film du jour rien que pour vous!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-3m-gLh">
-                    <rect key="frame" x="8" y="44" width="398" height="80"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuffle" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-d5-a82">
-                    <rect key="frame" x="8" y="132" width="398" height="495"/>
-                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-V7-e7p">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="809"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-nn-6Cb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="809"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="x56-w2-4Kq">
+                                    <rect key="frame" x="0.0" y="446.5" width="414" height="140"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="xDJ-YJ-alY"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C1j-zl-YEW">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonjour, voici notre film du jour rien que pour vous!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfE-tr-ptH">
+                                    <rect key="frame" x="20" y="0.0" width="374" height="50.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noPicture" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-J0-8aw">
+                                    <rect key="frame" x="67" y="80.5" width="260" height="320"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="260" id="IVf-VA-4Uf"/>
+                                        <constraint firstAttribute="height" constant="320" id="fpu-5g-pH3"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best rated movies : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiJ-Af-aHx">
+                                    <rect key="frame" x="10" y="601.5" width="161" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best popular movies :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQJ-ix-YsS">
+                                    <rect key="frame" x="10" y="415.5" width="176" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LfW-3l-2qJ">
+                                    <rect key="frame" x="0.0" y="632.5" width="414" height="140"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="THp-ez-ge0"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aI7-BM-POj">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="x56-w2-4Kq" secondAttribute="trailing" id="3Z0-BV-P93"/>
+                                <constraint firstItem="UQJ-ix-YsS" firstAttribute="top" secondItem="cmO-J0-8aw" secondAttribute="bottom" constant="15" id="7IR-kk-3ri"/>
+                                <constraint firstItem="YiJ-Af-aHx" firstAttribute="top" secondItem="x56-w2-4Kq" secondAttribute="bottom" constant="15" id="7kb-gE-a0R"/>
+                                <constraint firstItem="LfW-3l-2qJ" firstAttribute="leading" secondItem="ufo-nn-6Cb" secondAttribute="leading" id="8PB-xS-Ozq"/>
+                                <constraint firstAttribute="trailing" secondItem="rfE-tr-ptH" secondAttribute="trailing" constant="20" id="APq-iE-36Q"/>
+                                <constraint firstItem="YiJ-Af-aHx" firstAttribute="leading" secondItem="ufo-nn-6Cb" secondAttribute="leading" constant="10" id="D0I-oJ-mf3"/>
+                                <constraint firstItem="rfE-tr-ptH" firstAttribute="leading" secondItem="ufo-nn-6Cb" secondAttribute="leading" constant="20" id="cl1-XW-As4"/>
+                                <constraint firstItem="LfW-3l-2qJ" firstAttribute="top" secondItem="YiJ-Af-aHx" secondAttribute="bottom" constant="10" id="ctI-8o-rfI"/>
+                                <constraint firstItem="cmO-J0-8aw" firstAttribute="top" secondItem="rfE-tr-ptH" secondAttribute="bottom" constant="30" id="fag-51-2eo"/>
+                                <constraint firstAttribute="trailing" secondItem="LfW-3l-2qJ" secondAttribute="trailing" id="gPh-Ak-oaa"/>
+                                <constraint firstAttribute="height" constant="809" id="jty-oz-ExN"/>
+                                <constraint firstItem="rfE-tr-ptH" firstAttribute="centerX" secondItem="ufo-nn-6Cb" secondAttribute="centerX" id="lYW-qG-GVA"/>
+                                <constraint firstItem="UQJ-ix-YsS" firstAttribute="leading" secondItem="ufo-nn-6Cb" secondAttribute="leading" constant="10" id="mPe-Y9-Eza"/>
+                                <constraint firstItem="x56-w2-4Kq" firstAttribute="top" secondItem="UQJ-ix-YsS" secondAttribute="bottom" constant="10" id="nbU-iV-nzP"/>
+                                <constraint firstItem="cmO-J0-8aw" firstAttribute="centerX" secondItem="ufo-nn-6Cb" secondAttribute="centerX" constant="-10" id="svT-da-b1a"/>
+                                <constraint firstItem="rfE-tr-ptH" firstAttribute="top" secondItem="ufo-nn-6Cb" secondAttribute="top" id="uul-LX-3UH"/>
+                                <constraint firstItem="x56-w2-4Kq" firstAttribute="leading" secondItem="ufo-nn-6Cb" secondAttribute="leading" id="y8k-kZ-KsJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ufo-nn-6Cb" secondAttribute="bottom" id="8h7-yk-fNF"/>
+                        <constraint firstItem="ufo-nn-6Cb" firstAttribute="centerY" secondItem="9q0-V7-e7p" secondAttribute="centerY" id="EeA-67-QqN"/>
+                        <constraint firstItem="ufo-nn-6Cb" firstAttribute="centerX" secondItem="9q0-V7-e7p" secondAttribute="centerX" id="fsz-bY-qM7"/>
+                        <constraint firstAttribute="trailing" secondItem="ufo-nn-6Cb" secondAttribute="trailing" id="igR-Le-Ixq"/>
+                        <constraint firstItem="ufo-nn-6Cb" firstAttribute="top" secondItem="9q0-V7-e7p" secondAttribute="top" id="s83-6h-8cm"/>
+                        <constraint firstItem="ufo-nn-6Cb" firstAttribute="leading" secondItem="MWH-R0-aZi" secondAttribute="leading" id="uW5-dj-zop"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="MWH-R0-aZi"/>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="top" secondItem="F3Y-3m-gLh" secondAttribute="bottom" constant="8" id="Clj-Ox-JuV"/>
-                <constraint firstItem="F3Y-3m-gLh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FyD-Wo-Ph0"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TQv-39-cou"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="88" id="WPH-fG-IQA"/>
-                <constraint firstItem="F3Y-3m-gLh" firstAttribute="leading" secondItem="YPz-d5-a82" secondAttribute="leading" id="ZuF-bH-gAq"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="ckr-sb-GJn"/>
-                <constraint firstItem="YPz-d5-a82" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-68.5" id="fh9-T4-32v"/>
-                <constraint firstItem="F3Y-3m-gLh" firstAttribute="trailing" secondItem="YPz-d5-a82" secondAttribute="trailing" id="n6O-KW-c7X"/>
+                <constraint firstAttribute="trailing" secondItem="9q0-V7-e7p" secondAttribute="trailing" id="XRr-xD-bKw"/>
+                <constraint firstItem="9q0-V7-e7p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="knD-Zt-Dk0"/>
+                <constraint firstItem="9q0-V7-e7p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="soo-tV-8NB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+            <point key="canvasLocation" x="50.724637681159422" y="46.875"/>
         </view>
     </objects>
     <resources>
-        <image name="shuffle" width="36" height="36"/>
+        <image name="noPicture" width="800" height="800"/>
     </resources>
 </document>
