@@ -18,7 +18,7 @@ class HomeViewController: UITabBarController {
         super.viewDidLoad()
         self.title = "Netflix Roulette"
         self.navigationItem.rightBarButtonItem =
-            UIBarButtonItem(image: UIImage(named: "disconnect"), style: .done, target: self, action: #selector(disconnect))
+            UIBarButtonItem(image: UIImage(named: "leave"), style: .done, target: self, action: #selector(disconnect))
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.red
         self.navigationItem.setHidesBackButton(true, animated: true)
         tabBar.barTintColor = UIColor(red: 0/255, green: 0/255, blue:  0/255, alpha: 1)

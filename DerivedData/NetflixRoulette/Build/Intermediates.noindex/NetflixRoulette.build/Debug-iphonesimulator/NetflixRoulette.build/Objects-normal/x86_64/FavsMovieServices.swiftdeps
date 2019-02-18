@@ -1,23 +1,23 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "MovieServices"
+- "FavMovieServices"
 provides-nominal:
-- "15NetflixRoulette13MovieServicesC"
+- "15NetflixRoulette16FavMovieServicesC"
 provides-member:
-- ["15NetflixRoulette13MovieServicesC", ""]
+- ["15NetflixRoulette16FavMovieServicesC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "..<"
 - !private "Alamofire"
 - "AssignmentPrecedence"
 - !private "CastingPrecedence"
+- "FavMovieServices"
 - "FloatLiteralType"
 - "HTTPHeaders"
 - "Int"
 - "IntegerLiteralType"
 - !private "JSONEncoding"
 - "Movie"
-- "MovieServices"
 - "String"
 - "StringLiteralType"
 - "Void"
@@ -102,6 +102,21 @@ depends-member:
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["15NetflixRoulette16FavMovieServicesC", "Alamofire"]
+- ["15NetflixRoulette16FavMovieServicesC", "FavMovieServices"]
+- ["15NetflixRoulette16FavMovieServicesC", "HTTPHeaders"]
+- ["15NetflixRoulette16FavMovieServicesC", "Int"]
+- !private ["15NetflixRoulette16FavMovieServicesC", "JSONEncoding"]
+- ["15NetflixRoulette16FavMovieServicesC", "Movie"]
+- ["15NetflixRoulette16FavMovieServicesC", "String"]
+- ["15NetflixRoulette16FavMovieServicesC", "Void"]
+- ["15NetflixRoulette16FavMovieServicesC", "addMovieToFavs"]
+- ["15NetflixRoulette16FavMovieServicesC", "default"]
+- ["15NetflixRoulette16FavMovieServicesC", "deleteMovieFromFavorite"]
+- ["15NetflixRoulette16FavMovieServicesC", "getFavsMovies"]
+- !private ["15NetflixRoulette16FavMovieServicesC", "headers"]
+- ["15NetflixRoulette16FavMovieServicesC", "init"]
+- !private ["15NetflixRoulette16FavMovieServicesC", "print"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["9Alamofire10HTTPMethodO", "delete"]
 - !private ["9Alamofire10HTTPMethodO", "get"]
@@ -121,22 +136,6 @@ depends-member:
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["15NetflixRoulette5MovieC", "init"]
-- !private ["15NetflixRoulette13MovieServicesC", "Alamofire"]
-- ["15NetflixRoulette13MovieServicesC", "HTTPHeaders"]
-- ["15NetflixRoulette13MovieServicesC", "Int"]
-- !private ["15NetflixRoulette13MovieServicesC", "JSONEncoding"]
-- ["15NetflixRoulette13MovieServicesC", "Movie"]
-- ["15NetflixRoulette13MovieServicesC", "MovieServices"]
-- ["15NetflixRoulette13MovieServicesC", "String"]
-- ["15NetflixRoulette13MovieServicesC", "Void"]
-- ["15NetflixRoulette13MovieServicesC", "addMovieToFavs"]
-- ["15NetflixRoulette13MovieServicesC", "default"]
-- ["15NetflixRoulette13MovieServicesC", "deinit"]
-- ["15NetflixRoulette13MovieServicesC", "deleteMovieFromFavorite"]
-- ["15NetflixRoulette13MovieServicesC", "getFavsMovies"]
-- !private ["15NetflixRoulette13MovieServicesC", "headers"]
-- ["15NetflixRoulette13MovieServicesC", "init"]
-- !private ["15NetflixRoulette13MovieServicesC", "print"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
 - !private ["SM", "subscript"]
@@ -226,6 +225,7 @@ depends-nominal:
 - !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- "15NetflixRoulette16FavMovieServicesC"
 - !private "s17FixedWidthIntegerP"
 - !private "9Alamofire10HTTPMethodO"
 - "SH"
@@ -234,7 +234,6 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - !private "15NetflixRoulette5MovieC"
-- "15NetflixRoulette13MovieServicesC"
 - !private "SM"
 - !private "So8NSObjectP"
 - !private "Sj"
@@ -300,4 +299,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f9d687b82971888ce4934072ffcf2157"
+interface-hash: "6f163ba83cfa7faccec6559d794e6ba6"

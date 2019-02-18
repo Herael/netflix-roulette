@@ -293,8 +293,8 @@ SWIFT_CLASS("_TtC15NetflixRoulette18MainViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified user_password;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldsErrorWarning;
 - (void)viewDidLoad;
-- (IBAction)sign:(id _Nonnull)sender;
 - (IBAction)sign_up:(id _Nonnull)sender;
+- (IBAction)sign:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

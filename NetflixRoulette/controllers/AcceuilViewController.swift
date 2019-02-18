@@ -49,7 +49,8 @@ class AcceuilViewController: UIViewController {
             if movie_poster != ""{
                 self.randomMovieOfTheDay.af_setImage(withURL: URL(string: movie_poster)!)
             }else{
-                self.randomMovieOfTheDay.image = UIImage(named: "noPicture")
+                self.uploadMoviePicture()
+                //self.randomMovieOfTheDay.image = UIImage(named: "noPicture")
             }
         })
     }

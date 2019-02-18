@@ -7,6 +7,8 @@ provides-member:
 - ["15NetflixRoulette12MovieServiceC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "..<"
+- !private "=="
 - !private "Alamofire"
 - "AssignmentPrecedence"
 - !private "CastingPrecedence"
@@ -16,90 +18,162 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - !private "JSONEncoding"
+- "Movie"
 - "MovieService"
+- !private "NSString"
+- "Show"
 - "String"
 - "StringLiteralType"
 - "Void"
 - !private "print"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
 - !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
 - ["SK", "init"]
 - ["SK", "init"]
 - !private ["SK", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "integerValue"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
 - ["Sl", "init"]
 - ["Sl", "init"]
 - !private ["Sl", "subscript"]
 - ["SL", "init"]
 - ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "integerValue"]
 - !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "result"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "integerValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "integerValue"]
 - !private ["s23CustomStringConvertibleP", "responseJSON"]
 - !private ["s23CustomStringConvertibleP", "result"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["9Alamofire11DataRequestC", "responseJSON"]
 - !private ["9Alamofire12DataResponseV", "result"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
 - ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
 - ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "subscript"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
 - !private ["SQ", "get"]
 - ["SQ", "init"]
 - ["SQ", "init"]
+- !private ["SQ", "integerValue"]
 - !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "integerValue"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "integerValue"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "integerValue"]
 - !private ["9Alamofire10HTTPMethodO", "get"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
 - !private ["SH", "get"]
 - ["SH", "init"]
 - ["SH", "init"]
+- !private ["SH", "integerValue"]
 - !private ["SH", "subscript"]
 - !private ["9Alamofire12JSONEncodingV", "default"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["15NetflixRoulette5MovieC", "init"]
 - !private ["15NetflixRoulette12MovieServiceC", "Alamofire"]
 - ["15NetflixRoulette12MovieServiceC", "DataResponse"]
 - ["15NetflixRoulette12MovieServiceC", "HTTPHeaders"]
 - ["15NetflixRoulette12MovieServiceC", "Int"]
 - !private ["15NetflixRoulette12MovieServiceC", "JSONEncoding"]
+- ["15NetflixRoulette12MovieServiceC", "Movie"]
 - ["15NetflixRoulette12MovieServiceC", "MovieService"]
+- !private ["15NetflixRoulette12MovieServiceC", "NSString"]
+- ["15NetflixRoulette12MovieServiceC", "Show"]
 - ["15NetflixRoulette12MovieServiceC", "String"]
 - ["15NetflixRoulette12MovieServiceC", "Void"]
 - ["15NetflixRoulette12MovieServiceC", "default"]
 - ["15NetflixRoulette12MovieServiceC", "getHomeRandomMovie"]
+- ["15NetflixRoulette12MovieServiceC", "getMovieByTitle"]
 - ["15NetflixRoulette12MovieServiceC", "getMovieFromId"]
+- ["15NetflixRoulette12MovieServiceC", "getShowByTitle"]
 - !private ["15NetflixRoulette12MovieServiceC", "headers"]
 - ["15NetflixRoulette12MovieServiceC", "init"]
 - !private ["15NetflixRoulette12MovieServiceC", "print"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "integerValue"]
+- !private ["So9NSCopyingP", "integerValue"]
+- !private ["So21NSItemProviderReadingP", "integerValue"]
+- !private ["So21NSItemProviderWritingP", "integerValue"]
+- !private ["So16NSMutableCopyingP", "integerValue"]
+- !private ["So8NSObjectC", "integerValue"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "integerValue"]
+- !private ["So14NSSecureCodingP", "integerValue"]
+- !private ["So8NSStringC", "integerValue"]
 - !private ["9Alamofire17ParameterEncodingP", "default"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
 - !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - !private ["Sm", "subscript"]
@@ -107,9 +181,12 @@ depends-member:
 - !private ["9Alamofire7RequestC", "responseJSON"]
 - !private ["9Alamofire8ResponseP", "result"]
 - !private ["9Alamofire6ResultO", "value"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
 - ["ST", "init"]
 - ["ST", "init"]
 - !private ["ST", "subscript"]
+- !private ["15NetflixRoulette4ShowC", "init"]
 - ["SS", "init"]
 - ["SS", "init"]
 - ["Sy", "init"]
@@ -120,7 +197,10 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - ["9Alamofire14URLConvertibleP", "init"]
 - ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -131,7 +211,15 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "integerValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "integerValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -140,7 +228,9 @@ depends-member:
 depends-nominal:
 - !private "Sa"
 - !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
 - "SK"
+- !private "Sb"
 - "s7CVarArgP"
 - "Sl"
 - "SL"
@@ -155,6 +245,7 @@ depends-nominal:
 - "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
@@ -164,8 +255,18 @@ depends-nominal:
 - !private "9Alamofire12JSONEncodingV"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "15NetflixRoulette5MovieC"
 - "15NetflixRoulette12MovieServiceC"
 - !private "SM"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - !private "9Alamofire17ParameterEncodingP"
 - !private "Sk"
 - "Sm"
@@ -174,18 +275,21 @@ depends-nominal:
 - !private "9Alamofire8ResponseP"
 - !private "9Alamofire6ResultO"
 - "ST"
+- !private "15NetflixRoulette4ShowC"
 - "SS"
 - "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Alamofire14URLConvertibleP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -222,4 +326,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2d99819b7234f152b524d9d6515439ab"
+interface-hash: "c5d003f11634f47bd19ddeb180d16ab1"

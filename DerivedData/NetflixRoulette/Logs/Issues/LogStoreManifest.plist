@@ -6,53 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>0E2AF513-08AF-4DF2-9AA2-3D31DD25CAEF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>0E2AF513-08AF-4DF2-9AA2-3D31DD25CAEF.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>AlamofireImage-bnjrxcrunetgpxcpveleczcyjhel</string>
-			<key>timeStartedRecording</key>
-			<real>572092668.26930797</real>
-			<key>timeStoppedRecording</key>
-			<real>572092673.76499295</real>
-			<key>title</key>
-			<string>Build target AlamofireImage</string>
-			<key>uniqueIdentifier</key>
-			<string>0E2AF513-08AF-4DF2-9AA2-3D31DD25CAEF</string>
-		</dict>
-		<key>2F610897-2A4F-4797-8028-C16D6EA42DA7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>2F610897-2A4F-4797-8028-C16D6EA42DA7.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>Pods-NetflixRoulette-bnjrxcrunetgpxcpveleczcyjhel</string>
-			<key>timeStartedRecording</key>
-			<real>572092668.27126503</real>
-			<key>timeStoppedRecording</key>
-			<real>572092674.11733103</real>
-			<key>title</key>
-			<string>Build target Pods-NetflixRoulette</string>
-			<key>uniqueIdentifier</key>
-			<string>2F610897-2A4F-4797-8028-C16D6EA42DA7</string>
-		</dict>
-		<key>5E7A69AF-A6E0-4F34-A51D-13B6488DF254</key>
+		<key>1D7D2982-93E1-47A6-9040-42707DDBBFB9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,21 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>5E7A69AF-A6E0-4F34-A51D-13B6488DF254.xcactivitylog</string>
+			<string>1D7D2982-93E1-47A6-9040-42707DDBBFB9.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>W</string>
 			<key>signature</key>
 			<string>NetflixRoulette-agesdcijmknhtfgdygrjejesdzec</string>
 			<key>timeStartedRecording</key>
-			<real>572188685.26501203</real>
+			<real>572212052.22777104</real>
 			<key>timeStoppedRecording</key>
-			<real>572188691.02149498</real>
+			<real>572212069.36012995</real>
 			<key>title</key>
 			<string>Build target NetflixRoulette</string>
 			<key>uniqueIdentifier</key>
-			<string>5E7A69AF-A6E0-4F34-A51D-13B6488DF254</string>
+			<string>1D7D2982-93E1-47A6-9040-42707DDBBFB9</string>
 		</dict>
-		<key>723AC467-1CA8-42E8-92F3-8FB00DBDA743</key>
+		<key>3DECB07A-4E71-4ADB-BAAE-2774117F5D07</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -84,19 +38,65 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>723AC467-1CA8-42E8-92F3-8FB00DBDA743.xcactivitylog</string>
+			<string>3DECB07A-4E71-4ADB-BAAE-2774117F5D07.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Pods-NetflixRoulette-bnjrxcrunetgpxcpveleczcyjhel</string>
+			<key>timeStartedRecording</key>
+			<real>572212052.22573495</real>
+			<key>timeStoppedRecording</key>
+			<real>572212058.17424595</real>
+			<key>title</key>
+			<string>Build target Pods-NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>3DECB07A-4E71-4ADB-BAAE-2774117F5D07</string>
+		</dict>
+		<key>9D87F7E1-2B33-4B3B-8F1A-0515C9574636</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>9D87F7E1-2B33-4B3B-8F1A-0515C9574636.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>AlamofireImage-bnjrxcrunetgpxcpveleczcyjhel</string>
+			<key>timeStartedRecording</key>
+			<real>572212052.22689497</real>
+			<key>timeStoppedRecording</key>
+			<real>572212058.047279</real>
+			<key>title</key>
+			<string>Build target AlamofireImage</string>
+			<key>uniqueIdentifier</key>
+			<string>9D87F7E1-2B33-4B3B-8F1A-0515C9574636</string>
+		</dict>
+		<key>F9A1417C-7C21-43F5-A3C7-DC7BD62BE508</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>F9A1417C-7C21-43F5-A3C7-DC7BD62BE508.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Alamofire-bnjrxcrunetgpxcpveleczcyjhel</string>
 			<key>timeStartedRecording</key>
-			<real>572092668.27310801</real>
+			<real>572212052.22012401</real>
 			<key>timeStoppedRecording</key>
-			<real>572092671.78331399</real>
+			<real>572212056.012815</real>
 			<key>title</key>
 			<string>Build target Alamofire</string>
 			<key>uniqueIdentifier</key>
-			<string>723AC467-1CA8-42E8-92F3-8FB00DBDA743</string>
+			<string>F9A1417C-7C21-43F5-A3C7-DC7BD62BE508</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

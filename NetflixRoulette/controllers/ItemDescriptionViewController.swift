@@ -42,7 +42,7 @@ class ItemDescriptionViewController: UIViewController {
         let idMovie = movie_id
         let authToken = "6513d7f844db"
         
-        MovieServices.default.addMovieToFavs(movieID: idMovie!, userAuthToken: authToken)
+        FavMovieServices.default.addMovieToFavs(movieID: idMovie!, userAuthToken: authToken)
     }
     
     private func fillViews(){

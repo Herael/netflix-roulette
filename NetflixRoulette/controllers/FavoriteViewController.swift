@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class FavoriteViewController: UIViewController {
 
@@ -55,7 +56,7 @@ class FavoriteViewController: UIViewController {
     func getFavoriteMovies(completion: @escaping ([Movie]) -> Void){
         let tabBarConcroller = self.tabBarController as! HomeViewController
         let userId = tabBarConcroller.userId
-        MovieServices.default.getFavsMovies(userId: userId, completion: { movies in
+        FavMovieServices.default.getFavsMovies(userId: userId, completion: { movies in
             completion(movies as! [Movie])
         })
     }
@@ -64,14 +65,19 @@ class FavoriteViewController: UIViewController {
 
 
 extension FavoriteViewController: UITableViewDelegate {
+
     
     // Catch du swipe de droite vers la gauche pour la suppression
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Faire la suppression du film sur l'API ici
+            let tabBarCtrl = self.tabBarController as! HomeViewController
+            let authToken = tabBarCtrl.userAuthToken
             
-            //movies.remove(at: indexPath.row)
-            //self.mediaResultList.deleteRows(at: [indexPath], with: .automatic)
+            FavMovieServices.default.deleteMovieFromFavorite(movieID: self.movies[indexPath.row].id,
+                                                             userAuthToken: authToken)
+            movies.remove(at: indexPath.row)
+            self.mediaResultList.deleteRows(at: [indexPath], with: .automatic)
         }
     }
     
@@ -94,8 +100,6 @@ extension FavoriteViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
         
         let movieCell = tableView.dequeueReusableCell(withIdentifier: SearchViewController.mediaCellId, for: indexPath) as! MovieSearchTableViewCell
         let movie = self.movies[indexPath.row]

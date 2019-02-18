@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class MovieServices{
+class FavMovieServices{
     
-    public static let `default` = MovieServices()
+    public static let `default` = FavMovieServices()
     
     private let headers: HTTPHeaders = [
         "Content-Type": "application/json",

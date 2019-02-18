@@ -104,7 +104,6 @@ depends-member:
 - !private ["ST", "init"]
 - ["15NetflixRoulette4ShowC", "Int"]
 - ["15NetflixRoulette4ShowC", "String"]
-- ["15NetflixRoulette4ShowC", "deinit"]
 - ["15NetflixRoulette4ShowC", "description"]
 - ["15NetflixRoulette4ShowC", "episodes"]
 - !private ["15NetflixRoulette4ShowC", "id"]

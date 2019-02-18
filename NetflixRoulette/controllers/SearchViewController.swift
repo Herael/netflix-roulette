@@ -50,8 +50,6 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
             return
         }
         self.searchAPI(title: searchBar.text!, completion: { (movie_list, show_list) in
-//            self.movies = movies
-//            self.shows = shows
             self.medias.append(contentsOf: movie_list)
             self.medias.append(contentsOf: show_list)
             self.tableView.reloadData()
@@ -72,72 +70,10 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         self.shows.removeAll()
         self.medias.removeAll()
         
-        var movies_list: [Movie] = []
-        
-        let params: [String: Any] = [
-            "title": title,
-            "order": "popularity",
-            "nbpp": 10
-        ]
-
-        let headers: HTTPHeaders = [
-            "Content-Type": "application/json",
-            "X-BetaSeries-Key": "ef873e84f313",
-            "X-BetaSeries-Version": "3.0"
-        ]
-        
-        _ = Alamofire.request("https://api.betaseries.com/movies/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            guard let   jsonResponse = res.result.value as? [String:Any],
-                let movie = jsonResponse["movies"] as? [[String:Any]] else{
-                    //Todo : Cellule avec "aucun résultat"
-                    return
-            }
-            
-            for j in 0..<movie.count {
-                movies_list.append(Movie(id: movie[j]["id"] as! Int, title: movie[j]["title"] as! String, production_year: movie[j]["production_year"] as! Int, length: movie[j]["length"] as! Int, picture: movie[j]["poster"] as! String))
-                //self.medias.append(self.movies[j])
-            }
-            
-            self.getShow(params: params, headers: headers, completion: { show_result in
-                completion(movies_list, show_result)
-            })
+        MovieService.default.getMovieByTitle(title: title) { (movies_list, shows_list) in
+            completion(movies_list, shows_list)
         }
     }
-    
-    
-    func getShow(params: [String: Any], headers: HTTPHeaders, completion: @escaping ([Show]) -> Void){
-        _ = Alamofire.request("https://api.betaseries.com/shows/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            
-            guard let   jsonResponse = res.result.value as? [String:Any],
-                let show = jsonResponse["shows"] as? [[String:Any]] else{
-                    //Todo : Cellule avec "aucun résultat"
-                    return
-            }
-            
-            for i in 0..<show.count {
-                let temp_creation = show[i]["creation"] as! String
-                let myInt = (temp_creation as NSString).integerValue
-                let images = show[i]["images"] as! [String: Any]
-                var poster_url = images["poster"] as? String
-                
-                if poster_url == nil{
-                    poster_url = images["baner"] as? String
-                    if poster_url == nil{
-                        poster_url = images["box"] as? String
-                        if poster_url == nil{
-                            poster_url = images["show"] as? String
-                        }
-                    }
-                }
-            
-                self.shows.append(Show(id: show[i]["id"] as! Int, title: show[i]["title"] as! String, production_year: myInt, seasons: show[i]["seasons"] as! String, episodes: show[i]["episodes"] as! String, picture: poster_url!))
-                //self.medias.append(self.shows[i])
-            }
-        
-            completion(self.shows)
-        }
-    }
-    
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = true

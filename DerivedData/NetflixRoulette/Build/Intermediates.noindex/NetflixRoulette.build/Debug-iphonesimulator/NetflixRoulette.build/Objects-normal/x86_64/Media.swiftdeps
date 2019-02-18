@@ -87,6 +87,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - ["15NetflixRoulette5MediaC", "Int"]
 - ["15NetflixRoulette5MediaC", "String"]
+- ["15NetflixRoulette5MediaC", "deinit"]
 - ["15NetflixRoulette5MediaC", "id"]
 - ["15NetflixRoulette5MediaC", "init"]
 - ["15NetflixRoulette5MediaC", "picture"]

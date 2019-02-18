@@ -26,6 +26,7 @@
 		2C62D25221D10AF100311826 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C62D25021D10AF100311826 /* CreateAccountViewController.xib */; };
 		2C62D25421D1767E00311826 /* MovieDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C62D25321D1767E00311826 /* MovieDesc.swift */; };
 		2C62D25721D2548000311826 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C62D25621D2548000311826 /* User.swift */; };
+		2CA752E4221AF575003B789A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA752E3221AF575003B789A /* UserService.swift */; };
 		2CC16AC221D2BF7300444837 /* ItemDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC16AC021D2BF7200444837 /* ItemDescriptionViewController.swift */; };
 		2CC16AC321D2BF7300444837 /* ItemDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */; };
 		2CD1F877220CC38900BA401D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD1F875220CC38900BA401D /* FavoriteViewController.swift */; };
@@ -60,6 +61,7 @@
 		2C62D25021D10AF100311826 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		2C62D25321D1767E00311826 /* MovieDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDesc.swift; sourceTree = "<group>"; };
 		2C62D25621D2548000311826 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2CA752E3221AF575003B789A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2CC16AC021D2BF7200444837 /* ItemDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescriptionViewController.swift; sourceTree = "<group>"; };
 		2CC16AC121D2BF7300444837 /* ItemDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDescriptionViewController.xib; sourceTree = "<group>"; };
 		2CD1F875220CC38900BA401D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				2CD1F87E220F20FB00BA401D /* FavsMovieServices.swift */,
 				2C069714221964A900C71259 /* MovieService.swift */,
+				2CA752E3221AF575003B789A /* UserService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			files = (
 				2CC16AC221D2BF7300444837 /* ItemDescriptionViewController.swift in Sources */,
 				2C62D25121D10AF100311826 /* CreateAccountViewController.swift in Sources */,
+				2CA752E4221AF575003B789A /* UserService.swift in Sources */,
 				5915551B2211F630003AEB2F /* MovieSearchTableViewCell.swift in Sources */,
 				2C62D25421D1767E00311826 /* MovieDesc.swift in Sources */,
 				2C46094921CE9FCF00BEAC9C /* SearchViewController.swift in Sources */,
