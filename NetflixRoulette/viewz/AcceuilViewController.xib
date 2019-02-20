@@ -13,7 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AcceuilViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
                 <outlet property="home_page_title" destination="rfE-tr-ptH" id="dNq-z8-6jl"/>
+                <outlet property="popularCollection" destination="x56-w2-4Kq" id="Rb3-iH-hl3"/>
                 <outlet property="randomMovieOfTheDay" destination="cmO-J0-8aw" id="urw-g1-EOE"/>
+                <outlet property="ratedMovie" destination="LfW-3l-2qJ" id="9i5-kM-fcX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

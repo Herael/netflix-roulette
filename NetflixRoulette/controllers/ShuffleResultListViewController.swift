@@ -54,8 +54,8 @@ extension ShuffleResultListViewController: UITableViewDataSource {
         }
     
         
-        movieCell.releaseDateLabel.text = "Sortie : " + String(movie.production_year)
-        movieCell.lengthLabel.text = "Durée : " + String(movie.length/60) + " min"
+        movieCell.releaseDateLabel.text = "Date : " + String(movie.production_year)
+        movieCell.lengthLabel.text = "Length : " + String(movie.length/60) + " min"
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.red

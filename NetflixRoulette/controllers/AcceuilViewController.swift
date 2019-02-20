@@ -17,6 +17,11 @@ class AcceuilViewController: UIViewController {
     
     @IBOutlet weak var home_page_title: UILabel!
     
+    
+    @IBOutlet var popularCollection: UICollectionView!
+    @IBOutlet var ratedMovie: UICollectionView!
+    
+    
     var movieTitle: String = ""
     var movieId: Int = 0
     var moviePoster: String = ""
@@ -27,6 +32,8 @@ class AcceuilViewController: UIViewController {
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(ShuffleViewController.tapDetected))
         randomMovieOfTheDay.isUserInteractionEnabled = true
         randomMovieOfTheDay.addGestureRecognizer(singleTap)
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

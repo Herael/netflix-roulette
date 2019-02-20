@@ -119,12 +119,12 @@ extension SearchViewController: UITableViewDataSource {
         
         if media.isKind(of: Movie.self) {
             
-            mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
-            mediaCell.lengthLabel.text = "Durée : " + String((media as! Movie).length/60) + " min"
+            mediaCell.releaseDateLabel.text = "Date : " + String(media.production_year)
+            mediaCell.lengthLabel.text = "Length : " + String((media as! Movie).length/60) + " min"
         }else if media.isKind(of: Show.self) {
             
-            mediaCell.releaseDateLabel.text = "Sortie : " + String(media.production_year)
-            mediaCell.lengthLabel.text = "Saison : " + (media as! Show).seasons
+            mediaCell.releaseDateLabel.text = "Date : " + String(media.production_year)
+            mediaCell.lengthLabel.text = "Seasons : " + (media as! Show).seasons
         }
     
     
