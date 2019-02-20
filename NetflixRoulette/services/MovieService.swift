@@ -112,4 +112,71 @@ public class MovieService{
             completion(shows)
         }
     }
+    
+    func getBestRatetMovies(){
+        
+    }
+    
+    
+    func getPopularMovies(completion: @escaping ([[String]]) -> Void){
+        let params: [String : Any] = [
+            "limit": 3,
+            "order": "release_date"
+        ]
+        
+        var moviesDictionnary: [[String]] = []
+        
+         _ = Alamofire.request("https://api.betaseries.com/movies/upcoming", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+            
+            guard let response_json = res.result.value as? [String: Any],
+                    let popular_movies = response_json["movies"] as? [[String: Any]] else{
+                    return
+            }
+
+            var movie_title: String
+            var movie_id: String
+            var count = 0
+        
+            
+            for _ in 0..<popular_movies.count{
+                movie_id = popular_movies[count]["id"] as! String
+                movie_title = popular_movies[count]["title"] as! String
+                
+                moviesDictionnary.append([movie_id.description, movie_title])
+                count = count + 1
+            }
+            
+
+            self.getMoviesPoster(moviesList: moviesDictionnary, completion: { (posters) in
+                for i in 0..<3 {
+                    moviesDictionnary[i].append(posters[i])
+                }
+                completion(moviesDictionnary)
+            })
+            
+        }
+    }
+    
+    func getMoviesPoster(moviesList: [[String]], completion: @escaping ([String]) -> Void){
+        var resulTab: [String] = []
+        
+        for i in 0..<3{
+            let params: [String: Any] = [
+                "title": moviesList[i][1]
+            ]
+            _ = Alamofire.request("https://api.betaseries.com/movies/search", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+                
+                guard let jsonResponse = res.result.value as? [String:Any],
+                    let movie = jsonResponse["movies"] as? [[String:Any]],
+                    let movie_poster = movie[0]["poster"] as? String else{
+                        return
+                }
+                
+                resulTab.append(movie_poster)
+                if(resulTab.count == 3){
+                    completion(resulTab)
+                }
+            }
+        }
+    }
 }

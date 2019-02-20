@@ -55,9 +55,9 @@ class AcceuilViewController: UIViewController {
             self.moviePoster = movie_poster
             if movie_poster != ""{
                 self.randomMovieOfTheDay.af_setImage(withURL: URL(string: movie_poster)!)
+                self.getTop3PopularMovies()
             }else{
                 self.uploadMoviePicture()
-                //self.randomMovieOfTheDay.image = UIImage(named: "noPicture")
             }
         })
     }
@@ -74,5 +74,15 @@ class AcceuilViewController: UIViewController {
         item_description.movie_id = movie_id
         item_description.movie_image_url = movie_poster
         self.navigationController?.pushViewController(item_description, animated: true)
+    }
+
+    func getTop3PopularMovies(){
+        MovieService.default.getPopularMovies { (popular_movies) in
+            print(popular_movies)
+        }
+    }
+    
+    func getTop3BestRatedMovies(){
+        
     }
 }

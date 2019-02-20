@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>1627B493-1539-4B3B-BB52-8A5B47CBB3A5</key>
+		<key>87A443E8-F7A2-4A26-BE57-D73D5AF9AB6C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
 			<key>fileName</key>
-			<string>1627B493-1539-4B3B-BB52-8A5B47CBB3A5.xcactivitylog</string>
+			<string>87A443E8-F7A2-4A26-BE57-D73D5AF9AB6C.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Update Signing</string>
 			<key>timeStartedRecording</key>
-			<real>571598818.23095298</real>
+			<real>572278690.60384798</real>
 			<key>timeStoppedRecording</key>
-			<real>571598821.14349103</real>
+			<real>572278692.65287304</real>
 			<key>title</key>
 			<string>Update Signing</string>
 			<key>uniqueIdentifier</key>
-			<string>1627B493-1539-4B3B-BB52-8A5B47CBB3A5</string>
+			<string>87A443E8-F7A2-4A26-BE57-D73D5AF9AB6C</string>
 		</dict>
 	</dict>
 </dict>

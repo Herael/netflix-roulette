@@ -45,7 +45,6 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
-        
         guard (searchBar.text) != nil else{
             return
         }

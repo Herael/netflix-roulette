@@ -185,6 +185,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class UIImageView;
 @class UILabel;
+@class UICollectionView;
 @class NSBundle;
 @class NSCoder;
 
@@ -192,6 +193,8 @@ SWIFT_CLASS("_TtC15NetflixRoulette21AcceuilViewController")
 @interface AcceuilViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified randomMovieOfTheDay;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified home_page_title;
+@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified popularCollection;
+@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified ratedMovie;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)tapDetected;

@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "511660ecf4b2bc98cf2a5c067c9ac699"
-build_time: [1550519252, 186679000]
+build_time: [1550664897, 455521000]
 inputs:
   "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/Pods/Alamofire/Source/AFError.swift": [1548963431, 0]
   "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/Pods/Alamofire/Source/Alamofire.swift": [1548963431, 0]
