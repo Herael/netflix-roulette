@@ -113,42 +113,35 @@ public class MovieService{
         }
     }
     
-    func getBestRatetMovies(){
-        
-    }
-    
-    
-    func getPopularMovies(completion: @escaping ([[String]]) -> Void){
-        let params: [String : Any] = [
-            "limit": 3,
-            "order": "release_date"
-        ]
+    func getuUpcomingMovies(url: String, params: [String: Any], completion: @escaping ([[String]]) -> Void){
         
         var moviesDictionnary: [[String]] = []
         
-         _ = Alamofire.request("https://api.betaseries.com/movies/upcoming", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+        _ = Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
             
             guard let response_json = res.result.value as? [String: Any],
-                    let popular_movies = response_json["movies"] as? [[String: Any]] else{
+                let popular_movies = response_json["movies"] as? [[String: Any]] else{
                     return
             }
-
+            
             var movie_title: String
             var movie_id: String
-            var count = 0
-        
             
-            for _ in 0..<popular_movies.count{
-                movie_id = popular_movies[count]["id"] as! String
+            for count in 0..<popular_movies.count{
+                if let id = popular_movies[count]["id"] as? String{
+                    movie_id = popular_movies[count]["id"] as! String
+                }else{
+                    movie_id = (popular_movies[count]["id"] as! Int).description
+                }
+                
                 movie_title = popular_movies[count]["title"] as! String
                 
                 moviesDictionnary.append([movie_id.description, movie_title])
-                count = count + 1
             }
             
-
+            
             self.getMoviesPoster(moviesList: moviesDictionnary, completion: { (posters) in
-                for i in 0..<3 {
+                for i in 0..<popular_movies.count {
                     moviesDictionnary[i].append(posters[i])
                 }
                 completion(moviesDictionnary)
@@ -157,10 +150,35 @@ public class MovieService{
         }
     }
     
+
+    func getBestPopularMovies(completion: @escaping ([[String]]) -> Void){
+        let params: [String : Any] = [
+            "type": "popular",
+            "limit": 4
+        ]
+        
+        self.getuUpcomingMovies(url: "https://api.betaseries.com/movies/discover", params: params) { (movies) in
+            completion(movies)
+        }
+    }
+    
+    
+    func getPopularUpcomingMovies(completion: @escaping ([[String]]) -> Void){
+        // Modifier les params (order: popularity ou release_date)
+        let params: [String : Any] = [
+            "limit": 4,
+            "order": "popularity"
+        ]
+        
+        self.getuUpcomingMovies(url: "https://api.betaseries.com/movies/upcoming", params: params) { (movies) in
+            completion(movies)
+        }
+    }
+    
     func getMoviesPoster(moviesList: [[String]], completion: @escaping ([String]) -> Void){
         var resulTab: [String] = []
         
-        for i in 0..<3{
+        for i in 0..<4{
             let params: [String: Any] = [
                 "title": moviesList[i][1]
             ]
@@ -173,10 +191,12 @@ public class MovieService{
                 }
                 
                 resulTab.append(movie_poster)
-                if(resulTab.count == 3){
+                if(resulTab.count == 4){
                     completion(resulTab)
                 }
             }
         }
     }
+    
+    
 }

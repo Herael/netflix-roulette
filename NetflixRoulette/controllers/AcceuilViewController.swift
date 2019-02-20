@@ -55,7 +55,7 @@ class AcceuilViewController: UIViewController {
             self.moviePoster = movie_poster
             if movie_poster != ""{
                 self.randomMovieOfTheDay.af_setImage(withURL: URL(string: movie_poster)!)
-                self.getTop3PopularMovies()
+                self.getTop4PopularUpcomingMovies()
             }else{
                 self.uploadMoviePicture()
             }
@@ -76,13 +76,20 @@ class AcceuilViewController: UIViewController {
         self.navigationController?.pushViewController(item_description, animated: true)
     }
 
-    func getTop3PopularMovies(){
-        MovieService.default.getPopularMovies { (popular_movies) in
-            print(popular_movies)
+    func getTop4PopularUpcomingMovies(){
+        MovieService.default.getPopularUpcomingMovies { (popular_upcoming_movies) in
+            print("Top 4 popular upcoming movies:")
+            print(popular_upcoming_movies)
+            print()
+            self.getTop4BestPopularMovies()
         }
     }
     
-    func getTop3BestRatedMovies(){
-        
+    func getTop4BestPopularMovies(){
+        MovieService.default.getBestPopularMovies { (popular_movies) in
+            print("Top 4 best popular movies:")
+            print(popular_movies)
+            print()
+        }
     }
 }
