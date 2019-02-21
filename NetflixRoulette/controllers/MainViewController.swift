@@ -23,13 +23,21 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.fieldsErrorWarning.isHidden = true
         self.hideKeyboardWhenTappedAround()
+        
     }
 
+    @IBAction func sign_up(_ sender: Any) {
+        let create_account_vc = CreateAccountViewController()
+        self.navigationController?.pushViewController(create_account_vc, animated: true)
+    }
     
     @IBAction func sign(_ sender: Any) {
         self.addToApi(completion: { (success, user) in
-            if success == true {
+            if success == 200 {
                 let home = HomeViewController()
+                home.userLogin = user.login
+                home.userId = user.id
+                home.userAuthToken = user.token
                 self.navigationController?.pushViewController(home, animated: true)
             }else{
                 self.fieldsErrorWarning.isHidden = false
@@ -38,34 +46,22 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         })
     }
     
-    func addToApi(completion: @escaping (Bool, User) -> Void){
+    func addToApi(completion: @escaping (Int, User) -> Void){
         guard let email = user_email.text,
               let pwd = user_password.text else {
             return
         }
-        
-        let params: [String : Any] = [
-            "login": email,
-            "password": self.toMD5encryption(password: pwd)
-        ]
-        let headers: HTTPHeaders = [
-            "Content-Type": "application/json",
-            "X-BetaSeries-Key": "ef873e84f313",
-            "X-BetaSeries-Version": "3.0"
-        ]
-        _ = Alamofire.request("https://api.betaseries.com/members/auth", method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            if res.response?.statusCode == 200{
-                guard let json_response = res.result.value as? [String: Any] else {
-                    return
-                }
-                let user: User = User(json: json_response)!
-                print(user)
-                completion(res.response?.statusCode == 200, user)
+        UserService.default.loginUser(login: email, password: self.toMD5encryption(password: pwd), completion: { (statusCode, response) in
+            if statusCode != 200{
+                self.fieldsErrorWarning.isHidden = false
+                print("Error while signing in!")
             } else {
-                print("User doesn't exist!!!!!!!!")
+                let user: User = User(json: response)!
+                print("User logger: \(user)")
+                completion(200, user)
             }
-        }
-    }
+        })
+     }
     
     // OK
     // Func to encrypt the password of the user with MD5 & send it in JSON obj
@@ -83,16 +79,11 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         
         return hexString
     }
-    
-    @IBAction func sign_up(_ sender: Any) {
-        let create_account_vc = CreateAccountViewController()
-        self.navigationController?.pushViewController(create_account_vc, animated: true)
-    }
-    
 }
 
-// Extension to allow hidding the keyboard if the user clicks anywhere else in the view
 
+
+// Extension to allow hidding the keyboard if the user clicks anywhere else in the view
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))

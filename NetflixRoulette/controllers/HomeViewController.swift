@@ -10,26 +10,28 @@ import UIKit
 
 class HomeViewController: UITabBarController {
     
-    var user_params: User!
-    var main_user: User!
+    var userLogin: String = "$"
+    var userId: Int = 0
+    var userAuthToken: String = "$"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Netflix Roulette"
         self.navigationItem.rightBarButtonItem =
-            UIBarButtonItem(image: UIImage(named: "disconnect"), style: .done, target: self, action: #selector(disconnect))
+            UIBarButtonItem(image: UIImage(named: "leave"), style: .done, target: self, action: #selector(disconnect))
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.red
         self.navigationItem.setHidesBackButton(true, animated: true)
         tabBar.barTintColor = UIColor(red: 0/255, green: 0/255, blue:  0/255, alpha: 1)
+        self.tabBar.tintColor = UIColor.red
         setTabBar()
-        
-        //main_user = User(id: userId, login: userLogin, token: userToken)
-        
     }
 
     @objc func disconnect(){
         let main_vc = MainViewController()
         self.navigationController?.pushViewController(main_vc, animated: true)
     }
+    
+
     
     func setTabBar(){
         
@@ -46,7 +48,11 @@ class HomeViewController: UITabBarController {
         shuffleVc.tabBarItem.image = UIImage(named: "shuffle-white")
         shuffleVc.tabBarItem.title = "Shuffle mode"
         
-        viewControllers = [homeVc, searchVc, shuffleVc]
+        let favoriteVc = UINavigationController(rootViewController: FavoriteViewController())
+        favoriteVc.tabBarItem.image = UIImage(named: "fav_white_full")
+        favoriteVc.tabBarItem.title = "Favorites"
+        
+        viewControllers = [homeVc, searchVc, shuffleVc, favoriteVc]
     }
   
 }

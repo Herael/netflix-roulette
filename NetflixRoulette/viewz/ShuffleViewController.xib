@@ -77,6 +77,8 @@
                 <constraint firstItem="mdT-YL-Kai" firstAttribute="top" secondItem="KQU-VD-dT1" secondAttribute="top" id="wyJ-5z-3R9"/>
                 <constraint firstItem="y8c-h1-iUG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-10" id="xR8-OF-AYt"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-187" y="147"/>
         </view>

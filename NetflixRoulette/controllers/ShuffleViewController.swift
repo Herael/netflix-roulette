@@ -20,11 +20,13 @@ class ShuffleViewController: UIViewController {
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(ShuffleViewController.tapDetected))
         randomBox.isUserInteractionEnabled = true
         randomBox.addGestureRecognizer(singleTap)
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
+    }
     
-    // Fonction à implémenter pour afficher une liste
-    // aléatoire (entre 1 & 10 film(s)) à l'utilisateur
     @objc func tapDetected() {
         let random_number = Int.random(in: 1...10)
         let params: [String : Any] = [
@@ -36,22 +38,31 @@ class ShuffleViewController: UIViewController {
             "X-BetaSeries-Key": "ef873e84f313",
             "X-BetaSeries-Version": "3.0"
         ]
+        let showShuffleResult = ShuffleResultListViewController()
         
         if movie_radioButton.isOn && !series_radioButton.isOn{  // Only movies
-            print("You'll have between 1 & 10 elements with only movies")
-            getMovies(nb: random_number, params: params, headers: headers)
+            getMovies(nb: random_number, params: params, headers: headers, completion: { res in
+                showShuffleResult.movies = res
+                self.navigationController?.pushViewController(showShuffleResult, animated: true)
+            })
         } else if !movie_radioButton.isOn && series_radioButton.isOn{    // Only series
-            print("You'll have between 1 & 10 elements with only series")
-            getSeries(nb: random_number, headers: headers)
+            getSeries(nb: random_number, headers: headers, completion: { res in
+                showShuffleResult.movies = res
+                self.navigationController?.pushViewController(showShuffleResult, animated: true)
+            })
         } else if movie_radioButton.isOn && series_radioButton.isOn{     // mix movies/series
-            print("You'll have between 1 & 10 elements with mix of movies & series")
-            getMovies(nb: random_number, params: params, headers: headers)
+            getMovies(nb: random_number, params: params, headers: headers, completion: { res in
+                showShuffleResult.movies = res
+                self.navigationController?.pushViewController(showShuffleResult, animated: true)
+            })
         } else {     // nothing ----> show message error
             print("You must check at least one radio button")
         }
+        
     }
     
-    func getMovies(nb: Int, params: [String : Any], headers: HTTPHeaders){
+    
+    func getMovies(nb: Int, params: [String : Any], headers: HTTPHeaders, completion: @escaping ([Movie])-> Void){
         var moviz: [Movie] = []
         
         _ = Alamofire.request("https://api.betaseries.com/movies/random", method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (response: DataResponse<Any>) in
@@ -64,6 +75,7 @@ class ShuffleViewController: UIViewController {
             var poster_url: String?
             var title_movie: String?
             var year_prod: Int
+            var length: Int = 0
             var id: Int
             
             for count in 0..<nb{
@@ -73,20 +85,32 @@ class ShuffleViewController: UIViewController {
                 year_prod = current_movie["production_year"] as! Int
                 id = current_movie["id"] as! Int
                 poster_url = current_movie["poster"] as? String
+                length = current_movie["length"] as! Int
             
                 
-                moviz.append(Movie(id: id, title: title_movie!, production_year: year_prod, length: 0, picture: poster_url ?? "no url"))
+                moviz.append(Movie(id: id, title: title_movie!, production_year: year_prod, length: length, picture: poster_url ?? "no url"))
             }
+            
             if nb < 10 && (self.series_radioButton.isOn && self.movie_radioButton.isOn){
-                self.getSeries(nb: 10 - nb, headers: headers)
+                self.getSeries(nb: 10 - nb, headers: headers, completion: { res in
+                    for i in 0..<res.count{
+                        moviz.append(res[i])
+                    }
+                    completion(moviz)
+                })
+            }else{
+                completion(moviz)
             }
+            
             for i in 0..<nb{
                 print("Movie n° \(i+1) ------> \(moviz[i])")
             }
         }
+        
     }
     
-    func getSeries(nb: Int, headers: HTTPHeaders){
+    
+    func getSeries(nb: Int, headers: HTTPHeaders, completion: @escaping ([Movie])-> Void){
         let params: [String: Any] = [
             "nb": nb
         ]
@@ -103,37 +127,41 @@ class ShuffleViewController: UIViewController {
             var poster_url: String?
             var show_links: [String: Any]
             var title_movie: String?
-            var year_prod: Int
+            var year_prod: String = "0"
+            var length: String = "0"
             var id: Int
             
             for count in 0..<nb{
                 current_movie = show_description[count] as! [String: Any]
-                
                 title_movie = current_movie["title"] as? String
-                year_prod = current_movie["production_year"] as! Int
-                id = current_movie["id"] as! Int
                 
+                if current_movie["creation"] != nil{
+                    year_prod = current_movie["creation"] as! String
+                }
+                
+                id = current_movie["id"] as! Int
                 show_links = current_movie["images"] as! [String: Any]
-            
-                poster_url = show_links["show"] as? String
+                length = current_movie["length"] as! String
+                poster_url = show_links["poster"] as? String
                 
                 if poster_url == nil{
                     poster_url = show_links["baner"] as? String
                     if poster_url == nil{
                         poster_url = show_links["box"] as? String
                         if poster_url == nil{
-                            poster_url = show_links["poster"] as? String
+                            poster_url = show_links["show"] as? String
                         }
                     }
                 }
-    
-                showz.append(Movie(id: id, title: title_movie!, production_year: year_prod,length: 0, picture: poster_url ?? "default"))
+                
+                showz.append(Movie(id: id, title: title_movie!, production_year: Int(year_prod)!,length: Int(length)! * 60, picture: poster_url ?? "default"))
             }
-            print()
+            
             for i in 0..<nb{
                 print("Show  n° \(i+1) ------> \(showz[i])")
             }
-            
+            completion(showz)
         }
     }
+    
 }

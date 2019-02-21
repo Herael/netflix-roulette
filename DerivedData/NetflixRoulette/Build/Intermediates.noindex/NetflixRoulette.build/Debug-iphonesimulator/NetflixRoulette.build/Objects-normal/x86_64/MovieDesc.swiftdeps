@@ -9,12 +9,11 @@ provides-dynamic-lookup:
 - "description"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CastingPrecedence"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
+- "Media"
 - "Movie"
-- "NSObject"
 - "String"
 - !private "StringLiteralType"
 depends-member:
@@ -25,13 +24,10 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "length"]
-- !private ["s7CVarArgP", "picture"]
 - !private ["s7CVarArgP", "production_year"]
-- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "title"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
-- !private ["Sl", "subscript"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -39,41 +35,30 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "length"]
-- !private ["s28CustomDebugStringConvertibleP", "picture"]
 - !private ["s28CustomDebugStringConvertibleP", "production_year"]
-- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "subscript"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "id"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "length"]
-- !private ["s23CustomStringConvertibleP", "picture"]
 - !private ["s23CustomStringConvertibleP", "production_year"]
-- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
-- !private ["Se", "subscript"]
-- !private ["SD", "subscript"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
-- !private ["SE", "subscript"]
 - ["SQ", ""]
 - !private ["SQ", "id"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "length"]
-- !private ["SQ", "picture"]
 - !private ["SQ", "production_year"]
-- !private ["SQ", "subscript"]
 - !private ["SQ", "title"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -85,45 +70,46 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "length"]
-- !private ["SH", "picture"]
 - !private ["SH", "production_year"]
-- !private ["SH", "subscript"]
 - !private ["SH", "title"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- ["15NetflixRoulette5MediaC", "Int"]
+- ["15NetflixRoulette5MediaC", "String"]
+- ["15NetflixRoulette5MediaC", ""]
+- ["15NetflixRoulette5MediaC", "description"]
+- !private ["15NetflixRoulette5MediaC", "id"]
+- ["15NetflixRoulette5MediaC", "init"]
+- ["15NetflixRoulette5MediaC", "length"]
+- !private ["15NetflixRoulette5MediaC", "production_year"]
+- !private ["15NetflixRoulette5MediaC", "title"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["15NetflixRoulette5MovieC", "Int"]
 - ["15NetflixRoulette5MovieC", "String"]
 - ["15NetflixRoulette5MovieC", "description"]
-- ["15NetflixRoulette5MovieC", "id"]
+- !private ["15NetflixRoulette5MovieC", "id"]
 - ["15NetflixRoulette5MovieC", "init"]
 - ["15NetflixRoulette5MovieC", "length"]
-- ["15NetflixRoulette5MovieC", "picture"]
-- ["15NetflixRoulette5MovieC", "production_year"]
-- ["15NetflixRoulette5MovieC", "title"]
+- !private ["15NetflixRoulette5MovieC", "production_year"]
+- !private ["15NetflixRoulette5MovieC", "title"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
-- ["So8NSObjectC", ""]
 - ["So8NSObjectC", "description"]
-- ["So8NSObjectC", "id"]
-- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "id"]
 - ["So8NSObjectC", "length"]
-- ["So8NSObjectC", "picture"]
-- ["So8NSObjectC", "production_year"]
-- ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "production_year"]
+- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "id"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "length"]
-- !private ["So8NSObjectP", "picture"]
 - !private ["So8NSObjectP", "production_year"]
 - !private ["So8NSObjectP", "title"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
-- !private ["ST", "subscript"]
 - !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
@@ -146,17 +132,14 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "length"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "picture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "production_year"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -169,15 +152,14 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
-- !private "SD"
 - !private "SE"
 - "SQ"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
+- "15NetflixRoulette5MediaC"
 - !private "s10MirrorPathP"
 - "15NetflixRoulette5MovieC"
 - "So8NSObjectC"
@@ -195,15 +177,14 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/AlamofireImage.swiftmodule/x86_64.swiftmodule"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/AlamofireImage.swiftmodule/x86_64.swiftmodule"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -216,12 +197,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
-- "/Users/ramzy/Desktop/swift/NetflixRoulette_v0_repo/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
+- "/Users/ramzy/Desktop/swift/Netflix_Roulette_Repo_V1_Final/netflix-roulette/DerivedData/NetflixRoulette/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -233,4 +214,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f40df06951c8583c153cbc4f17189c3e"
+interface-hash: "f6e10a5511f2ebe394ce3513be690d0c"

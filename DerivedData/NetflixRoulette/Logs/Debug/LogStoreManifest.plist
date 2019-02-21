@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>059C01D9-02FF-46C3-9927-72EB91A6B4A9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>059C01D9-02FF-46C3-9927-72EB91A6B4A9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572446120.76456702</real>
+			<key>timeStoppedRecording</key>
+			<real>572446265.60895097</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>059C01D9-02FF-46C3-9927-72EB91A6B4A9</string>
+		</dict>
+		<key>25828FB5-3408-4839-9C96-5B75E5EF4407</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>25828FB5-3408-4839-9C96-5B75E5EF4407.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572443075.15198898</real>
+			<key>timeStoppedRecording</key>
+			<real>572443148.02322304</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>25828FB5-3408-4839-9C96-5B75E5EF4407</string>
+		</dict>
+		<key>27B7A1DF-A97D-499A-AAD5-AC13B33F5291</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>27B7A1DF-A97D-499A-AAD5-AC13B33F5291.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572444140.25809205</real>
+			<key>timeStoppedRecording</key>
+			<real>572444199.42641306</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>27B7A1DF-A97D-499A-AAD5-AC13B33F5291</string>
+		</dict>
+		<key>33EFEEB4-144B-4A63-A836-7302C4673B2E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>33EFEEB4-144B-4A63-A836-7302C4673B2E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572443935.97427905</real>
+			<key>timeStoppedRecording</key>
+			<real>572444136.36108804</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>33EFEEB4-144B-4A63-A836-7302C4673B2E</string>
+		</dict>
+		<key>3CC18147-27E5-4A4F-967C-3DD36C3629AB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3CC18147-27E5-4A4F-967C-3DD36C3629AB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572446528.17771804</real>
+			<key>timeStoppedRecording</key>
+			<real>572446986.41826701</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>3CC18147-27E5-4A4F-967C-3DD36C3629AB</string>
+		</dict>
+		<key>6167A2DD-D481-4F82-B8D6-5CFF772CDF34</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6167A2DD-D481-4F82-B8D6-5CFF772CDF34.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572444522.23155999</real>
+			<key>timeStoppedRecording</key>
+			<real>572445143.28216004</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>6167A2DD-D481-4F82-B8D6-5CFF772CDF34</string>
+		</dict>
+		<key>6C7C66BD-E5CA-4859-AD2F-0EB2D2F7442F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6C7C66BD-E5CA-4859-AD2F-0EB2D2F7442F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572370105.68992805</real>
+			<key>timeStoppedRecording</key>
+			<real>572394902.975209</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>6C7C66BD-E5CA-4859-AD2F-0EB2D2F7442F</string>
+		</dict>
+		<key>6CA78A51-E967-4951-8AEA-E82A67A1CF6F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6CA78A51-E967-4951-8AEA-E82A67A1CF6F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572453636.61564696</real>
+			<key>timeStoppedRecording</key>
+			<real>572453902.54237294</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>6CA78A51-E967-4951-8AEA-E82A67A1CF6F</string>
+		</dict>
+		<key>7E22DED8-7A98-4E88-8562-09BB949A117F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7E22DED8-7A98-4E88-8562-09BB949A117F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572453944.71376097</real>
+			<key>timeStoppedRecording</key>
+			<real>572454004.18240201</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>7E22DED8-7A98-4E88-8562-09BB949A117F</string>
+		</dict>
+		<key>810837C6-C08F-4BD9-B720-74794EB33AE6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>810837C6-C08F-4BD9-B720-74794EB33AE6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572446453.04991198</real>
+			<key>timeStoppedRecording</key>
+			<real>572446525.84729505</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>810837C6-C08F-4BD9-B720-74794EB33AE6</string>
+		</dict>
+		<key>825663E2-F994-41DC-A4E6-17927DB66984</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>825663E2-F994-41DC-A4E6-17927DB66984.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572446384.19093502</real>
+			<key>timeStoppedRecording</key>
+			<real>572446452.977229</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>825663E2-F994-41DC-A4E6-17927DB66984</string>
+		</dict>
+		<key>83F7EB3F-D362-4A32-AED1-9260B5BB440F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>83F7EB3F-D362-4A32-AED1-9260B5BB440F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572445219.41812098</real>
+			<key>timeStoppedRecording</key>
+			<real>572445439.25156999</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>83F7EB3F-D362-4A32-AED1-9260B5BB440F</string>
+		</dict>
+		<key>8ADACB16-89C2-454C-A1F9-0F752D9522D2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8ADACB16-89C2-454C-A1F9-0F752D9522D2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572446989.71109998</real>
+			<key>timeStoppedRecording</key>
+			<real>572453625.25963795</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>8ADACB16-89C2-454C-A1F9-0F752D9522D2</string>
+		</dict>
+		<key>8F2006B7-CF63-4733-8CC4-BC8E194AE7A8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8F2006B7-CF63-4733-8CC4-BC8E194AE7A8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572442228.79975498</real>
+			<key>timeStoppedRecording</key>
+			<real>572442459.63311803</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>8F2006B7-CF63-4733-8CC4-BC8E194AE7A8</string>
+		</dict>
+		<key>A98F25B2-15F3-4E05-A692-7237B09EE8D3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A98F25B2-15F3-4E05-A692-7237B09EE8D3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572437447.99659801</real>
+			<key>timeStoppedRecording</key>
+			<real>572442109.58454204</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>A98F25B2-15F3-4E05-A692-7237B09EE8D3</string>
+		</dict>
+		<key>B833DC0D-C05A-424E-8D9F-FEB75E95F090</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B833DC0D-C05A-424E-8D9F-FEB75E95F090.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572445758.34730005</real>
+			<key>timeStoppedRecording</key>
+			<real>572446112.82465303</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>B833DC0D-C05A-424E-8D9F-FEB75E95F090</string>
+		</dict>
+		<key>B925DFD7-B700-4A0A-A496-D233AD9E9D7B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B925DFD7-B700-4A0A-A496-D233AD9E9D7B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572444341.55400705</real>
+			<key>timeStoppedRecording</key>
+			<real>572444460.82273197</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>B925DFD7-B700-4A0A-A496-D233AD9E9D7B</string>
+		</dict>
+		<key>CECDD8D5-66CD-4E6C-B6EA-8C49F250759A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CECDD8D5-66CD-4E6C-B6EA-8C49F250759A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572445441.777233</real>
+			<key>timeStoppedRecording</key>
+			<real>572445598.89318895</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>CECDD8D5-66CD-4E6C-B6EA-8C49F250759A</string>
+		</dict>
+		<key>DA72AFFC-0ED3-4F8A-BA8B-F070D011969C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DA72AFFC-0ED3-4F8A-BA8B-F070D011969C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572444201.93676496</real>
+			<key>timeStoppedRecording</key>
+			<real>572444337.75269997</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>DA72AFFC-0ED3-4F8A-BA8B-F070D011969C</string>
+		</dict>
+		<key>F42C1592-C67E-481E-B794-81F2FF285079</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F42C1592-C67E-481E-B794-81F2FF285079.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetflixRoulette project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetflixRoulette</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug NetflixRoulette</string>
+			<key>timeStartedRecording</key>
+			<real>572442705.26825202</real>
+			<key>timeStoppedRecording</key>
+			<real>572443071.64346695</real>
+			<key>title</key>
+			<string>Debug NetflixRoulette</string>
+			<key>uniqueIdentifier</key>
+			<string>F42C1592-C67E-481E-B794-81F2FF285079</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
