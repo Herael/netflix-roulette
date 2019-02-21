@@ -5,9 +5,9 @@ Ce document fait réference à l'application NetflixRoulette.
 ![logo](doc/logo.png)
 
 
-##Introduction
+## Introduction
 
-###NetflixRoulette, Kesako? 
+### NetflixRoulette, Kesako? 
 
 NetflixRoulette est une application IOS créée par des étudiants de l'ESGI. Elle est née d'un problème souvent rencontré sur la célèbre plateforme de streaming Netflix, la difficulté à trouver LE film de votre soirée, NetflixRoulette est là pour vous ! Cette application contient les fonctionnalités suivantes :  
 - La recherche de films et de séries
