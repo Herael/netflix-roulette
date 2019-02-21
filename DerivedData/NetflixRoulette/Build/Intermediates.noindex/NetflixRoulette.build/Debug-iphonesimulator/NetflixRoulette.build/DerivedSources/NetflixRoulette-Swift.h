@@ -356,6 +356,7 @@ SWIFT_CLASS("_TtC15NetflixRoulette20SearchViewController")
 @interface SearchViewController : UIViewController <UISearchBarDelegate>
 @property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noResultLabel;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;

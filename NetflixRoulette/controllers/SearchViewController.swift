@@ -13,6 +13,8 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var noResultLabel: UILabel!
+    
     
     var movies : [Movie] = []
     var shows : [Show] = []
@@ -30,6 +32,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.noResultLabel.isHidden = true
         self.searchBar.becomeFirstResponder()
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).keyboardAppearance = .dark
         searchBar.showsCancelButton = true
@@ -70,7 +73,12 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         self.medias.removeAll()
         
         MovieService.default.getMovieByTitle(title: title) { (movies_list, shows_list) in
-            completion(movies_list, shows_list)
+            if movies_list.count == 0 && shows_list.count == 0{
+                self.noResultLabel.isHidden = false
+            }else{
+                self.noResultLabel.isHidden = true
+                completion(movies_list, shows_list)
+            }
         }
     }
     

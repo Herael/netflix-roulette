@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="NetflixRoulette" customModuleProvider="target">
             <connections>
+                <outlet property="noResultLabel" destination="d6J-aE-bdG" id="HzS-RG-ohw"/>
                 <outlet property="searchBar" destination="KSv-07-rhT" id="u4Q-mF-Lbp"/>
                 <outlet property="tableView" destination="m9Q-eq-0jK" id="zPS-gN-DfL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -37,11 +38,25 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matching result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6J-aE-bdG">
+                    <rect key="frame" x="50" y="423" width="314" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LY5-C5-bUM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="KSv-07-rhT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="6V2-0v-HhP"/>
                 <constraint firstAttribute="trailing" secondItem="KSv-07-rhT" secondAttribute="trailing" id="9Ra-7d-Mn2"/>
+                <constraint firstItem="d6J-aE-bdG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Bx0-Xq-52b"/>
+                <constraint firstItem="d6J-aE-bdG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NPV-D2-QLp"/>
+                <constraint firstItem="d6J-aE-bdG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="swB-rl-xKk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d6J-aE-bdG" secondAttribute="trailing" constant="50" id="vIt-de-p0g"/>
                 <constraint firstItem="KSv-07-rhT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x0w-Eo-N4M"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>

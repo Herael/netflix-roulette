@@ -158,7 +158,6 @@ public class MovieService{
                 }else{
                     movie_id = (popular_movies[count]["id"] as! Int).description
                 }
-                
                 movie_title = popular_movies[count]["title"] as! String
                 
                 moviesDictionnary.append([movie_id.description, movie_title, ""])
