@@ -9,10 +9,10 @@ Ce document fait réference à l'application NetflixRoulette.
 
 ###NetflixRoulette, Kesako? 
 
-NetflixRoulette est une application IOS créée par des étudiants de l'ESGI. Elle est née d'un problème souvent rencontré sur la célèbre plateforme de streaming Netflix, la difficulté à trouver LE film de votre soirée, NetflixRoulette est là pour vous ! Cette application contient les fonctionnalités suivantes : 
-​	- La recherche de films et de séries
-​	- Le "Suffle Mode" renvoyant une liste aléatoire de films, de séries ou bien des deux
-​	- La gestion de vos films favoris
+NetflixRoulette est une application IOS créée par des étudiants de l'ESGI. Elle est née d'un problème souvent rencontré sur la célèbre plateforme de streaming Netflix, la difficulté à trouver LE film de votre soirée, NetflixRoulette est là pour vous ! Cette application contient les fonctionnalités suivantes :  
+- La recherche de films et de séries
+- Le "Suffle Mode" renvoyant une liste aléatoire de films, de séries ou bien des deux
+- La gestion de vos films favoris
 
 
 ## Inscription / Connexion : 
