@@ -35,17 +35,11 @@ class FavoriteViewController: UIViewController {
         })
     }
     
-    // Fonction pour l'affichage des petit cercle rouge à gauche des cellules lorsqu'on clique sur "Edit"
+    
     @objc func touchEditTableView() {
         UIView.animate(withDuration: 0.33) {
             self.mediaResultList.isEditing = !self.mediaResultList.isEditing
         }
-    }
-    
-    // Fonction lors du clique sur "+" (ne sert à rien pour le moment
-    // mais peut être utilse si on compte faire un PUT
-    @objc func touchNewMovie() {
-        //self.navigationController?.pushViewController(NewMovieViewController.newInstance(), animated: true)
     }
     
     @objc func disconnect(){

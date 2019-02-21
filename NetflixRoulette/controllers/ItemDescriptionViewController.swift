@@ -26,7 +26,6 @@ class ItemDescriptionViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TO DO : Why he don't make my button..?
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.fillViews()
     }
@@ -99,8 +98,6 @@ class ItemDescriptionViewController: UIViewController {
             self.rate_value.text = "Note: " + test + "/5"
 
         }
-
-        print("response of the server: \(json_response)")
         
         guard let json = response.result.value as? [String: Any],
             let m = json[m] as? [String: Any],

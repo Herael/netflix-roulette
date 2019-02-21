@@ -41,19 +41,16 @@ class ShuffleViewController: UIViewController {
         let showShuffleResult = ShuffleResultListViewController()
         
         if movie_radioButton.isOn && !series_radioButton.isOn{  // Only movies
-            print("You'll have between 1 & 10 elements with only movies")
             getMovies(nb: random_number, params: params, headers: headers, completion: { res in
                 showShuffleResult.movies = res
                 self.navigationController?.pushViewController(showShuffleResult, animated: true)
             })
         } else if !movie_radioButton.isOn && series_radioButton.isOn{    // Only series
-            print("You'll have between 1 & 10 elements with only series")
             getSeries(nb: random_number, headers: headers, completion: { res in
                 showShuffleResult.movies = res
                 self.navigationController?.pushViewController(showShuffleResult, animated: true)
             })
         } else if movie_radioButton.isOn && series_radioButton.isOn{     // mix movies/series
-            print("You'll have between 1 & 10 elements with mix of movies & series")
             getMovies(nb: random_number, params: params, headers: headers, completion: { res in
                 showShuffleResult.movies = res
                 self.navigationController?.pushViewController(showShuffleResult, animated: true)
@@ -160,7 +157,6 @@ class ShuffleViewController: UIViewController {
                 showz.append(Movie(id: id, title: title_movie!, production_year: Int(year_prod)!,length: Int(length)! * 60, picture: poster_url ?? "default"))
             }
             
-            print()
             for i in 0..<nb{
                 print("Show  n° \(i+1) ------> \(showz[i])")
             }

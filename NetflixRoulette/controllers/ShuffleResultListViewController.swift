@@ -48,7 +48,6 @@ extension ShuffleResultListViewController: UITableViewDataSource {
         if movie.picture != ""{
             let imageURL = URL(string: movie.picture)
             movieCell.typeImageView.af_setImage(withURL: imageURL!)
-                //.image = UIImage(data: imageURL?)
         }else {
             movieCell.typeImageView.image = UIImage(named: "noPicture")
         }

@@ -74,6 +74,10 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         
         MovieService.default.getMovieByTitle(title: title) { (movies_list, shows_list) in
             if movies_list.count == 0 && shows_list.count == 0{
+                self.movies.removeAll()
+                self.shows.removeAll()
+                self.medias.removeAll()
+                self.tableView.reloadData()
                 self.noResultLabel.isHidden = false
             }else{
                 self.noResultLabel.isHidden = true
@@ -91,6 +95,7 @@ class SearchViewController: UIViewController , UISearchBarDelegate {
         searchBar.text = nil
         searchBar.showsCancelButton = false
         searchBar.endEditing(true)
+        self.noResultLabel.isHidden = true
     }
 
 }
@@ -151,6 +156,3 @@ extension SearchViewController: UITableViewDataSource {
     }
     
 }
-
-
-//typeof()

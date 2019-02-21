@@ -26,7 +26,6 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationItem.setHidesBackButton(true, animated: true)
         self.fieldNotFilled.isHidden = hideSomeFieldsEmptyWarning   // hide the warning
         self.differentPasswordField.isHidden = hidePasswordsAreDifferentWarning //hide the warning
         
@@ -60,14 +59,11 @@ class CreateAccountViewController: UIViewController {
     
     func postAccount(){
         UserService.default.createAccount(login: self.login_field.text!, email: self.email_field.text!, password: self.toMD5encryption(password: self.init_password_field.text!)) {
-            //TODO: delete these 2 lines of code (just for a test)
             let back = MainViewController()
             self.navigationController?.pushViewController(back, animated: true)
         }
     }
     
-    // OK
-    // Func to encrypt the password of the user with MD5 & send it in JSON obj
     func toMD5encryption(password: String) -> String {
         let context = UnsafeMutablePointer<CC_MD5_CTX>.allocate(capacity: 1)
         var digest = Array<UInt8>(repeating:0, count:Int(CC_MD5_DIGEST_LENGTH))

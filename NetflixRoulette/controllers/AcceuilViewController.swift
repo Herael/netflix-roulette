@@ -49,7 +49,6 @@ class AcceuilViewController: UIViewController {
     }
     
     @objc func tapDetected() {
-        print("Show description")
         getRandomMovie()
     }
     
@@ -83,9 +82,6 @@ class AcceuilViewController: UIViewController {
 
     func getTop4PopularUpcomingMovies(){
         MovieService.default.getPopularUpcomingMovies { (popular_upcoming_movies) in
-            print("Top 4 popular upcoming movies:")
-            print(popular_upcoming_movies)
-            print()
             self.upcomingMovies = popular_upcoming_movies
             if(self.upcomingMovies.count == 4){
                 self.popularCollection.reloadData()
@@ -96,9 +92,6 @@ class AcceuilViewController: UIViewController {
     
     func getTop4BestPopularMovies(){
         MovieService.default.getBestPopularMovies { (popular_movies) in
-            print("Top 4 best popular movies:")
-            print(popular_movies)
-            print()
             self.popularMovies = popular_movies
             if(self.popularMovies.count == 4){
                 self.ratedCollection.reloadData()
@@ -152,12 +145,8 @@ extension AcceuilViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! MovieCollectionViewCell
-        print(cell)
         let id = cell.id
-        print(id)
         for i in 0..<upcomingMovies.count{
-            print(i)
-            print(id)
             if Int(upcomingMovies[i][0]) == Int(id){
                 let item_description = ItemDescriptionViewController()
                 item_description.movie_title = upcomingMovies[i][1]
@@ -167,8 +156,6 @@ extension AcceuilViewController: UICollectionViewDataSource {
             }
         }
         for i in 0..<popularMovies.count{
-            print(i)
-            print(id)
             if Int(popularMovies[i][0]) == Int(id){
                 let item_description = ItemDescriptionViewController()
                 item_description.movie_title = popularMovies[i][1]
