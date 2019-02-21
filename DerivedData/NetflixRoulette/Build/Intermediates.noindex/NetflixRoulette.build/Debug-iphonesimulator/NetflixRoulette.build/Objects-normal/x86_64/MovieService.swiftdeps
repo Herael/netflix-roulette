@@ -34,7 +34,6 @@ depends-member:
 - !private ["s13ArrayProtocolP", "append"]
 - !private ["s13ArrayProtocolP", "count"]
 - !private ["s13ArrayProtocolP", "subscript"]
-- !private ["s10ArraySliceV", "append"]
 - !private ["s10ArraySliceV", "subscript"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
@@ -103,6 +102,7 @@ depends-member:
 - ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "subscript"]
+- !private ["SD", "count"]
 - !private ["SD", "subscript"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
@@ -124,6 +124,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "description"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -394,4 +395,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "096e3af041764ae80e82dbbfa73d976a"
+interface-hash: "4db7ba077a225b4da967227a3fc2eea9"

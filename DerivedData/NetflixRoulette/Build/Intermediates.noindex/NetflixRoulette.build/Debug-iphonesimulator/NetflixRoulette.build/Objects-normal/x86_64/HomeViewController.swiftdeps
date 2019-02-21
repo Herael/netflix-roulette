@@ -416,6 +416,8 @@ depends-member:
 - !private ["So9UIBarItemC", "tintColor"]
 - !private ["So9UIBarItemC", "title"]
 - !private ["So24UIBarPositioningDelegateP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So24UICollectionViewDelegateP", "init"]
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "AcceuilViewController"]
@@ -811,6 +813,8 @@ depends-nominal:
 - !private "So15UIBarButtonItemC"
 - !private "So9UIBarItemC"
 - !private "So24UIBarPositioningDelegateP"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"

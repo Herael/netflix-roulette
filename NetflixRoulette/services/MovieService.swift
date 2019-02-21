@@ -112,44 +112,6 @@ public class MovieService{
             completion(shows)
         }
     }
-    
-    func getuUpcomingMovies(url: String, params: [String: Any], completion: @escaping ([[String]]) -> Void){
-        
-        var moviesDictionnary: [[String]] = []
-        
-        _ = Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
-            
-            guard let response_json = res.result.value as? [String: Any],
-                let popular_movies = response_json["movies"] as? [[String: Any]] else{
-                    return
-            }
-            
-            var movie_title: String
-            var movie_id: String
-            
-            for count in 0..<popular_movies.count{
-                if let id = popular_movies[count]["id"] as? String{
-                    movie_id = popular_movies[count]["id"] as! String
-                }else{
-                    movie_id = (popular_movies[count]["id"] as! Int).description
-                }
-                
-                movie_title = popular_movies[count]["title"] as! String
-                
-                moviesDictionnary.append([movie_id.description, movie_title])
-            }
-            
-            
-            self.getMoviesPoster(moviesList: moviesDictionnary, completion: { (posters) in
-                for i in 0..<popular_movies.count {
-                    moviesDictionnary[i].append(posters[i])
-                }
-                completion(moviesDictionnary)
-            })
-            
-        }
-    }
-    
 
     func getBestPopularMovies(completion: @escaping ([[String]]) -> Void){
         let params: [String : Any] = [
@@ -175,8 +137,50 @@ public class MovieService{
         }
     }
     
-    func getMoviesPoster(moviesList: [[String]], completion: @escaping ([String]) -> Void){
-        var resulTab: [String] = []
+    
+    func getuUpcomingMovies(url: String, params: [String: Any], completion: @escaping ([[String]]) -> Void){
+        
+        var moviesDictionnary: [[String]] = []
+        
+        _ = Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (res: DataResponse<Any>) in
+            
+            guard let response_json = res.result.value as? [String: Any],
+                let popular_movies = response_json["movies"] as? [[String: Any]] else{
+                    return
+            }
+            
+            var movie_title: String
+            var movie_id: String
+            
+            for count in 0..<popular_movies.count{
+                if let id = popular_movies[count]["id"] as? String{
+                    movie_id = id
+                }else{
+                    movie_id = (popular_movies[count]["id"] as! Int).description
+                }
+                
+                movie_title = popular_movies[count]["title"] as! String
+                
+                moviesDictionnary.append([movie_id.description, movie_title, ""])
+            }
+            
+            
+            self.getMoviesPoster(moviesList: moviesDictionnary, completion: { (posters) in
+                var currentMovieId: String
+                for i in 0..<popular_movies.count {
+                    
+                    currentMovieId = moviesDictionnary[i][0]
+                    moviesDictionnary[i][2] = posters[currentMovieId] as! String
+                }
+                completion(moviesDictionnary)
+            })
+            
+        }
+    }
+    
+    
+    func getMoviesPoster(moviesList: [[String]], completion: @escaping ([String: Any]) -> Void){
+        var resulTab: [String: Any] = [:]
         
         for i in 0..<4{
             let params: [String: Any] = [
@@ -186,11 +190,13 @@ public class MovieService{
                 
                 guard let jsonResponse = res.result.value as? [String:Any],
                     let movie = jsonResponse["movies"] as? [[String:Any]],
-                    let movie_poster = movie[0]["poster"] as? String else{
+                    let movie_poster = movie[0]["poster"] as? String,
+                    let movie_id = movie[0]["id"] as? Int
+                else{
                         return
                 }
                 
-                resulTab.append(movie_poster)
+                resulTab[movie_id.description] = movie_poster
                 if(resulTab.count == 4){
                     completion(resulTab)
                 }
