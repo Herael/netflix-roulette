@@ -2,7 +2,7 @@
 
 Ce document fait réference à l'application NetflixRoulette. 
 
-![logo](/Users/benjaminrousval/Desktop/logo.png)
+![logo](doc/logo.png)
 
 
 ##Introduction
@@ -18,7 +18,7 @@ NetflixRoulette est une application IOS créée par des étudiants de l'ESGI. El
 ## Inscription / Connexion : 
 
 
-![home](/Users/benjaminrousval/Desktop/home.png)
+![home](doc/home.png)
 
 L'application possède un système d'authentification permettant l'obtention d'un compte BetaSeries et offre donc l'accès à toutes les fonctionnalités de l'application. Si vous ne possédez pas de compte, il est possible d'en créer un via l'application. 
 
@@ -26,7 +26,7 @@ L'application possède un système d'authentification permettant l'obtention d'u
 ## Page d'accueil : 
 
 
-![home2](/Users/benjaminrousval/Desktop/home2.png)
+![home2](doc/home2.png)
 
 La page d'accueil propose 3 différentes information : 
 
@@ -40,7 +40,7 @@ Un clic sur l'une des images vous permet d'obtenir une description détaillée d
 ## Page de description : 
 
 
-![desc](/Users/benjaminrousval/Desktop/desc.png)
+![desc](doc/desc.png)
 
 La page de description permet de fournir des informations supplémentaires sur un film ou bien une série. Vous pouvez également l'ajouter à votre liste des favoris
 
@@ -48,7 +48,7 @@ La page de description permet de fournir des informations supplémentaires sur u
 ## Page de recherche : 
 
 
-![Search](/Users/benjaminrousval/Desktop/Search.png)
+![Search](doc/Search.png)
 
 La page de recherche vous permet de rechercher un film ou une série grâce à son titre. Suite à un choix de l'équipe, la recherche ne s'étend pas uniquement au catalogue proposé par Netflix. 
 
@@ -56,7 +56,7 @@ La page de recherche vous permet de rechercher un film ou une série grâce à s
 ## Page Shuffle Mode : 
 
 
-![PSM](/Users/benjaminrousval/Desktop/PSM.png)
+![PSM](doc/PSM.png)
 
 La page shuffle vous permet d'obtenir selon votre choix une liste de films, de séries ou bien les deux afin de palier au choix DU film de ce soir. Le shuffle est utilisable autant de fois qu'il sera nécessaire afin de trouver la perle rare. 
 
@@ -64,7 +64,7 @@ La page shuffle vous permet d'obtenir selon votre choix une liste de films, de s
 ## Page Favoris : 
 
 
-![Favoris](/Users/benjaminrousval/Desktop/Favoris.png)
+![Favoris](doc/Favoris.png)
 
 La page favoris vous permet de gérer facilement votre liste de films ou de séries favoris. Un clic sur "Edit" vous permet de supprimer un élément si vous le souhaitez. 
 
